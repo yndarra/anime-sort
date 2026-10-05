@@ -1,0 +1,8 @@
+# Runtime dependencies (Python 3.12, Windows 10/11)
+dghs-imgutils>=0.19      # WD-14 / Camie taggers (ONNX)
+onnxruntime>=1.20        # or onnxruntime-gpu
+huggingface_hub>=1.0     # tagger model download/cache
+pillow>=11
+pillow-heif>=1.0
+piexif>=1.1
+numpy>=1.26

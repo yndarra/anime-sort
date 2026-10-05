@@ -1,0 +1,20 @@
+[project]
+name = "anime-sort"
+version = "1.0.0"
+description = "Config-driven pipeline that sorts a large anime-art collection by title and character using local taggers and multimodal LLMs with API failover"
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+
+[tool.ruff]
+line-length = 140
+target-version = "py312"
+extend-exclude = ["venv"]
+
+[tool.ruff.lint]
+# Pyflakes + pycodestyle errors; the codebase favours long Russian docstrings, so line length is relaxed.
+select = ["E", "F", "W"]
+ignore = ["E402", "E501", "E731", "E741"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,193 @@
+{
+  "//": "Шаблон пачки для «Other» на второй круг (папки dataN-other, tools\\other.py): prepare.bat берёт его вместо template.json. Сюда попали трудные картинки — поэтому шесть AI-этапов подряд без from/where: каждый следующий берёт ВСЁ, что не определили этапы выше. У каждого AI-этапа — запасная модель (fallback): если все его API спят дольше after минут, этап переходит на неё, и в таблице окна меняется его название (table)",
+  "//batches": "Пачек ровно столько (не больше числа папок) — ключи первого AI-этапа делятся между пачками по кругу",
+  "batches": 4,
+  "//rotate_ai": "Пачки идут одновременно — у каждой AI-этапы начинаются со своего места по кругу (пачка 1: GF, G6, K3…; пачка 2: G6, K3, G5…). Провайдеры в списке ниже чередуются (beniclo / ritttta), поэтому в один момент пачки сидят на разных моделях и разных провайдерах",
+  "rotate_ai": true,
+  "//fallback": "Запасной маршрут — перекрёстный: у моделей beniclo запасная — сначала другая модель beniclo (если «зависла» одна модель), затем GPT у ritttta (если лёг весь beniclo); у GPT-этапов — наоборот, Claude у beniclo. Так у каждого этапа хотя бы раз меняется провайдер",
+  "stages": [
+    {
+      "id": "WD-14",
+      "type": "wd14",
+      "accept": 0.75
+    },
+    {
+      "id": "Camie",
+      "type": "camie",
+      "accept": 0.75
+    },
+    {
+      "id": "AI-GF",
+      "type": "ai_image",
+      "model": "gemini-3.8-flash",
+      "accept": 0.8,
+      "api": [
+        "beniclo/key1",
+        "beniclo/key2",
+        "ritttta/key3",
+        "ritttta/key0",
+        "ritttta/key1",
+        "ritttta/key2",
+        "openrouter/key"
+      ],
+      "fallback": {
+        "model": "claude-sonnet-5",
+        "after": 20,
+        "table": "AI Sonnet 5",
+        "api": [
+          "beniclo/key1",
+          "beniclo/key2",
+          "ritttta/key3"
+        ]
+      }
+    },
+    {
+      "id": "AI-G6",
+      "type": "ai_image",
+      "model": "gpt-6-sol",
+      "accept": 0.5,
+      "api": [
+        "ritttta/key3",
+        "openrouter/key"
+      ],
+      "fallback": {
+        "model": "gpt-5.6-sol",
+        "after": 20,
+        "table": "AI GPT-5.6",
+        "api": [
+          {
+            "api": "beniclo/key1",
+            "model": "claude-opus-5"
+          },
+          {
+            "api": "beniclo/key2",
+            "model": "claude-opus-5"
+          }
+        ]
+      }
+    },
+    {
+      "id": "AI-K3",
+      "type": "ai_image",
+      "model": "kimi-k3",
+      "accept": 0.55,
+      "api": [
+        "beniclo/key1",
+        "beniclo/key2",
+        "ritttta/key3",
+        "ritttta/key0",
+        "openrouter/key"
+      ],
+      "fallback": {
+        "model": "claude-sonnet-5",
+        "after": 20,
+        "table": "AI Sonnet 5",
+        "api": [
+          "beniclo/key1",
+          "beniclo/key2",
+          "ritttta/key3"
+        ]
+      }
+    },
+    {
+      "id": "AI-G5",
+      "type": "ai_image",
+      "model": "gpt-5.6-sol",
+      "accept": 0.5,
+      "api": [
+        "ritttta/key3",
+        "openrouter/key"
+      ],
+      "fallback": {
+        "model": "gpt-6-sol",
+        "after": 20,
+        "table": "AI GPT-6",
+        "api": [
+          "ritttta/key3",
+          {
+            "api": "beniclo/key1",
+            "model": "claude-sonnet-5"
+          },
+          {
+            "api": "beniclo/key2",
+            "model": "claude-sonnet-5"
+          }
+        ]
+      }
+    },
+    {
+      "id": "AI-GP",
+      "type": "ai_image",
+      "model": "gemini-3.1-pro",
+      "accept": 0.55,
+      "api": [
+        "beniclo/key1",
+        "beniclo/key2",
+        "ritttta/key3",
+        "ritttta/key0",
+        "openrouter/key"
+      ],
+      "fallback": {
+        "model": "claude-opus-5",
+        "after": 20,
+        "table": "AI Opus 5",
+        "api": [
+          "beniclo/key1",
+          "beniclo/key2",
+          "ritttta/key3"
+        ]
+      }
+    },
+    {
+      "id": "AI-F5",
+      "type": "ai_image",
+      "model": "claude-fable-5-1",
+      "accept": 0.55,
+      "api": [
+        "beniclo/key1",
+        "beniclo/key2",
+        "ritttta/key3",
+        "openrouter/key"
+      ],
+      "fallback": {
+        "model": "claude-opus-5",
+        "after": 20,
+        "table": "AI Opus 5",
+        "api": [
+          "beniclo/key1",
+          "beniclo/key2",
+          "ritttta/key3"
+        ]
+      }
+    },
+    {
+      "//": "JSON — текст пина, дешёвая GPT-5.6 Luna у нескольких провайдеров; у beniclo — Gemini Flash",
+      "id": "JSON",
+      "type": "json_meta",
+      "model": "gpt-5.6-luna",
+      "accept": 0.5,
+      "api": [
+        "ritttta/key3",
+        {
+          "api": "beniclo/key1",
+          "model": "gemini-3.8-flash"
+        },
+        {
+          "api": "beniclo/key2",
+          "model": "gemini-3.8-flash"
+        },
+        "openrouter/key"
+      ]
+    },
+    {
+      "//": "Соседи у наборов -other — по общему порядку всех dataN (engine\\global_order.py), а не внутри набора",
+      "id": "N-L&R",
+      "type": "neighbors_title"
+    },
+    {
+      "id": "N-LR",
+      "type": "neighbors_lr"
+    }
+  ],
+  "previous": "keep"
+}

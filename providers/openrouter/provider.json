@@ -1,0 +1,19 @@
+{
+  "//": "OpenRouter (openrouter.ai) — настоящие модели всех производителей, формат OpenAI chat/completions",
+  "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+  "auth": "Bearer",
+  "reasoning": "openrouter",
+  "interval": 3.2,
+  "models": {
+    "kimi-k3": "moonshotai/kimi-k3",
+    "claude-fable-5-1": "anthropic/claude-fable-5.1",
+    "gpt-6-astra": "openai/gpt-6-astra",
+    "gpt-5.6-luna": "openai/gpt-5.6-luna",
+    "claude-opus-5-5": "anthropic/claude-opus-5.5",
+    "gemini-3.8-flash": "google/gemini-3.8-flash",
+    "gemini-3.1-pro": "google/gemini-3.1-pro-preview",
+    "gpt-6-sol": "openai/gpt-6-sol",
+    "gpt-5.6-sol": "openai/gpt-5.6-sol",
+    "claude-opus-5": "anthropic/claude-opus-5"
+  }
+}

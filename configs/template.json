@@ -1,0 +1,100 @@
+{
+  "//": "Шаблон пачки для prepare.bat: из него генерируются configs/config1.json … configN.json. Правьте этот файл, а не configN — они перезаписываются. В api — ВСЕ ключи-кандидаты по приоритету: prepare проверит каждый, оставит рабочие и у каждой пачки поставит первым другой ключ (нагрузка делится)",
+  "//max_batches": "Сколько пачек запускать одновременно — не больше этого числа, числа папок и числа рабочих ключей первого AI-этапа",
+  "max_batches": 4,
+  "stages": [
+    {
+      "id": "WD-14",
+      "type": "wd14",
+      "accept": 0.75
+    },
+    {
+      "id": "Camie",
+      "type": "camie",
+      "accept": 0.75
+    },
+    {
+      "id": "AI-GF",
+      "type": "ai_image",
+      "model": "gemini-3.8-flash",
+      "accept": 0.8,
+      "api": [
+        "beniclo/key1",
+        "beniclo/key2",
+        "ritttta/key3",
+        "openrouter/key"
+      ]
+    },
+    {
+      "id": "AI-K3",
+      "type": "ai_image",
+      "model": "kimi-k3",
+      "accept": 0.55,
+      "from": 0.1,
+      "api": [
+        "beniclo/key1",
+        "beniclo/key2",
+        "ritttta/key3",
+        "openrouter/key"
+      ]
+    },
+    {
+      "//": "Дорогие модели — только на то, что не определили обе дешёвые (их ~5–10% набора)"
+    },
+    {
+      "id": "AI-F5",
+      "type": "ai_image",
+      "model": "claude-fable-5-1",
+      "accept": 0.55,
+      "from": 0.2,
+      "where": "[AI-GF] and [AI-K3]",
+      "api": [
+        "beniclo/key1",
+        "beniclo/key2",
+        "ritttta/key3",
+        "openrouter/key"
+      ]
+    },
+    {
+      "id": "AI-G6",
+      "type": "ai_image",
+      "model": "gpt-6-sol",
+      "accept": 0.5,
+      "from": 0.15,
+      "where": "[AI-F5]",
+      "api": [
+        "ritttta/key3",
+        "openrouter/key"
+      ]
+    },
+    {
+      "//": "JSON — текст пина, дешёвая GPT-5.6 Luna у нескольких провайдеров; у beniclo — Gemini Flash",
+      "id": "JSON",
+      "type": "json_meta",
+      "model": "gpt-5.6-luna",
+      "accept": 0.5,
+      "api": [
+        "ritttta/key3",
+        {
+          "api": "beniclo/key1",
+          "model": "gemini-3.8-flash"
+        },
+        {
+          "api": "beniclo/key2",
+          "model": "gemini-3.8-flash"
+        },
+        "openrouter/key"
+      ]
+    },
+    {
+      "id": "N-L&R",
+      "type": "neighbors_title"
+    },
+    {
+      "id": "N-LR",
+      "type": "neighbors_lr",
+      "from": 0.1
+    }
+  ],
+  "previous": "keep"
+}

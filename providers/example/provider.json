@@ -1,0 +1,11 @@
+{
+  "//": "Образец провайдера: любой OpenAI-совместимый API. Скопируйте папку под своим именем; ключ — secrets/providers/<имя>/<ключ>.txt, в конфиге этапа — \"api\": \"<имя>/<ключ>\"",
+  "endpoint": "https://api.example.com/v1/chat/completions",
+  "auth": "Bearer",
+  "reasoning": "none",
+  "interval": 1.0,
+  "models": {
+    "gemini-3.8-flash": "gemini-3.8-flash",
+    "kimi-k3": "kimi-k3"
+  }
+}

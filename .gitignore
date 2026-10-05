@@ -1,0 +1,26 @@
+# Environment
+venv/
+__pycache__/
+*.pyc
+.ruff_cache/
+.pytest_cache/
+
+# Secrets: API keys live only on the local machine (see secrets.example/)
+secrets/
+
+# Private OpenAI-compatible gateways: keep only the public ones in the repo
+providers/*/
+!providers/openrouter/
+!providers/example/
+
+# Runtime state, logs and per-machine data
+logs/
+tools/.busy/
+tools/merge_journal.jsonl
+tools/add/folders.json
+tools/add/folders.txt*
+tools/ani/ani.txt
+tools/fix_name/names.json.bak
+assets/done.ico
+configs/config[0-9]*.json
+configs/config.json

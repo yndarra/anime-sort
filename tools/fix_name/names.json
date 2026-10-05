@@ -1,0 +1,2249 @@
+{
+  "//": "Правила переименования папок Waifu: \"Источник\": \"Цель\". Тайтл — \"Тайтл\", персонаж — \"Тайтл\\\\Персонаж\" (слэш в JSON двойной). Новые правила вписывайте в \"new\" — tools\\fix_name\\regroup.py разложит их по блокам \"titles\" (блок = целевой тайтл, Other первым, дальше по алфавиту). Пустая цель — правило выключено. Применить к Waifu — tools\\fix_name\\fix_name.py (его же вызывает finish.bat)",
+  "new": {},
+  "titles": {
+    "Other": {
+      "Неизвестный тайтл": "Other",
+      "Original": "Other",
+      "['Honkai Impact 3rd', 'Honkai Star Rail', 'The Duke of Death and His Black Maid', 'Chainsaw Man', 'Kono Subarashii Sekai Ni Shukufuku Wo!', 'Chained Soldier']": "Other",
+      "['Arknights', 'Fate (series)']": "Other",
+      "['Arknights', 'Blue Archive', 'Is It Wrong to Try to Pick Up Girls in a Dungeon']": "Other",
+      "['Arknights', 'Re Zero − Starting Life in Another World', 'I Was Reincarnated as the 7th Prince So I Can Take My Time Perfecting My Magical Ability', 'Is It Wrong to Try to Pick Up Girls in a Dungeon']": "Other",
+      "['Arknights', _Hell's Paradise  Jigokuraku_, 'Is It Wrong to Try to Pick Up Girls in a Dungeon_']": "Other",
+      "[_Frieren Beyond Journey's End_, 'Is It Wrong to Try to Pick Up Girls in a Dungeon']": "Other",
+      "['Is It Wrong to Try to Pick Up Girls in a Dungeon', 'Honkai Star Rail', 'The Eminence in Shadow', 'Zenless Zone Zero']": "Other",
+      "['Punishing Gray Raven', 'Arknights', 'Is It Wrong to Try to Pick Up Girls in a Dungeon']": "Other",
+      "['Re Zero − Starting Life in Another World', 'Is It Wrong to Try to Pick Up Girls in a Dungeon']": "Other",
+      "['Arknights', _Frieren Beyond Journey's End_, 'Is It Wrong to Try to Pick Up Girls in a Dungeon']": "Other",
+      "['Is It Wrong to Try to Pick Up Girls in a Dungeon', 'Wuthering Waves', 'Fate (series)', 'High School DxD']": "Other",
+      "Original character": "Other",
+      "Original character (Cissia)": "Other",
+      "Original character (Haimiya)": "Other",
+      "Original character (Pixiv artist Lemo)": "Other",
+      "Original character _ VTuber persona": "Other",
+      "Original character illustration": "Other",
+      "Original illustration — _Withering Waves_": "Other",
+      "Unknown anime_game title": "Other",
+      "Unknown game": "Other",
+      "Unknown game title": "Other",
+      "Unknown; possibly an original character": "Other",
+      "The Testament of Sister New Devil _ High School DxD": "Other",
+      "Wuthering Waves _ Arknights _ Is It Wrong to Try to Pick Up Girls in a Dungeon _ Solo Leveling": "Other",
+      "Genshin Impact (fan art style variant)": "Other",
+      "None (original artwork)": "Other",
+      "Original character (#chainsmokercat)": "Other",
+      "Original character (artist @bonnie 3404)": "Other",
+      "Original character (artist @F4D1A6)": "Other",
+      "Original character (artist @tokkyusan)": "Other",
+      "Original illustration by CAISENA33": "Other",
+      "1ssakawaguchi": "Other",
+      "Ane Naru Mono (The Elder Sister-Like One) x Do You Love Your Mom and Her Two-Hit Multi-Target Attacks_": "Other",
+      "Blue Archive-style original illustration": "Other",
+      "Genshin Impact (visual resemblance, unconfirmed)": "Other",
+      "Genshin Impact and Zenless Zone Zero": "Other",
+      "Honkai Star Rail, Genshin Impact": "Other",
+      "HoYoverse": "Other",
+      "Jujutsu Kaisen × Wuthering Waves": "Other",
+      "KuroMeDesainArt (original illustration)": "Other",
+      "Original illustration (Egyptian judgement-themed artwork; no confirmed canonical anime_game title)": "Other",
+      "Unidentified — likely a fan art or promotional illustration rather than a verified canonical anime_game scene": "Other",
+      "Zonao Olympus (ILEE ANTES)": "Other",
+      "Other\\Irene": "Other\\Irene (kanniiepan)",
+      "Other\\Shalltear Bloodfallen": ""
+    },
+    "2.5 Dimensional Seduction": {
+      "2.5 Dimensional Seduction (2.5-jigen no Ririsa)": "2.5 Dimensional Seduction",
+      "2.5-jigen no Ririsa": "2.5 Dimensional Seduction",
+      "2.5 Dimensional Seduction\\753♡": "2.5 Dimensional Seduction\\Nagomi",
+      "2.5 Dimensional Seduction\\753♡ (Nagomi)": "2.5 Dimensional Seduction\\Nagomi",
+      "2.5 Dimensional Seduction\\753♡ (Nagomi) as Ikora": "2.5 Dimensional Seduction\\Nagomi",
+      "2.5 Dimensional Seduction\\Aria Kisaki (cosplaying Melia)": "2.5 Dimensional Seduction\\Aria Kisaki",
+      "2.5 Dimensional Seduction\\Ririsa Amano (Liliel)": "2.5 Dimensional Seduction\\Ririsa Amano",
+      "2.5 Dimensional Seduction\\Liliel (Ririsa Amano cosplay)": "2.5 Dimensional Seduction\\Liliel",
+      "2.5 Dimensional Seduction\\Liliel (cosplayed by Ririsa Amano)": "2.5 Dimensional Seduction\\Liliel",
+      "2.5 Dimensional Seduction\\Lilysa Amano (as Liliel)": "2.5 Dimensional Seduction\\Liliel",
+      "2.5 Dimensional Seduction\\Lilysa Amano": "2.5 Dimensional Seduction\\Ririsa Amano",
+      "2.5 Dimensional Seduction\\Mayuri Hanyuu": "2.5 Dimensional Seduction\\Mayuri Hanyu"
+    },
+    "7th Dragon 2020": {
+      "7th Dragon 2020\\Samurai (female class avatar)": "7th Dragon 2020\\Samurai (female)"
+    },
+    "86 — Eighty Six": {
+      "86—Eighty-Six—": "86 — Eighty Six",
+      "86—Eighty-Six-": "86 — Eighty Six",
+      "86 -Eighty-Six-": "86 — Eighty Six",
+      "86 -Eighty Six-": "86 — Eighty Six",
+      "86 -eightysix-": "86 — Eighty Six",
+      "86 Eighty-Six": "86 — Eighty Six",
+      "86—Eighty-Six": "86 — Eighty Six",
+      "The 86 (Eighty-Six)": "86 — Eighty Six",
+      "86": "86 — Eighty Six",
+      "86 — Eighty Six\\Vladilena Milizé (Lena)": "86 — Eighty Six\\Vladilena Milizé",
+      "86 — Eighty Six\\Vladilena Millize": "86 — Eighty Six\\Vladilena Milizé"
+    },
+    "9-nine- Ruler's Crown": {
+      "Nine Ruler's Crown": "9-nine- Ruler's Crown"
+    },
+    "A Certain Magical Index": {
+      "Toaru Majutsu No Index": "A Certain Magical Index",
+      "A Certain Magical Index (Toaru Majutsu no Index)": "A Certain Magical Index",
+      "Toaru Majutsu no Index (A Certain Magical Index)": "A Certain Magical Index",
+      "Toaru Majutsu no Index Imaginary Fest": "A Certain Magical Index"
+    },
+    "A Certain Scientific Railgun": {
+      "Toaru Kagaku no Railgun": "A Certain Scientific Railgun",
+      "A Certain Scientific Railgun T": "A Certain Scientific Railgun",
+      "A Certain Scientific Railgun\\Saten Ruiko": "A Certain Scientific Railgun\\Ruiko Saten"
+    },
+    "A Couple of Cuckoos": {
+      "A Couple of Cuckoos (Kakkou no Iinazuke)": "A Couple of Cuckoos",
+      "Kakkou no Iinazuke": "A Couple of Cuckoos"
+    },
+    "A Ninja and an Assassin Under One Roof": {
+      "Ninja to Koroshiya no Futarigurashi": "A Ninja and an Assassin Under One Roof"
+    },
+    "A Nobody's Way Up to an Exploration Hero": {
+      "Mob kara Hajimaru Tansaku Eiyuutan": "A Nobody's Way Up to an Exploration Hero"
+    },
+    "A Town Where You Live": {
+      "Kimi no Iru Machi": "A Town Where You Live"
+    },
+    "A Will Eternal": {
+      "A Will Eternal (Yi Nian Yong Heng)": "A Will Eternal"
+    },
+    "Aether Gazer": {
+      "Aether Gazer (深空之眼)": "Aether Gazer"
+    },
+    "Ah! My Goddess": {
+      "Ah! My Goddess (Aa Megami-sama)": "Ah! My Goddess"
+    },
+    "Aim for the Top 2! Diebuster": {
+      "Top o Nerae 2! Diebuster (Aim for the Top 2!)": "Aim for the Top 2! Diebuster"
+    },
+    "Akame ga Kill!": {
+      "Akame ga Kill! Zero": "Akame ga Kill!"
+    },
+    "Akashic Records of Bastard Magic Instructor": {
+      "Rokudenashi Majutsu Koushi to Akashic Records": "Akashic Records of Bastard Magic Instructor",
+      "Rokudenashi Majutsu Koushi to Akashic Records (Akashic Records of Bastard Magic Instructor)": "Akashic Records of Bastard Magic Instructor"
+    },
+    "Akebi's Sailor Uniform": {
+      "Akebi's Sailor Uniform (Akebi-chan no Sailor-fuku)": "Akebi's Sailor Uniform"
+    },
+    "Alya Sometimes Hides Her Feelings in Russian": {
+      "Tokidoki Bosotto Roshia-go De Dereru Tonari No Alya-san": "Alya Sometimes Hides Her Feelings in Russian",
+      "Tokidoki Bosotto Russia-go de Dereru Tonari no Alya-san": "Alya Sometimes Hides Her Feelings in Russian",
+      "Alya Sometimes Hides Her Feelings in Russian (Roshidere)": "Alya Sometimes Hides Her Feelings in Russian",
+      "Alya Sometimes Hides Her Feelings in Russian (Tokidoki Bosotto Russia-go de Dereru Tonari no Alya-san)": "Alya Sometimes Hides Her Feelings in Russian",
+      "Tokidoki Bosotto Russia-go de Dereru Tonari no Alya-san (Alya Sometimes Hides Her Feelings in Russian)": "Alya Sometimes Hides Her Feelings in Russian",
+      "Alya Sometimes Hides Her Feelings in Russian\\Alya Mikhailovna Kujou": "Alya Sometimes Hides Her Feelings in Russian\\Alisa Mikhailovna Kujou",
+      "Alya Sometimes Hides Her Feelings in Russian\\Алиса Михайловна Кудзё _ Аля иногда кокетничает со мной по-русски": "Alya Sometimes Hides Her Feelings in Russian\\Alisa Mikhailovna Kujou",
+      "Alya Sometimes Hides Her Feelings in Russian\\Maria Kujou": "Alya Sometimes Hides Her Feelings in Russian\\Maria Mikhailovna Kujou",
+      "Alya Sometimes Hides Her Feelings in Russian\\Alisa Mikhailovna Kujou (Alya)": "Alya Sometimes Hides Her Feelings in Russian\\Alisa Mikhailovna Kujou"
+    },
+    "Am I Actually the Strongest": {
+      "Am I Actually the Strongest_": "Am I Actually the Strongest"
+    },
+    "Amagi Brilliant Park": {
+      "Amagi Brilliant Park\\Sento Isuzu": "Amagi Brilliant Park\\Isuzu Sento"
+    },
+    "An Archdemon's Dilemma How to Love Your Elf Bride": {
+      "An Archdemon's Dilemma How to Love Your Elf Bride\\Nephy": "An Archdemon's Dilemma How to Love Your Elf Bride\\Nephelia",
+      "An Archdemon's Dilemma How to Love Your Elf Bride\\Nephelia (Nephy)": "An Archdemon's Dilemma How to Love Your Elf Bride\\Nephelia"
+    },
+    "Anemone Is in Heat": {
+      "Anemone wa Netsu wo Obiru": "Anemone Is in Heat"
+    },
+    "Anohana The Flower We Saw That Day": {
+      "Anohana The Flower We Saw That Day (Ano Hi Mita Hana no Namae wo Bokutachi wa Mada Shiranai)": "Anohana The Flower We Saw That Day",
+      "Anohana The Flower We Saw That Day\\Meiko Honma (Menma)": "Anohana The Flower We Saw That Day\\Meiko Honma"
+    },
+    "Arifureta From Commonplace to World's Strongest": {
+      "Arifureta": "Arifureta From Commonplace to World's Strongest",
+      "Arifureta From Commonplace to World's Strongest\\Shia Haulia": "Arifureta From Commonplace to World's Strongest\\Shea Haulia"
+    },
+    "Arknights": {
+      "Arknights\\Dusk (Xi)": "Arknights\\Dusk",
+      "Arknights\\Reed The Flame Shadow": "Arknights\\Reed",
+      "Arknights\\Skadi The Corrupting Heart": "Arknights\\Skadi",
+      "Arknights\\Spectre": "Arknights\\Specter",
+      "Arknights\\Yato (Kirin R)": "Arknights\\Yato Alter",
+      "Arknights\\Wis'adel (W)": "Arknights\\Wis'adel"
+    },
+    "Arknights Endfield": {
+      "Arknights\\Zhuang Fangyi": "Arknights Endfield\\Zhuang Fangyi",
+      "Arknights\\Yvonne": "Arknights Endfield\\Yvonne",
+      "Arknights Endfield\\Ch'en (Chen Qianyu)": "Arknights Endfield\\Chen Qianyu",
+      "Arknights Endfield\\Fangyi": "Arknights Endfield\\Zhuang Fangyi",
+      "Arknights Endfield\\Mifu": "Arknights Endfield\\Mi Fu"
+    },
+    "Armed Girl's Machiavellism": {
+      "Busou Shoujo Machiavellianism": "Armed Girl's Machiavellism",
+      "Busou Shoujo Machiavellianism (Armed Girl's Machiavellism)": "Armed Girl's Machiavellism"
+    },
+    "Arpeggio of Blue Steel": {
+      "Aoki Hagane no Arpeggio Ars Nova": "Arpeggio of Blue Steel"
+    },
+    "As a Reincarnated Aristocrat, I'll Use My Appraisal Skill to Rise in the World": {
+      "As a Reincarnated Aristocrat, I'll Use My Appraisal Skill to Rise in the World Season 2": "As a Reincarnated Aristocrat, I'll Use My Appraisal Skill to Rise in the World"
+    },
+    "Assassination Classroom": {
+      "Assassination Classroom\\Irina Jelavic": "Assassination Classroom\\Irina Jelavić"
+    },
+    "Atelier Ryza": {
+      "Atelier Ryza Ever Darkness & the Secret Hideout": "Atelier Ryza",
+      "Atelier Ryza Ever Darkness & the Secret Hideout The Animation": "Atelier Ryza",
+      "Atelier Ryza 3 Alchemist of the End & the Secret Key": "Atelier Ryza"
+    },
+    "Attack on Titan": {
+      "Shingeki No Kyojin": "Attack on Titan",
+      "Attack on Titan (Shingeki no Kyojin)": "Attack on Titan"
+    },
+    "Azur Lane": {
+      "Azur Lane Slow Ahead!": "Azur Lane",
+      "Azur Lane\\St. Louis (luxurious Wheels)": "Azur Lane\\St. Louis",
+      "Azur Lane\\Amagi (Azur Lane)": "Azur Lane\\Amagi"
+    },
+    "Baka and Test": {
+      "Baka to Test to Shoukanjuu": "Baka and Test",
+      "Baka and Test Summon the Beasts (Baka to Test to Shoukanjuu)": "Baka and Test"
+    },
+    "BanG Dream!": {
+      "BanG Dream! It's MyGO!!!!! _ BanG Dream! Ave Mujica": "BanG Dream!",
+      "BanG Dream! Girls Band Party!": "BanG Dream!"
+    },
+    "Banished from the Hero's Party, I Decided to Live a Quiet Life in the Countryside": {
+      "Banished from the Hero's Party, I Decided to Live a Slow Life in the Countryside": "Banished from the Hero's Party, I Decided to Live a Quiet Life in the Countryside"
+    },
+    "Bastard!! Heavy Metal, Dark Fantasy": {
+      "BASTARD!! -Heavy Metal, Dark Fantasy-": "Bastard!! Heavy Metal, Dark Fantasy"
+    },
+    "Battle Through the Heavens": {
+      "Battle Through the Heavens (Doupo Cangqiong)": "Battle Through the Heavens",
+      "Battle Through the Heavens (斗破苍穹)": "Battle Through the Heavens"
+    },
+    "Beast Tamer": {
+      "Yuusha Party wo Tsuihou sareta Beast Tamer, Saikyoushu no Nekomimi Shoujo to Deau": "Beast Tamer"
+    },
+    "Beatless": {
+      "Beatless (ビートレス)": "Beatless"
+    },
+    "Black Rock Shooter": {
+      "Black★Rock Shooter": "Black Rock Shooter",
+      "Black★Rock Shooter Dawn Fall": "Black Rock Shooter",
+      "Black Rock Shooter\\Insane Black★Rock Shooter": "Black Rock Shooter\\Insane Black Rock Shooter"
+    },
+    "Black Rock Shooter The Game": {
+      "Black★Rock Shooter The Game": "Black Rock Shooter The Game"
+    },
+    "Blast of Tempest": {
+      "Zetsuen no Tempest": "Blast of Tempest"
+    },
+    "Bleach": {
+      "Bleach Thousand-Year Blood War": "Bleach",
+      "Bleach\\Neliel Tu Odelschwanck": "Bleach\\Nelliel Tu Odelschwanck",
+      "Bleach\\Yoruichi Shihōin": "Bleach\\Yoruichi Shihouin",
+      "Bleach\\Sui-feng": "Bleach\\Soi Fon",
+      "Bleach\\Suì-Fēng (Soi Fon)": "Bleach\\Soi Fon",
+      "Bleach\\Shihouin Yoruichi": "Bleach\\Yoruichi Shihouin",
+      "Bleach\\Franceska Mila Rose": "Bleach\\Mila Rose",
+      "Bleach\\Sui-Feng (Soi Fon)": "Bleach\\Soi Fon",
+      "Bleach\\Suì-Fēng": "Bleach\\Soi Fon",
+      "Bleach\\Kuukaku Shiba": "Bleach\\Kukaku Shiba",
+      "Bleach\\Kūkaku Shiba": "Bleach\\Kukaku Shiba",
+      "Bleach\\Kuchiki Rukia": "Bleach\\Rukia Kuchiki"
+    },
+    "Bloodline Forbidden Zone": {
+      "血族禁域 (Vampire Sphere)": "Bloodline Forbidden Zone",
+      "Bloodline Forbidden Zone\\南宫夕颜 (Nangong Xiyan)": "Bloodline Forbidden Zone\\Nangong Xiyan"
+    },
+    "Blue Archive": {
+      "Blue Archive\\Aris (Tendou Aris)": "Blue Archive\\Aris",
+      "Blue Archive\\Aris Tendou": "Blue Archive\\Aris",
+      "Blue Archive\\Hina Sorasaki": "Blue Archive\\Hina",
+      "Blue Archive\\Sorasaki Hina": "Blue Archive\\Hina",
+      "Blue Archive\\Kayoko Onikata": "Blue Archive\\Kayoko",
+      "Blue Archive\\Misono Mika": "Blue Archive\\Mika",
+      "Blue Archive\\Nagisa Kashiwagi": "Blue Archive\\Nagisa",
+      "Blue Archive\\Noa Ushio": "Blue Archive\\Noa",
+      "Blue Archive\\Tachibana Satsuki": "Blue Archive\\Satsuki",
+      "Blue Archive\\Hoshino (swimsuit)": "Blue Archive\\Hoshino",
+      "Blue Archive\\Shiroko Terror": "Blue Archive\\Shiroko",
+      "Blue Archive\\Aru Rikuhachima": "Blue Archive\\Aru",
+      "Blue Archive\\Miyu Kasumizawa": "Blue Archive\\Miyu",
+      "Blue Archive\\Asuna (Blue Archive)": "Blue Archive\\Asuna",
+      "Blue Archive\\Hoshino (Blue Archive)": "Blue Archive\\Hoshino",
+      "Blue Archive\\Kakudate Karin": "Blue Archive\\Karin",
+      "Blue Archive\\Mikamo Neru": "Blue Archive\\Neru",
+      "Blue Archive\\Neru Mikamo": "Blue Archive\\Neru",
+      "Blue Archive\\Nonomi Izayoi": "Blue Archive\\Nonomi",
+      "Blue Archive\\Onikata Kayoko": "Blue Archive\\Kayoko",
+      "Blue Archive\\Onikata Haruka": "Blue Archive\\Haruka",
+      "Blue Archive\\Seia Yurizono": "Blue Archive\\Seia",
+      "Blue Archive\\Shiroko Sunaookami": "Blue Archive\\Shiroko",
+      "Blue Archive\\Ushio Noa": "Blue Archive\\Noa",
+      "Blue Archive\\Gokurakubou Nagusa": "Blue Archive\\Nagusa",
+      "Blue Archive\\Hakari Shigure": "Blue Archive\\Shigure",
+      "Blue Archive\\Hanako Urawa": "Blue Archive\\Hanako",
+      "Blue Archive\\Hanuma Makoto": "Blue Archive\\Makoto",
+      "Blue Archive\\Haruna Kurodate": "Blue Archive\\Haruna",
+      "Blue Archive\\Imashino Misaki": "Blue Archive\\Misaki",
+      "Blue Archive\\Joumae Saori": "Blue Archive\\Saori",
+      "Blue Archive\\Juri Ushio": "Blue Archive\\Juri",
+      "Blue Archive\\Kenzaki Tsurugi": "Blue Archive\\Tsurugi",
+      "Blue Archive\\Kiyosumi Akira": "Blue Archive\\Akira",
+      "Blue Archive\\Kurosaki Koyuki": "Blue Archive\\Koyuki",
+      "Blue Archive\\Moe Kazekura": "Blue Archive\\Moe",
+      "Blue Archive\\Morizuki Suzumi": "Blue Archive\\Suzumi",
+      "Blue Archive\\Nekozuka Hibiki": "Blue Archive\\Hibiki",
+      "Blue Archive\\Shinra Kirara": "Blue Archive\\Kirara",
+      "Blue Archive\\Sunaookami Shiroko": "Blue Archive\\Shiroko",
+      "Blue Archive\\Toki Asuma": "Blue Archive\\Toki",
+      "Blue Archive\\Tsukatsuki Rio": "Blue Archive\\Rio",
+      "Blue Archive\\Yukino Shichitou": "Blue Archive\\Yukino",
+      "Blue Archive\\Yurizono Seia": "Blue Archive\\Seia",
+      "Blue Archive\\Ako Amau": "Blue Archive\\Ako",
+      "Blue Archive\\Aomori Mine": "Blue Archive\\Mine",
+      "Blue Archive\\Asagi Mutsuki": "Blue Archive\\Mutsuki",
+      "Blue Archive\\Asuka Toki": "Blue Archive\\Toki",
+      "Blue Archive\\Toki Asuka": "Blue Archive\\Toki",
+      "Blue Archive\\Toki Asukama": "Blue Archive\\Toki",
+      "Blue Archive\\Toki Asumi": "Blue Archive\\Toki",
+      "Blue Archive\\Hayase Yuuka": "Blue Archive\\Yuuka",
+      "Blue Archive\\Himuro Sena": "Blue Archive\\Sena",
+      "Blue Archive\\Izayoi Nonomi": "Blue Archive\\Nonomi",
+      "Blue Archive\\Kadenokouji Kikyou": "Blue Archive\\Kikyou",
+      "Blue Archive\\Kyouyama Kikyou": "Blue Archive\\Kikyou",
+      "Blue Archive\\Kajou Yukari": "Blue Archive\\Yukari",
+      "Blue Archive\\Kazusa Kyouyama": "Blue Archive\\Kazusa",
+      "Blue Archive\\Koharu Shimoe": "Blue Archive\\Koharu",
+      "Blue Archive\\Kosaka Wakamo": "Blue Archive\\Wakamo",
+      "Blue Archive\\Wakamo Kosaka": "Blue Archive\\Wakamo",
+      "Blue Archive\\Kuromi Serika": "Blue Archive\\Serika",
+      "Blue Archive\\Nagusa Goryou": "Blue Archive\\Nagusa",
+      "Blue Archive\\Ogata Kanna": "Blue Archive\\Kanna",
+      "Blue Archive\\Rio Tsukatsuki": "Blue Archive\\Rio",
+      "Blue Archive\\Yukino Shichigusa": "Blue Archive\\Yukino",
+      "Blue Archive\\Yukino Shichishin": "Blue Archive\\Yukino",
+      "Blue Archive\\Akeboshi Himari": "Blue Archive\\Himari",
+      "Blue Archive\\Himari Akeboshi": "Blue Archive\\Himari",
+      "Blue Archive\\Atsuko Hakari": "Blue Archive\\Atsuko",
+      "Blue Archive\\Hakari Atsuko": "Blue Archive\\Atsuko",
+      "Blue Archive\\Makoto Hanuma": "Blue Archive\\Makoto",
+      "Blue Archive\\Tsukiyuki Miyako": "Blue Archive\\Miyako"
+    },
+    "Boarding School Juliet": {
+      "Kishuku Gakkou no Juliet": "Boarding School Juliet"
+    },
+    "Bocchi The Rock!": {
+      "Bocchi The Rock!\\Gotoh Hitori": "Bocchi The Rock!\\Hitori Gotoh",
+      "Bocchi The Rock!\\Hiroi Kikuri": "Bocchi The Rock!\\Kikuri Hiroi",
+      "Bocchi The Rock!\\Ijichi Nijika": "Bocchi The Rock!\\Nijika Ijichi",
+      "Bocchi The Rock!\\Yamada Ryo": "Bocchi The Rock!\\Ryo Yamada"
+    },
+    "Bogus Skill «Fruitmaster» About That Time I Became Able to Eat Unlimited Numbers of Skill Fruits (That Kill You)": {
+      "Hazure Skill  Kinomi Master (Bogus Skill _Fruitmaster_)": "Bogus Skill «Fruitmaster» About That Time I Became Able to Eat Unlimited Numbers of Skill Fruits (That Kill You)",
+      "Hazure Skill _Kinomi Master_  Skill no Mi o Tabetara Shinda": "Bogus Skill «Fruitmaster» About That Time I Became Able to Eat Unlimited Numbers of Skill Fruits (That Kill You)",
+      "Hazure Skill _Kinomi Master_": "Bogus Skill «Fruitmaster» About That Time I Became Able to Eat Unlimited Numbers of Skill Fruits (That Kill You)",
+      "Bogus Skill _Fruitmaster_  About That Time I Became Able to Eat Unlimited Skill Fruits": "Bogus Skill «Fruitmaster» About That Time I Became Able to Eat Unlimited Numbers of Skill Fruits (That Kill You)",
+      "Bogus Skill _Fruitmaster_ (Hazure Skill  Kinomi Master)": "Bogus Skill «Fruitmaster» About That Time I Became Able to Eat Unlimited Numbers of Skill Fruits (That Kill You)",
+      "Bogus Skill _Fruitmaster_  About That Time I Became Able to Eat Unlimited Numbers of Skill Fruits (That Kill You)": "Bogus Skill «Fruitmaster» About That Time I Became Able to Eat Unlimited Numbers of Skill Fruits (That Kill You)",
+      "Bogus Skill _Fruitmaster_": "Bogus Skill «Fruitmaster» About That Time I Became Able to Eat Unlimited Numbers of Skill Fruits (That Kill You)",
+      "Bogus Skill _Fruitmaster_ ~About That Time I Became Able to Eat Unlimited Numbers of Skill Fruits (That Kill You)~": "Bogus Skill «Fruitmaster» About That Time I Became Able to Eat Unlimited Numbers of Skill Fruits (That Kill You)",
+      "Bogus Skill «Fruitmaster» About That Time I Became Able to Eat Unlimited Numbers of Skill Fruits (That Kill You)\\Dratena Belbury": "Bogus Skill «Fruitmaster» About That Time I Became Able to Eat Unlimited Numbers of Skill Fruits (That Kill You)\\Dratena",
+      "Bogus Skill «Fruitmaster» About That Time I Became Able to Eat Unlimited Numbers of Skill Fruits (That Kill You)\\Lena Floria": "Bogus Skill «Fruitmaster» About That Time I Became Able to Eat Unlimited Numbers of Skill Fruits (That Kill You)\\Lena"
+    },
+    "Boundless Necromancer": {
+      "Iron-Blooded Monarch; Boundless Necromancer": "Boundless Necromancer"
+    },
+    "Boy's Abyss": {
+      "Shounen no Abyss": "Boy's Abyss"
+    },
+    "Brynhildr in the Darkness": {
+      "Gokukoku no Brynhildr (Brynhildr in the Darkness)": "Brynhildr in the Darkness"
+    },
+    "Call of the Night": {
+      "Call of the Night (Yofukashi no Uta)": "Call of the Night",
+      "Yofukashi No Uta": "Call of the Night",
+      "Call of the Night\\Nanakusa Nazuna": "Call of the Night\\Nazuna Nanakusa"
+    },
+    "Can a Boy-Girl Friendship Survive (No, It Can't!)": {
+      "Can a Boy-Girl Friendship Survive_ (No, It Can't!)": "Can a Boy-Girl Friendship Survive (No, It Can't!)",
+      "Can a Boy-Girl Friendship Survive_": "Can a Boy-Girl Friendship Survive (No, It Can't!)",
+      "Can a Boy-Girl Friendship Survive_ (Iya, Shinkenai!)": "Can a Boy-Girl Friendship Survive (No, It Can't!)",
+      "Can a Boy-Girl Friendship Survive_ (Iya, Shinai!!_)": "Can a Boy-Girl Friendship Survive (No, It Can't!)",
+      "Can a Boy-Girl Friendship Survive_ (Iya, Shinai!!)": "Can a Boy-Girl Friendship Survive (No, It Can't!)",
+      "Can a Boy-Girl Friendship Survive_ (Danjo no Yuujou wa Seiritsu suru_ (Iya, Shinai!!))": "Can a Boy-Girl Friendship Survive (No, It Can't!)",
+      "Danjo no Yuujou wa Seiritsu Suru_ (Iya, Shinai!!)": "Can a Boy-Girl Friendship Survive (No, It Can't!)"
+    },
+    "Castlevania": {
+      "Castlevania (series)": "Castlevania",
+      "Castlevania Order of Ecclesia": "Castlevania"
+    },
+    "Catch Me at the Ballpark!": {
+      "Ballpark de Tsukamaete!": "Catch Me at the Ballpark!",
+      "Catch Me at the Ballpark! (Ballpark de Tsukamaete!)": "Catch Me at the Ballpark!"
+    },
+    "Chaika The Coffin Princess": {
+      "Hitsugi no Chaika (Chaika The Coffin Princess)": "Chaika The Coffin Princess"
+    },
+    "Chained Soldier": {
+      "Chained Soldier (Mato Seihei no Slave)": "Chained Soldier",
+      "Mato Seihei no Slave": "Chained Soldier",
+      "Mato Seihei no Slave (Chained Soldier)": "Chained Soldier",
+      "Chained Soldier\\Coco": "Chained Soldier\\Coco Wanstein",
+      "Chained Soldier\\Mira": "Chained Soldier\\Mira Kamiunten",
+      "Chained Soldier\\Kuutetsu": "Chained Soldier\\Kuusetsu",
+      "Chained Soldier\\Naon Yuno": "Chained Soldier\\Yuno Naon",
+      "Chained Soldier\\Sahara Wakasa": "Chained Soldier\\Wakasa Sahara"
+    },
+    "Chillin' in Another World with Level 2 Super Cheat Powers": {
+      "Lv2 kara Cheat datta Moto Yuusha Kouho no Mattari Isekai Life": "Chillin' in Another World with Level 2 Super Cheat Powers"
+    },
+    "Chillin' in My 30s after Getting Fired from the Demon King's Army": {
+      "Kaiko sareta Ankoku Heishi (30-dai) no Slow na Second Life": "Chillin' in My 30s after Getting Fired from the Demon King's Army"
+    },
+    "Chivalry of a Failed Knight": {
+      "Rakudai Kishi No Cavalry": "Chivalry of a Failed Knight",
+      "Rakudai Kishi no Cavalry (Chivalry of a Failed Knight)": "Chivalry of a Failed Knight"
+    },
+    "Classroom of the Elite": {
+      "Classroom of the Elite (Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e)": "Classroom of the Elite",
+      "Classroom of the Elite (Yōkoso Jitsuryoku Shijō Shugi no Kyōshitsu e)": "Classroom of the Elite",
+      "Youjitsu": "Classroom of the Elite",
+      "Youkoso Jitsuryoku Shijou Shugi No Kyoushitsu E": "Classroom of the Elite",
+      "Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e (Classroom of the Elite)": "Classroom of the Elite",
+      "Classroom of the Elite (Yōkoso Jitsuryoku Shijō Shugi no Kyōshitsu e) — 2nd Year arc": "Classroom of the Elite",
+      "Classroom of the Elite\\Kikyō Kushida": "Classroom of the Elite\\Kikyo Kushida",
+      "The Shiunji Family Children\\Hiyori Shiina": "Classroom of the Elite\\Hiyori Shiina",
+      "Classroom of the Elite\\Horikita Suzune": "Classroom of the Elite\\Suzune Horikita",
+      "Classroom of the Elite\\Kushida Kikyou": "Classroom of the Elite\\Kikyou Kushida",
+      "Classroom of the Elite\\Chabashira Sae": "Classroom of the Elite\\Sae Chabashira",
+      "Classroom of the Elite\\Ichinose Honami": "Classroom of the Elite\\Honami Ichinose",
+      "Classroom of the Elite\\Karuizawa Kei": "Classroom of the Elite\\Kei Karuizawa",
+      "Classroom of the Elite\\Kikyou Kushida": "Classroom of the Elite\\Kikyo Kushida",
+      "Classroom of the Elite\\Matsushita Chiaki": "Classroom of the Elite\\Chiaki Matsushita",
+      "Classroom of the Elite\\Maya Satō": "Classroom of the Elite\\Maya Sato",
+      "Classroom of the Elite\\Nanase Tsubasa": "Classroom of the Elite\\Tsubasa Nanase",
+      "Classroom of the Elite\\Amasawa Ichika": "Classroom of the Elite\\Ichika Amasawa",
+      "Classroom of the Elite\\Fūka Kiryūin": "Classroom of the Elite\\Fuka Kiryuin",
+      "Classroom of the Elite\\Sakayanagi Arisu": "Classroom of the Elite\\Arisu Sakayanagi"
+    },
+    "Cleopatra": {
+      "Other\\Cleopatra": "Cleopatra"
+    },
+    "Clumsy Senpai": {
+      "Bukiyou na Senpai (Clumsy Senpai)": "Clumsy Senpai",
+      "Clumsy Senpai\\Katagiri Ami": "Clumsy Senpai\\Ami Katagiri"
+    },
+    "Code Geass": {
+      "Code Geass  Lelouch of the Rebellion": "Code Geass",
+      "Code Geass  Akito the Exiled": "Code Geass",
+      "Code Geass  Rozé of the Recapture": "Code Geass",
+      "Code Geass Genesic Re;CODE": "Code Geass",
+      "Code Geass Lelouch of the Rebellion R2": "Code Geass"
+    },
+    "Combatants Will Be Dispatched!": {
+      "Combatants Will Be Dispatched! (Sentouin, Hakenshimasu!)": "Combatants Will Be Dispatched!",
+      "Sentouin, Hakenshimasu!": "Combatants Will Be Dispatched!"
+    },
+    "Corpse Princess": {
+      "Shikabane Hime (Corpse Princess)": "Corpse Princess"
+    },
+    "Cosmic Princess Kaguya": {
+      "Cosmic Princess Kaguya!": "Cosmic Princess Kaguya",
+      "Chou Kaguya-hime!": "Cosmic Princess Kaguya"
+    },
+    "Cross Ange Rondo of Angel and Dragon": {
+      "Cross Ange Rondo of Angels and Dragons": "Cross Ange Rondo of Angel and Dragon",
+      "Cross Ange Tenshi to Ryuu no Rondo": "Cross Ange Rondo of Angel and Dragon",
+      "Cross Ange Rondo of Angel and Dragon\\Ange (Angelise Ikaruga Misurugi)": "Cross Ange Rondo of Angel and Dragon\\Ange",
+      "Cross Ange Rondo of Angel and Dragon\\Angelise Ikaruga Misurugi": "Cross Ange Rondo of Angel and Dragon\\Ange",
+      "Cross Ange Rondo of Angel and Dragon\\Angelise Ikaruga Misurugi (Ange)": "Cross Ange Rondo of Angel and Dragon\\Ange"
+    },
+    "Cyberpunk Edgerunners": {
+      "Cyberpunk Edgerunners\\Lucy (Lucyna Kushinada)": "Cyberpunk Edgerunners\\Lucy"
+    },
+    "Dagashi Kashi": {
+      "Dagashi Kashi\\Shidare Hotaru": "Dagashi Kashi\\Hotaru Shidare"
+    },
+    "Dandadan": {
+      "Dan Da Dan": "Dandadan"
+    },
+    "Dark Souls": {
+      "Dark Souls II": "Dark Souls",
+      "Dark Souls III": "Dark Souls"
+    },
+    "Darkstalkers": {
+      "Vampire (game)": "Darkstalkers",
+      "Darkstalkers\\Lilith": "Darkstalkers\\Lilith Aensland"
+    },
+    "Darling In The Franxx": {
+      "Darling In The Franxx\\Klaxosaur Princess (001)": "Darling In The Franxx\\Klaxosaur Princess",
+      "Darling In The Franxx\\001 (Klaxosaur Princess)": "Darling In The Franxx\\Klaxosaur Princess"
+    },
+    "Date A Live": {
+      "Date A Live Fragment Date A Bullet": "Date A Live",
+      "Date A Live IV": "Date A Live",
+      "Date A Live Mayuri Judgement": "Date A Live",
+      "Date A Live\\Yatogami Tohka": "Date A Live\\Tohka Yatogami",
+      "Date A Live\\Itsuka Kotori": "Date A Live\\Kotori Itsuka",
+      "Date A Live\\Tokisaki Kurumi": "Date A Live\\Kurumi Tokisaki"
+    },
+    "Dealing with Mikadono Sisters Is a Breeze": {
+      "The Mikadono Sisters Are Surprisingly Easy to Deal With": "Dealing with Mikadono Sisters Is a Breeze",
+      "The Three Mikadono Sisters Are Surprisingly Easy": "Dealing with Mikadono Sisters Is a Breeze"
+    },
+    "Delicious in Dungeon": {
+      "Delicious in Dungeon (Dungeon Meshi)": "Delicious in Dungeon",
+      "Dungeon Meshi (Delicious in Dungeon)": "Delicious in Dungeon",
+      "Dungeon Meshi": "Delicious in Dungeon"
+    },
+    "Demon Lord 2099": {
+      "The Demon Lord 2099": "Demon Lord 2099",
+      "Demon Lord 2099 (Maou 2099)": "Demon Lord 2099",
+      "Demon Lord 2099\\Machina": "Demon Lord 2099\\Machina Soleige",
+      "Demon Lord 2099\\Goddess Meldia": "Demon Lord 2099\\Meldia",
+      "Demon Lord 2099\\Hizuki Reynard": "Demon Lord 2099\\Hizuki Reynard-Yamada"
+    },
+    "Demon Slayer": {
+      "Demon Slayer  Kimetsu no Yaiba": "Demon Slayer",
+      "Kimetsu no Yaiba": "Demon Slayer",
+      "Demon Slayer\\Mitsuri Kanroji": "Demon Slayer\\Kanroji Mitsuri",
+      "Demon Slayer\\Shinobu Kocho": "Demon Slayer\\Kochou Shinobu",
+      "Demon Slayer\\Nezuko Kamado": "Demon Slayer\\Kamado Nezuko",
+      "Demon Slayer\\Makio Uzui": "Demon Slayer\\Makio",
+      "Demon Slayer\\Tanjiro Kamado": "Demon Slayer\\Kamado Tanjiro",
+      "Demon Slayer\\Kamado Tanjirou": "Demon Slayer\\Kamado Tanjiro",
+      "Demon Slayer\\Tengen Uzui": "Demon Slayer\\Uzui Tengen",
+      "Demon Slayer\\Zenitsu Agatsuma (female_genderbent interpretation)": "Demon Slayer\\Agatsuma Zenitsu",
+      "Demon Slayer\\Kotoha Hashibira": "Demon Slayer\\Hashibira Kotoha",
+      "Demon Slayer\\Zenitsu Agatsuma": "Demon Slayer\\Agatsuma Zenitsu"
+    },
+    "Dies Irae": {
+      "Dies Irae (Dies irae Also sprach Zarathustra)": "Dies Irae"
+    },
+    "Digimon Tamers": {
+      "Digimon": "Digimon Tamers",
+      "Digimon Tamers\\Sakuyamon (Miko Mode)": "Digimon Tamers\\Sakuyamon"
+    },
+    "Don't Toy with Me, Miss Nagatoro": {
+      "Ijiranaide, Nagatoro-san (Don't Toy with Me, Miss Nagatoro)": "Don't Toy with Me, Miss Nagatoro"
+    },
+    "Dragon Ball": {
+      "Dragon Ball Super": "Dragon Ball",
+      "Dragon Ball Z": "Dragon Ball"
+    },
+    "Dusk Beyond the End of the World": {
+      "Towa no Yuugure": "Dusk Beyond the End of the World",
+      "Towa no Yuugure (Dusk Beyond the End of the World)": "Dusk Beyond the End of the World"
+    },
+    "Edens Zero": {
+      "Edens Zero\\Rebecca (Rebecca Bluegarden)": "Edens Zero\\Rebecca Bluegarden"
+    },
+    "Elden Ring": {
+      "Elden Ring\\Ranni The Witch": "Elden Ring\\Ranni"
+    },
+    "Elsword": {
+      "Elsword\\Rena": "Elsword\\Rena Erindel"
+    },
+    "Epic Seven": {
+      "(epic seven)": "Epic Seven",
+      "Epic Seven\\New Moon Luna": "Epic Seven\\Luna"
+    },
+    "Eromanga Sensei": {
+      "Eromanga Sensei\\Izumi Sagiri": "Eromanga Sensei\\Sagiri Izumi"
+    },
+    "Eternal Life": {
+      "Eternal Life (Yong Sheng)": "Eternal Life"
+    },
+    "Even Given the Worthless 'Appraiser' Class, I'm Actually the Strongest": {
+      "Even Given the Worthless _Appraiser_ Class, I’m Actually the Strongest": "Even Given the Worthless 'Appraiser' Class, I'm Actually the Strongest"
+    },
+    "Eversoul": {
+      "Eversoul\\Vivian": "Eversoul\\Vivienne"
+    },
+    "Expelled from Paradise": {
+      "Rakuen Tsuihou": "Expelled from Paradise"
+    },
+    "Fairy Tail": {
+      "Fairy Tail 100 Years Quest": "Fairy Tail",
+      "Fairy Tail\\Wendy": "Fairy Tail\\Wendy Marvell"
+    },
+    "Farming Life in Another World": {
+      "Farming Life in Another World (Isekai Nonbiri Nouka)": "Farming Life in Another World",
+      "Isekai Nonbiri Nouka (Farming Life in Another World)": "Farming Life in Another World",
+      "Isekai Nonbiri Nouka": "Farming Life in Another World",
+      "Farming Life in Another World\\Ru": "Farming Life in Another World\\Rurushi Ru",
+      "Farming Life in Another World\\Ru (Rurushi Ru)": "Farming Life in Another World\\Rurushi Ru"
+    },
+    "Fatal Fury": {
+      "Fatal Fury\\Shiranui Mai": "Fatal Fury\\Mai Shiranui"
+    },
+    "Fate (series)": {
+      "Fate": "Fate (series)",
+      "Fate series": "Fate (series)",
+      "Fate (series)\\Matou Sakura": "Fate (series)\\Sakura",
+      "Fate (series)\\Meltlilith": "Fate (series)\\Meltryllis",
+      "Fate (series)\\Tamamo": "Fate (series)\\Tamamo No Mae",
+      "Fate (series)\\Medusa": "Fate (series)\\Medusa Rider",
+      "Fate (series)\\Saber (Okita Souji)": "Fate (series)\\Okita Souji",
+      "Fate (series)\\Rin Tohsaka": "Fate (series)\\Tohsaka Rin"
+    },
+    "Fate_Grand Order": {
+      "Fate_Grand Order - Absolute Demonic Front Babylonia": "Fate_Grand Order",
+      "Fate_Grand Order (Fate_Apocrypha)": "Fate_Grand Order",
+      "Fate_Grand Order Absolute Demonic Front Babylonia": "Fate_Grand Order",
+      "Fate_Grand Order Final Singularity - Grand Temple of Time Solomon": "Fate_Grand Order",
+      "Fate_Grand Order\\Carmilla (Rider)": "Fate_Grand Order\\Carmilla",
+      "Fate_Grand Order\\Morgan": "Fate_Grand Order\\Morgan le Fay",
+      "Fate_Grand Order\\Tiamat (Larva)": "Fate_Grand Order\\Tiamat",
+      "Fate_Grand Order\\Prelati": "Fate_Grand Order\\Francesca Prelati",
+      "Fate_Grand Order\\Gorgon (Medusa)": "Fate_Grand Order\\Gorgon",
+      "Fate_Grand Order\\Rider (Medusa)": "Fate_Grand Order\\Medusa",
+      "Fate_Grand Order\\Barghest (Tam Lin Gawain)": "Fate_Grand Order\\Barghest",
+      "Fate_Grand Order\\Anastasia Nikolaevna Romanova": "Fate_Grand Order\\Anastasia",
+      "Fate_Grand Order\\Barghest (Fairy Knight Gawain)": "Fate_Grand Order\\Barghest",
+      "Fate_Grand Order\\Okita Souji (Alter)": "Fate_Grand Order\\Okita Souji Alter",
+      "Fate_Grand Order\\Tamamo no Mae": "Fate_Grand Order\\Tamamo-no-Mae",
+      "Fate_Grand Order\\Jeanne d'Arc (Alter)": "Fate_Grand Order\\Jeanne d'Arc Alter",
+      "Fate_Grand Order\\Mélusine": "Fate_Grand Order\\Melusine",
+      "Fate_Grand Order\\U-Olga Marie (Olga Marie Animusphere)": "Fate_Grand Order\\Olga Marie Animusphere",
+      "Fate_Grand Order\\Marie Antoinette Alter": "Fate_Grand Order\\Marie Antoinette (Alter)"
+    },
+    "Fate_hollow ataraxia": {
+      "Fate_hollow ataraxia\\Gilgamesh (female_gender-swapped depiction)": "Fate_hollow ataraxia\\Gilgamesh"
+    },
+    "Fate_kaleid liner Prisma Illya": {
+      "Fate_kaleid liner Prisma☆Illya": "Fate_kaleid liner Prisma Illya",
+      "Fate_kaleid liner Prisma Illya\\Chloe von Einzbern (Kuro)": "Fate_kaleid liner Prisma Illya\\Chloe von Einzbern"
+    },
+    "Fate_Prototype": {
+      "Fate_Prototype\\Gilgamesh (female_Prototype)": "Fate_Prototype\\Gilgamesh"
+    },
+    "Fate_stay night": {
+      "Fate_stay night\\Artoria Pendragon (Saber)": "Fate_stay night\\Artoria Pendragon",
+      "Fate_stay night\\Rider (Medusa)": "Fate_stay night\\Medusa",
+      "Fate_stay night\\Saber": "Fate_stay night\\Artoria Pendragon",
+      "Fate_stay night\\Saber (Artoria Pendragon)": "Fate_stay night\\Artoria Pendragon",
+      "Fate_stay night\\Saber Alter (Artoria Pendragon)": "Fate_stay night\\Saber Alter"
+    },
+    "Final Fantasy": {
+      "Final Fantasy VII": "Final Fantasy",
+      "Final Fantasy VII (Ever Crisis)": "Final Fantasy",
+      "Final Fantasy XII": "Final Fantasy"
+    },
+    "Fire Emblem The Blazing Blade": {
+      "Fire Emblem The Blazing Blade\\Lyn (Lyndis)": "Fire Emblem The Blazing Blade\\Lyn"
+    },
+    "Fire Force": {
+      "En'en No Shouboutai": "Fire Force",
+      "Fire Force (Enen no Shouboutai)": "Fire Force",
+      "Fire Force\\Тамаки Котацу _ Пламенная бригада пожарных": "Fire Force\\Tamaki Kotatsu",
+      "Fire Force\\Kotatsu Tamaki": "Fire Force\\Tamaki Kotatsu",
+      "Fire Force\\Princess Hibana": "Fire Force\\Hibana",
+      "Fire Force\\Sister Iris": "Fire Force\\Iris"
+    },
+    "Food Wars!": {
+      "Shokugeki no Soma (Food Wars!)": "Food Wars!",
+      "Shokugeki No Souma": "Food Wars!",
+      "Food Wars! Shokugeki no Soma": "Food Wars!",
+      "Food Wars!\\Nakiri Erina": "Food Wars!\\Erina Nakiri",
+      "Food Wars!\\Rindou Kobayashi": "Food Wars!\\Rindo Kobayashi"
+    },
+    "Frieren Beyond Journey's End": {
+      "Frieren  Beyond Journey's End": "Frieren Beyond Journey's End",
+      "Sousou No Frieren": "Frieren Beyond Journey's End",
+      "Frieren  Beyond Journey's End (Sousou no Frieren)": "Frieren Beyond Journey's End",
+      "Sousou no Frieren (Frieren Beyond Journey's End)": "Frieren Beyond Journey's End",
+      "Frieren Beyond Journey's End (Sōsō no Frieren)": "Frieren Beyond Journey's End",
+      "Frieren Beyond Journey's End\\Aura": "Frieren Beyond Journey's End\\Aura the Guillotine",
+      "Frieren Beyond Journey's End\\Ubel": "Frieren Beyond Journey's End\\Übel",
+      "Frieren Beyond Journey's End\\Aura (Aura the Guillotine)": "Frieren Beyond Journey's End\\Aura the Guillotine",
+      "Frieren Beyond Journey's End\\Aura (the Guillotine)": "Frieren Beyond Journey's End\\Aura the Guillotine"
+    },
+    "From Old Country Bumpkin to Master Swordsman": {
+      "From Old Country Bumpkin to Master Swordsman\\Surena Lysandra": "From Old Country Bumpkin to Master Swordsman\\Surena Lysandara"
+    },
+    "From Overshadowed to Overpowered Second Reincarnation of a Talentless Sage": {
+      "From Overshadowed to Overpowered Second Reincarnation of a Talentless Sage (Rakudai Kenja no Gakuin Musou Nidome no Tensei, S-Rank Cheat Majutsushi Boukenroku)": "From Overshadowed to Overpowered Second Reincarnation of a Talentless Sage",
+      "From Overshadowed to Overpowered Second Reincarnation of a Talentless Sage (Rakudai Kenja no Gakuin Musou)": "From Overshadowed to Overpowered Second Reincarnation of a Talentless Sage",
+      "Rakudai Kenja no Gakuin Musou Nidome no Tensei, S-Rank Cheat Majutsushi Boukenroku": "From Overshadowed to Overpowered Second Reincarnation of a Talentless Sage"
+    },
+    "Fullmetal Alchemist": {
+      "Fullmetal Alchemist Brotherhood": "Fullmetal Alchemist"
+    },
+    "Future Diary": {
+      "The Future Diary": "Future Diary",
+      "Future Diary (Mirai Nikki)": "Future Diary",
+      "Mirai Nikki (Future Diary)": "Future Diary",
+      "Future Diary\\Gasai Yuno": "Future Diary\\Yuno Gasai"
+    },
+    "Gabriel DropOut": {
+      "Gabriel DropOut\\Satanichia Kurumizawa McDowell (Satania)": "Gabriel DropOut\\Satanichia Kurumizawa McDowell"
+    },
+    "Gakuen Idolmaster": {
+      "Gakuen Idolmaster\\Hiro Shinasawa": "Gakuen Idolmaster\\Hiro Shinosawa",
+      "Gakuen Idolmaster\\Hiro Shinozawa": "Gakuen Idolmaster\\Hiro Shinosawa"
+    },
+    "GATE Thus the JSDF Fought There!": {
+      "GATE Jieitai Kanochi nite, Kaku Tatakaeri (Enryū-hen)": "GATE Thus the JSDF Fought There!",
+      "Gate - Jieitai Ka No Chi Nite Kaku Tatakaeri": "GATE Thus the JSDF Fought There!"
+    },
+    "Genshin Impact": {
+      "Genshin Impact\\Kujou Sara": "Genshin Impact\\Sara",
+      "Genshin Impact\\Nicole Reeyn": "Genshin Impact\\Nicole",
+      "Genshin Impact\\Crystalfly": "Genshin Impact\\Nicole",
+      "Genshin Impact\\La Signora (Rosalyne-Kruzchka Lohefalter)": "Genshin Impact\\La Signora",
+      "Unknown game\\Nicole Reeyn": "Genshin Impact\\Nicole",
+      "Genshin Impact\\Anastasya Feodorovna Snezhnaya": "Genshin Impact\\Tsaritsa",
+      "Genshin Impact\\The Tsaritsa": "Genshin Impact\\Tsaritsa",
+      "Genshin Impact\\Nefert": "Genshin Impact\\Nefer",
+      "Genshin Impact\\Rhinedottir (Gold)": "Genshin Impact\\Rhinedottir",
+      "Genshin Impact\\Kokomi Sangonomiya": "Genshin Impact\\Sangonomiya Kokomi",
+      "Genshin Impact\\Cocogoat": "Genshin Impact\\Ganyu",
+      "Genshin Impact\\Eula Lawrence": "Genshin Impact\\Eula",
+      "Genshin Impact\\Furina de Fontaine": "Genshin Impact\\Furina",
+      "Genshin Impact\\Jean Gunnhildr": "Genshin Impact\\Jean",
+      "Genshin Impact\\Mizuki": "Genshin Impact\\Yumemizuki Mizuki",
+      "Genshin Impact\\Mona Megistus": "Genshin Impact\\Mona",
+      "Genshin Impact\\Diluc Ragnvindr": "Genshin Impact\\Diluc",
+      "Genshin Impact\\Lisa Minci": "Genshin Impact\\Lisa",
+      "Genshin Impact\\Raiden Shogun (Raiden Ei)": "Genshin Impact\\Raiden Shogun",
+      "Genshin Impact\\Yoimiya Naganohara": "Genshin Impact\\Yoimiya"
+    },
+    "Girlfriend, Girlfriend": {
+      "Kanojo mo Kanojo": "Girlfriend, Girlfriend",
+      "Girlfriend, Girlfriend\\Shino Kiryuu": "Girlfriend, Girlfriend\\Shino Kiryu"
+    },
+    "Girls' Frontline Neural Cloud": {
+      "Neural Cloud": "Girls' Frontline Neural Cloud"
+    },
+    "Goblin Slayer!": {
+      "Goblin Slayer": "Goblin Slayer!",
+      "Goblin Slayer II": "Goblin Slayer!",
+      "Goblin Slayer!\\Priestess (Onna Shinkan)": "Goblin Slayer!\\Priestess"
+    },
+    "Goddess of Victory Nikke": {
+      "GODDESS OF VICTORY NIKKE": "Goddess of Victory Nikke",
+      "NIKKE Goddess of Victory": "Goddess of Victory Nikke",
+      "Goddess of Victory Nikke\\Rapi (red Hood)": "Goddess of Victory Nikke\\Red Hood"
+    },
+    "Gods' Games We Play": {
+      "Gods' Game We Play": "Gods' Games We Play"
+    },
+    "Gonna Be the Twin-Tail!!": {
+      "Ore, Twintail ni Narimasu": "Gonna Be the Twin-Tail!!"
+    },
+    "Goodbye, Dragon Life": {
+      "Good Bye, Dragon Life": "Goodbye, Dragon Life"
+    },
+    "Granblue Fantasy": {
+      "Granblue Fantasy\\Vampy (Vania)": "Granblue Fantasy\\Vampy",
+      "Granblue Fantasy\\Vania (Vampy)": "Granblue Fantasy\\Vampy",
+      "Granblue Fantasy\\Vania": "Granblue Fantasy\\Vampy",
+      "Granblue Fantasy\\Vira Lillie": "Granblue Fantasy\\Vira"
+    },
+    "Grand Blue Dreaming": {
+      "Grand Blue": "Grand Blue Dreaming"
+    },
+    "Gravity Rush": {
+      "Gravity Daze": "Gravity Rush",
+      "Gravity Rush (Gravity Daze)": "Gravity Rush"
+    },
+    "Gridman Universe": {
+      "Gridman Universe (SSSS.Dynazenon)": "Gridman Universe",
+      "SSSS.Gridman": "Gridman Universe",
+      "Gridman Universe\\Shinjou Akane": "Gridman Universe\\Akane Shinjo",
+      "Gridman Universe\\Takarada Rikka": "Gridman Universe\\Rikka Takarada"
+    },
+    "Guilty Crown": {
+      "Guilty Crown\\Yuzuriha Inori": "Guilty Crown\\Inori Yuzuriha"
+    },
+    "Gushing over Magical Girls": {
+      "Mahou Shoujo ni Akogarete (Gushing over Magical Girls)": "Gushing over Magical Girls",
+      "Gushing over Magical Girls (Mahou Shoujo ni Akogarete)": "Gushing over Magical Girls",
+      "Mahou Shoujo ni Akogarete": "Gushing over Magical Girls",
+      "Gushing over Magical Girls\\Kiwi Araga (Leoparde)": "Gushing over Magical Girls\\Kiwi Araga",
+      "Gushing over Magical Girls\\Magia Baiser (Utena Hiiragi)": "Gushing over Magical Girls\\Utena Hiiragi",
+      "Gushing over Magical Girls\\Utena Hiiragi (Magia Baiser)": "Gushing over Magical Girls\\Utena Hiiragi"
+    },
+    "Haganai I Don't Have Many Friends": {
+      "Boku Wa Tomodachi Ga Sukunai": "Haganai I Don't Have Many Friends",
+      "Haganai I Have Few Friends": "Haganai I Don't Have Many Friends",
+      "Haganai I Don't Have Many Friends\\Kashiwazaki Sena": "Haganai I Don't Have Many Friends\\Sena Kashiwazaki"
+    },
+    "Haimiya-senpai wa Kowakute Kawaii": {
+      "Haimiya-senpai wa Kowakute Kawaii\\Haimiya": "Haimiya-senpai wa Kowakute Kawaii\\Haimiya Mio"
+    },
+    "Harem in the Labyrinth of Another World": {
+      "Isekai Meikyuu de Harem wo": "Harem in the Labyrinth of Another World",
+      "Harem in the Labyrinth of Another World (Isekai Meikyuu de Harem wo)": "Harem in the Labyrinth of Another World",
+      "Isekai Meikyuu de Harem wo (Harem in the Labyrinth of Another World)": "Harem in the Labyrinth of Another World"
+    },
+    "Headhunted to Another World From Salaryman to Big Four!": {
+      "Headhunted to Another World  From Salaryman to Big Four!": "Headhunted to Another World From Salaryman to Big Four!",
+      "Headhunted to Another World From Salaryman to Big Four!\\Ulmander": "Headhunted to Another World From Salaryman to Big Four!\\Ulmandra"
+    },
+    "Heaven's Lost Property": {
+      "Sora no Otoshimono": "Heaven's Lost Property",
+      "Heaven's Lost Property (Sora no Otoshimono)": "Heaven's Lost Property",
+      "Sora no Otoshimono (Heaven's Lost Property)": "Heaven's Lost Property"
+    },
+    "Hell Girl": {
+      "Jigoku Shoujo": "Hell Girl",
+      "Jigoku Shoujo (Hell Girl)": "Hell Girl",
+      "Hell Girl\\Enma Ai": "Hell Girl\\Ai Enma"
+    },
+    "Hell's Paradise Jigokuraku": {
+      "Hell's Paradise  Jigokuraku": "Hell's Paradise Jigokuraku",
+      "Jigokuraku": "Hell's Paradise Jigokuraku",
+      "Jigokuraku (Hell's Paradise)": "Hell's Paradise Jigokuraku",
+      "Jigokuraku (Hell's Paradise Jigokuraku)": "Hell's Paradise Jigokuraku",
+      "Hell's Paradise Jigokuraku\\Sagiri": "Hell's Paradise Jigokuraku\\Yamada Asaemon Sagiri",
+      "Hell's Paradise Jigokuraku\\Sagiri Yamada Asaemon": "Hell's Paradise Jigokuraku\\Yamada Asaemon Sagiri",
+      "Hell's Paradise Jigokuraku\\Yuzuriha of Keiun": "Hell's Paradise Jigokuraku\\Yuzuriha"
+    },
+    "Hero Killer": {
+      "Hero Killer\\Ihwa (Ehwa)": "Hero Killer\\Ihwa",
+      "Hero Killer\\Ihwa (Jin Ihwa)": "Hero Killer\\Ihwa",
+      "Hero Killer\\Ehwa": "Hero Killer\\Ihwa"
+    },
+    "High School DxD": {
+      "High School DxD BorN": "High School DxD",
+      "High School DxD New": "High School DxD",
+      "High School DxD\\Toujou Koneko": "High School DxD\\Koneko Toujou",
+      "High School DxD\\Himejima Akeno": "High School DxD\\Akeno Himejima",
+      "High School DxD\\Kuroka Toujou": "High School DxD\\Kuroka",
+      "High School DxD\\Ravel Phoenix": "High School DxD\\Ravel Phenex",
+      "High School DxD\\Shidou Irina": "High School DxD\\Irina Shidou"
+    },
+    "Highschool of the Dead": {
+      "Highschool of the Dead (Gakuen Mokushiroku Highschool of the Dead)": "Highschool of the Dead",
+      "Highschool of the Dead\\Busujima Saeko": "Highschool of the Dead\\Saeko Busujima"
+    },
+    "Hikayu Hoshikawa": {
+      "Other\\Hoshikawa Hikayu _ Re_Creators": "Hikayu Hoshikawa"
+    },
+    "Hokkaido Gals Are Super Adorable!": {
+      "Hokkaido Gals Are Super Adorable! (Dosanko Gal wa Namara Menkoi)": "Hokkaido Gals Are Super Adorable!"
+    },
+    "Hololive": {
+      "Hololive Production": "Hololive",
+      "Hololive (Virtual YouTuber)": "Hololive",
+      "Hololive (holoX)": "Hololive",
+      "Hololive Indonesia (VTuber)": "Hololive"
+    },
+    "Hololive English": {
+      "Hololive English -Advent-": "Hololive English",
+      "Hololive English -Justice-": "Hololive English",
+      "Hololive English -Council-": "Hololive English",
+      "Hololive (hololive English -Myth-)": "Hololive English",
+      "Hololive English -Advent- (VTuber)": "Hololive English"
+    },
+    "Honkai (series)": {
+      "Honkai Gakuen 2": "Honkai (series)"
+    },
+    "Honkai Impact 3rd": {
+      "Honkai Impact 3rd\\Bianka Durandal Ataegina": "Honkai Impact 3rd\\Durandal",
+      "Honkai Impact 3rd\\Susannah": "Honkai Impact 3rd\\Susannah Manatt",
+      "Honkai Impact 3rd\\Thelema": "Honkai Impact 3rd\\Thelema Nutriscu",
+      "Honkai Impact 3rd\\Herrscher of Sentience": "Honkai Impact 3rd\\Vita",
+      "Honkai Impact 3rd\\Sushang": "Honkai Impact 3rd\\Li Sushang",
+      "Honkai Impact 3rd\\Bronya Silverwing": "Honkai Impact 3rd\\Bronya Zaychik",
+      "Honkai Impact 3rd\\Himeko Murata": "Honkai Impact 3rd\\Murata Himeko",
+      "Honkai Impact 3rd\\Kiana Kaslana (Herrscher of Finality)": "Honkai Impact 3rd\\Kiana Kaslana",
+      "Honkai Impact 3rd\\Himeko": "Honkai Impact 3rd\\Murata Himeko",
+      "Honkai Impact 3rd\\Helia": "Honkai Impact 3rd\\Erdős Helia",
+      "Honkai Impact 3rd\\Misteln Schariac (Hare)": "Honkai Impact 3rd\\Misteln Schariac"
+    },
+    "Honkai Star Rail": {
+      "Honkai  Star Rail": "Honkai Star Rail",
+      "onkai Star Rail": "Honkai Star Rail",
+      "Honkai Star Railway": "Honkai Star Rail",
+      "Honkai Star Rail\\Acheron (Raiden Bosenmori Mei)": "Honkai Star Rail\\Acheron",
+      "Honkai Star Rail\\Stella": "Honkai Star Rail\\Stelle",
+      "Honkai Star Rail\\Tingyun": "Honkai Star Rail\\Fugue",
+      "Honkai Star Rail\\Bronya Rand": "Honkai Star Rail\\Bronya",
+      "Honkai Star Rail\\Dahlia": "Honkai Star Rail\\The Dahlia",
+      "Honkai Star Rail\\Serval Landau": "Honkai Star Rail\\Serval",
+      "Honkai Star Rail\\Yaoguang": "Honkai Star Rail\\Yao Guang",
+      "Honkai Star Rail\\Sparkle (Hanabi)": "Honkai Star Rail\\Sparkle",
+      "Honkai Star Rail\\Evernight (March 7th)": "Honkai Star Rail\\Evernight",
+      "Honkai Star Rail\\Constance (The Dahlia)": "Honkai Star Rail\\The Dahlia",
+      "Honkai Star Rail\\Fugue (Tingyun)": "Honkai Star Rail\\Fugue",
+      "Honkai Star Rail\\Tribbie (Tribios)": "Honkai Star Rail\\Tribbie",
+      "Honkai Star Rail\\Tingyun (Fugue)": "Honkai Star Rail\\Fugue",
+      "Honkai Star Rail\\Cipher (Cifera)": "Honkai Star Rail\\Cipher",
+      "Honkai Star Rail\\Herta (The Herta)": "Honkai Star Rail\\The Herta",
+      "Honkai Star Rail\\The Herta (Madam Herta)": "Honkai Star Rail\\The Herta",
+      "Honkai Star Rail\\The Herta (Herta)": "Honkai Star Rail\\The Herta"
+    },
+    "Honor of Kings": {
+      "Honor of Kings (Wangzhe Rongyao)": "Honor of Kings",
+      "Honor of Kings\\Yaria (Yao)": "Honor of Kings\\Yao"
+    },
+    "Horimiya": {
+      "Horimiya\\Kyoko Hori": "Horimiya\\Kyouko Hori"
+    },
+    "How a Realist Hero Rebuilt the Kingdom": {
+      "How a Realist Hero Rebuilt the Kingdom (Genjitsu Shugi Yuusha no Oukoku Saikenki)": "How a Realist Hero Rebuilt the Kingdom"
+    },
+    "How Do We Relationship": {
+      "How Do We Relationship_": "How Do We Relationship"
+    },
+    "How Heavy Are the Dumbbells You Lift": {
+      "How Heavy Are the Dumbbells You Lift_": "How Heavy Are the Dumbbells You Lift"
+    },
+    "How Not to Summon a Demon Lord": {
+      "How NOT to Summon a Demon Lord Ω": "How Not to Summon a Demon Lord",
+      "Isekai Maou to Shoukan Shoujo no Dorei Majutsu": "How Not to Summon a Demon Lord",
+      "How NOT to Summon a Demon Lord (Isekai Maou to Shoukan Shoujo no Dorei Majutsu)": "How Not to Summon a Demon Lord"
+    },
+    "Hunter x Hunter": {
+      "Hunter × Hunter": "Hunter x Hunter"
+    },
+    "HxEros": {
+      "Dokyuu Hentai HxEros": "HxEros"
+    },
+    "Hybrid x Heart Magias Academy Ataraxia": {
+      "Hybrid × Heart Magias Academy Ataraxia": "Hybrid x Heart Magias Academy Ataraxia",
+      "Hybrid × Heart Magias Academy Ataraxia (Masou Gakuen HxH)": "Hybrid x Heart Magias Academy Ataraxia",
+      "Masou Gakuen HxH (Hybrid × Heart Magias Academy Ataraxia)": "Hybrid x Heart Magias Academy Ataraxia",
+      "Hybrid x Heart Magias Academy Ataraxia\\Aine Chidori": "Hybrid x Heart Magias Academy Ataraxia\\Aine Chidorigafuchi",
+      "Hybrid x Heart Magias Academy Ataraxia\\Scarlet Fairchild": "Hybrid x Heart Magias Academy Ataraxia\\Scarlett Fairchild"
+    },
+    "Hyouka": {
+      "Hyouka\\Chitanda Eru": "Hyouka\\Eru Chitanda"
+    },
+    "Hyperdimension Neptunia": {
+      "Neptune (series)": "Hyperdimension Neptunia",
+      "Neptunia Riders VS Dogoos": "Hyperdimension Neptunia",
+      "Hyperdimension Neptunia\\Black Heart (Noire)": "Hyperdimension Neptunia\\Black Heart"
+    },
+    "I Became Friends with the Second Cutest Girl in My Class": {
+      "I Made Friends with the Second Prettiest Girl in My Class (Class de 2-banme ni Kawaii Onnanoko to Tomodachi ni Natta)": "I Became Friends with the Second Cutest Girl in My Class"
+    },
+    "I Became the Strongest With The Failure Frame «Abnormal State Skill» As I Devastated Everything": {
+      "Failure Frame  I Became the Strongest and Annihilated Everything with Low-Level Spells": "I Became the Strongest With The Failure Frame «Abnormal State Skill» As I Devastated Everything",
+      "Hazurewaku no _Joutai Ijou Skill_ de Saikyou ni Natta Ore (Failure Frame)": "I Became the Strongest With The Failure Frame «Abnormal State Skill» As I Devastated Everything",
+      "Failure Frame I Became the Strongest with the Failure Frame _Abnormal State Skill_ as I Devastated Everything": "I Became the Strongest With The Failure Frame «Abnormal State Skill» As I Devastated Everything",
+      "I Became the Strongest With The Failure Frame «Abnormal State Skill» As I Devastated Everything\\Nyantan Kikeepat": "I Became the Strongest With The Failure Frame «Abnormal State Skill» As I Devastated Everything\\Nyantan Kikipat"
+    },
+    "I Got a Cheat Skill in Another World and Became Unrivaled in the Real World, Too": {
+      "I Got a Cheat Skill in Another World": "I Got a Cheat Skill in Another World and Became Unrivaled in the Real World, Too",
+      "I Got a Cheat Skill in Another World and Became Unrivaled in the Real World, Too\\Yūti": "I Got a Cheat Skill in Another World and Became Unrivaled in the Real World, Too\\Yuti"
+    },
+    "I Killed an Academy Player": {
+      "I Killed the Player of the Academy": "I Killed an Academy Player"
+    },
+    "I May Be a Guild Receptionist, but I’ll Solo Any Boss to Clock Out on Time": {
+      "I May Be a Guild Receptionist, but I'll Solo Any Boss to Clock Out on Time": "I May Be a Guild Receptionist, but I’ll Solo Any Boss to Clock Out on Time",
+      "Guild no Uketsukejou desu ga, Zangyou wa Iya nano de Boss wo Taosu Koto ni Shimashita": "I May Be a Guild Receptionist, but I’ll Solo Any Boss to Clock Out on Time",
+      "I May Be a Guild Receptionist, but I'll Solo Any Boss to Clock Out on Time!": "I May Be a Guild Receptionist, but I’ll Solo Any Boss to Clock Out on Time",
+      "I May Be a Guild Receptionist, but I'll Solo Any Boss to Clock Out!": "I May Be a Guild Receptionist, but I’ll Solo Any Boss to Clock Out on Time",
+      "Guild no Uketsukejou Desu ga, Zangyou wa Iya nanode Boss wo Solo Toubatsu Shiyou to Omoimasu (I May Be a Guild Receptionist, But I'll Solo Any Boss to Clock Out on Time)": "I May Be a Guild Receptionist, but I’ll Solo Any Boss to Clock Out on Time",
+      "I May Be a Guild Receptionist, but I’ll Solo Any Boss to Clock Out on Time\\Alina Clover (child_young version)": "I May Be a Guild Receptionist, but I’ll Solo Any Boss to Clock Out on Time\\Alina Clover"
+    },
+    "I Obtained a Mythic Item": {
+      "I Obtained a Mythic Item\\Yoo Seongeun": "I Obtained a Mythic Item\\Yoo Seong-eun"
+    },
+    "I Took Over the Academy with a Single Sashimi Knife": {
+      "I Took Over the Academy With a Single Sashimi": "I Took Over the Academy with a Single Sashimi Knife"
+    },
+    "I Was Reincarnated as the 7th Prince So I Can Take My Time Perfecting My Magical Ability": {
+      "The 7th Prince, I Can Do Whatever I Want": "I Was Reincarnated as the 7th Prince So I Can Take My Time Perfecting My Magical Ability",
+      "I Was Reincarnated as the 7th Prince So I Can Take My Time Perfecting My Magical Ability\\Sylpha": "I Was Reincarnated as the 7th Prince So I Can Take My Time Perfecting My Magical Ability\\Sylpha Langlis",
+      "I Was Reincarnated as the 7th Prince So I Can Take My Time Perfecting My Magical Ability\\Silpha": "I Was Reincarnated as the 7th Prince So I Can Take My Time Perfecting My Magical Ability\\Sylpha Langlis",
+      "I Was Reincarnated as the 7th Prince So I Can Take My Time Perfecting My Magical Ability\\Tao Yuifa": "I Was Reincarnated as the 7th Prince So I Can Take My Time Perfecting My Magical Ability\\Tao",
+      "I Was Reincarnated as the 7th Prince So I Can Take My Time Perfecting My Magical Ability\\Сильфа Лангрис _ Я перевоплотился в 7-го принца": "I Was Reincarnated as the 7th Prince So I Can Take My Time Perfecting My Magical Ability\\Sylpha Langlis"
+    },
+    "I'm a Noble on the Brink of Ruin, So I Might as Well Try Mastering Magic": {
+      "I'm a Noble on the Verge of Ruin, So I Might as Well Try Mastering Magic": "I'm a Noble on the Brink of Ruin, So I Might as Well Try Mastering Magic",
+      "Botsuraku Yotei no Kizoku": "I'm a Noble on the Brink of Ruin, So I Might as Well Try Mastering Magic"
+    },
+    "I'm Getting Married to a Girl I Hate in My Class": {
+      "The Shiunji Family Children\\Rui Shiunji": "I'm Getting Married to a Girl I Hate in My Class\\Rui Shiunji"
+    },
+    "I'm Living with an Otaku NEET Kunoichi!": {
+      "I'm Living with an Otaku NEET Kunoichi!_": "I'm Living with an Otaku NEET Kunoichi!"
+    },
+    "I'm Quitting Heroing": {
+      "Yuusha, Yamemasu": "I'm Quitting Heroing",
+      "I'm Quitting Heroing (Yuusha, Yamemasu)": "I'm Quitting Heroing"
+    },
+    "I've Somehow Gotten Stronger When I Improved My Farm-Related Skills": {
+      "Noumin Kanren no Skill bakka Agetetara Nazeka Tsuyoku Natta": "I've Somehow Gotten Stronger When I Improved My Farm-Related Skills"
+    },
+    "Identity V": {
+      "Identity V\\Mary (Bloody Queen)": "Identity V\\Bloody Queen"
+    },
+    "Idolmaster": {
+      "THE iDOLM@STER": "Idolmaster",
+      "THE IDOLM@STER Cinderella Girls": "Idolmaster",
+      "The Idolmaster Cinderella Girls": "Idolmaster",
+      "The Idolmaster Shiny Colors": "Idolmaster",
+      "THE IDOLM@STER Shiny Colors": "Idolmaster",
+      "Idolmaster\\Amami Haruka": "Idolmaster\\Haruka Amami",
+      "Idolmaster\\Asakura Toru": "Idolmaster\\Toru Asakura",
+      "Idolmaster\\Ichinose Shiki": "Idolmaster\\Shiki Ichinose",
+      "Idolmaster\\Ohtsuki Yui": "Idolmaster\\Yui Ohtsuki",
+      "Idolmaster\\Takagaki Kaede": "Idolmaster\\Kaede Takagaki"
+    },
+    "Ikkitousen": {
+      "Ikki Tousen (Battle Vixens)": "Ikkitousen"
+    },
+    "Immoral Guild": {
+      "Futoku no Guild": "Immoral Guild"
+    },
+    "In_Spectre": {
+      "In_Spectre Season 2": "In_Spectre"
+    },
+    "Infinite Stratos": {
+      "IS Infinite Stratos": "Infinite Stratos"
+    },
+    "Inuyasha": {
+      "Inuyasha (catgirl fan-art interpretation)": "Inuyasha",
+      "Inuyasha\\Rin (catgirl variant)": "Inuyasha\\Rin"
+    },
+    "Irina The Vampire Cosmonaut": {
+      "Irina  The Vampire Cosmonaut": "Irina The Vampire Cosmonaut"
+    },
+    "Is It Wrong to Try to Pick Up Girls in a Dungeon": {
+      "Is It Wrong to Try to Pick Up Girls in a Dungeon_": "Is It Wrong to Try to Pick Up Girls in a Dungeon",
+      "Sword Oratoria  Is It Wrong to Try to Pick Up Girls in a Dungeon_ On the Side": "Is It Wrong to Try to Pick Up Girls in a Dungeon",
+      "Is It Wrong to Try to Pick Up Girls in a Dungeon_ (DanMachi)": "Is It Wrong to Try to Pick Up Girls in a Dungeon",
+      "Dungeon Ni Deai Wo Motomeru No Wa Machigatteiru Darou Ka": "Is It Wrong to Try to Pick Up Girls in a Dungeon",
+      "DanMachi": "Is It Wrong to Try to Pick Up Girls in a Dungeon",
+      "DanMachi (Is It Wrong to Try to Pick Up Girls in a Dungeon_)": "Is It Wrong to Try to Pick Up Girls in a Dungeon",
+      "Is It Wrong to Try to Pick Up Girls in a Dungeon_ Familia Myth Battle Chronicle": "Is It Wrong to Try to Pick Up Girls in a Dungeon",
+      "Is It Wrong to Try to Pick Up Girls in a Dungeon_ II": "Is It Wrong to Try to Pick Up Girls in a Dungeon",
+      "Is It Wrong to Try to Pick Up Girls in a Dungeon_ Memoria Freese": "Is It Wrong to Try to Pick Up Girls in a Dungeon",
+      "Is It Wrong to Try to Pick Up Girls in a Dungeon_ V": "Is It Wrong to Try to Pick Up Girls in a Dungeon",
+      "Is It Wrong to Try to Pick Up Girls in a Dungeon_ (DanMachi) — card from DanMachi Memoria Freese": "Is It Wrong to Try to Pick Up Girls in a Dungeon",
+      "Is It Wrong to Try to Find Encounters in a Dungeon_ (DanMachi)": "Is It Wrong to Try to Pick Up Girls in a Dungeon",
+      "Is It Wrong to Try to Find Girls in a Dungeon_ (DanMachi)": "Is It Wrong to Try to Pick Up Girls in a Dungeon",
+      "Is It Wrong to Try to Pick Up Girls in a Dungeon_ (DanMachi) — Battle Chronicle": "Is It Wrong to Try to Pick Up Girls in a Dungeon",
+      "Is It Wrong to Try to Pick Up Girls in a Dungeon_ Sword Oratoria": "Is It Wrong to Try to Pick Up Girls in a Dungeon",
+      "Is It Wrong to Try to Pick Up Girls in a Dungeon_ II OVA": "Is It Wrong to Try to Pick Up Girls in a Dungeon",
+      "Dungeon ni Deai o Motomeru no wa Machigatteiru Darou ka": "Is It Wrong to Try to Pick Up Girls in a Dungeon",
+      "Dungeon ni Deai o Motomeru no wa Machigatteiru Darō ka": "Is It Wrong to Try to Pick Up Girls in a Dungeon",
+      "Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka (DanMachi)": "Is It Wrong to Try to Pick Up Girls in a Dungeon",
+      "Is It Wrong to Try to Pick Up Girls in a Dungeon_ (DanMachi Memoria Freese)": "Is It Wrong to Try to Pick Up Girls in a Dungeon",
+      "Is It Wrong to Try to Pick Up Girls in a Dungeon_ (DanMachi) — Memoria Freese": "Is It Wrong to Try to Pick Up Girls in a Dungeon",
+      "Is It Wrong to Try to Pick Up Girls in a Dungeon\\Aiz Wallenstein": "Is It Wrong to Try to Pick Up Girls in a Dungeon\\Ais Wallenstein",
+      "Is It Wrong to Try to Pick Up Girls in a Dungeon\\Ryuu Lion": "Is It Wrong to Try to Pick Up Girls in a Dungeon\\Ryu Lion",
+      "Is It Wrong to Try to Pick Up Girls in a Dungeon\\Sanjono Haruhime": "Is It Wrong to Try to Pick Up Girls in a Dungeon\\Haruhime Sanjouno",
+      "Is It Wrong to Try to Pick Up Girls in a Dungeon\\Sanjouno Haruhime": "Is It Wrong to Try to Pick Up Girls in a Dungeon\\Haruhime Sanjouno",
+      "Is It Wrong to Try to Pick Up Girls in a Dungeon\\Syr Flova": "Is It Wrong to Try to Pick Up Girls in a Dungeon\\Syr Flover",
+      "Is It Wrong to Try to Pick Up Girls in a Dungeon\\Haruhime Sanjono": "Is It Wrong to Try to Pick Up Girls in a Dungeon\\Haruhime Sanjouno"
+    },
+    "Is the Order a Rabbit_": {
+      "Gochuumon Wa Usagi Desu Ka_": "Is the Order a Rabbit_",
+      "Is the Order a Rabbit_\\Tedeza Rize": "Is the Order a Rabbit_\\Rize Tedeza"
+    },
+    "Is This a Zombie_": {
+      "Kore wa Zombie Desu ka_": "Is This a Zombie_"
+    },
+    "Jade Dynasty": {
+      "Jade Dynasty (Zhu Xian)": "Jade Dynasty"
+    },
+    "Jirai nan desu ka_ Chihara-san": {
+      "Jirai Nandesuka_ Chihara-san": "Jirai nan desu ka_ Chihara-san"
+    },
+    "JoJo's Bizarre Adventure": {
+      "JoJo's Bizarre Adventure Stone Ocean": "JoJo's Bizarre Adventure",
+      "JoJo's Bizarre Adventure Diamond is Unbreakable": "JoJo's Bizarre Adventure"
+    },
+    "Jujutsu Kaisen": {
+      "Jujutsu Kaisen\\Uro Takako": "Jujutsu Kaisen\\Takako Uro",
+      "Jujutsu Kaisen\\Zen'in Maki": "Jujutsu Kaisen\\Maki Zen'in"
+    },
+    "K-on!": {
+      "K-on!\\Nakano Azusa": "K-on!\\Azusa Nakano"
+    },
+    "Kabaneri of the Iron Fortress": {
+      "Kabaneri of the Iron Fortress (Koutetsujou no Kabaneri)": "Kabaneri of the Iron Fortress"
+    },
+    "Kagerou Project": {
+      "Kagerou Project (Mekakucity Actors)": "Kagerou Project",
+      "Kagerou Project\\Kido Tsubomi": "Kagerou Project\\Tsubomi Kido"
+    },
+    "Kaguya-sama Love Is War": {
+      "Kaguya-sama Wa Kokurasetai ~tensai-tachi No Renai Zunousen~": "Kaguya-sama Love Is War",
+      "Kaguya-sama Love Is Not War": "Kaguya-sama Love Is War",
+      "Kaguya-sama Love Is War\\Fujiwara Chika": "Kaguya-sama Love Is War\\Chika Fujiwara",
+      "Kaguya-sama Love Is War\\Shinomiya Kaguya": "Kaguya-sama Love Is War\\Kaguya Shinomiya",
+      "Kaguya-sama Love Is War\\Hayasaka Ai": "Kaguya-sama Love Is War\\Ai Hayasaka",
+      "Kaguya-sama Love Is War\\Iino Miko": "Kaguya-sama Love Is War\\Miko Iino"
+    },
+    "Kakegurui Compulsive Gambler": {
+      "Kakegurui (Compulsive Gambler)": "Kakegurui Compulsive Gambler",
+      "Kakegurui Twin": "Kakegurui Compulsive Gambler",
+      "Kakegurui Project": "Kakegurui Compulsive Gambler"
+    },
+    "Kakegurui Project": {
+      "Kakegurui": "Kakegurui Project",
+      "Kakegurui – Compulsive Gambler": "Kakegurui Project",
+      "Kakegurui Project\\Jabami Yumeko": "Kakegurui Project\\Yumeko Jabami"
+    },
+    "Kakushite! Makina-san!!": {
+      "Kakushite! Makina-san!!\\Makina": "Kakushite! Makina-san!!\\Makina Agatsuma"
+    },
+    "KamiKatsu Working for God in a Godless World": {
+      "Kaminaki Sekai no Kamisama Katsudou": "KamiKatsu Working for God in a Godless World"
+    },
+    "Kill La Kill": {
+      "Kill La Kill\\Matoi Ryuuko": "Kill La Kill\\Ryuko Matoi",
+      "Kill La Kill\\Kiryuuin Satsuki": "Kill La Kill\\Satsuki Kiryuin"
+    },
+    "Kirei ni Shitemoraemasu ka": {
+      "Kirei ni Shitemoraemasu ka_": "Kirei ni Shitemoraemasu ka"
+    },
+    "Komi Can't Communicate": {
+      "Komi-san Wa Komyushou Desu": "Komi Can't Communicate"
+    },
+    "KonoSuba  God's Blessing on This Wonderful World!": {
+      "Kono Subarashii Sekai Ni Shukufuku Wo!": "KonoSuba  God's Blessing on This Wonderful World!",
+      "KonoSuba  An Explosion on This Wonderful World!": "KonoSuba  God's Blessing on This Wonderful World!",
+      "Kono Subarashii Sekai ni Shukufuku wo! (KonoSuba)": "KonoSuba God's Blessing on This Wonderful World!",
+      "KonoSuba God's Blessing on This Wonderful World!\\Darkness (Lalatina Dustiness Ford)": "KonoSuba God's Blessing on This Wonderful World!\\Darkness",
+      "KonoSuba God's Blessing on This Wonderful World!\\Айрис": "KonoSuba God's Blessing on This Wonderful World!\\Iris",
+      "KonoSuba God's Blessing on This Wonderful World!\\Виз": "KonoSuba God's Blessing on This Wonderful World!\\Wiz",
+      "KonoSuba God's Blessing on This Wonderful World!\\Луна": "KonoSuba God's Blessing on This Wonderful World!\\Luna",
+      "KonoSuba God's Blessing on This Wonderful World!\\Мегумин": "KonoSuba God's Blessing on This Wonderful World!\\Megumin",
+      "KonoSuba God's Blessing on This Wonderful World!\\Сокетто": "KonoSuba God's Blessing on This Wonderful World!\\Soketto",
+      "KonoSuba God's Blessing on This Wonderful World!\\Эрис _ Крис": "KonoSuba God's Blessing on This Wonderful World!\\Eris",
+      "KonoSuba God's Blessing on This Wonderful World!\\Юн-юн": "KonoSuba God's Blessing on This Wonderful World!\\Yunyun",
+      "KonoSuba God's Blessing on This Wonderful World!\\Darkness (Lalatina Ford Dustiness)": "KonoSuba God's Blessing on This Wonderful World!\\Darkness"
+    },
+    "Kuro": {
+      "Kuro (manga by Sōichirō Yamamoto)": "Kuro"
+    },
+    "Laid-Back Camp": {
+      "Laid-Back Camp (Yuru Camp△)": "Laid-Back Camp",
+      "Yuru Camp△ (Laid-Back Camp)": "Laid-Back Camp"
+    },
+    "Lamia  Lost": {
+      "Lamia  Lost": ""
+    },
+    "Land of the Lustrous": {
+      "Land of the Lustrous (Houseki no Kuni)": "Land of the Lustrous"
+    },
+    "Let This Grieving Soul Retire": {
+      "Let This Grieving Soul Retire (Nageki no Bourei wa Intai shitai)": "Let This Grieving Soul Retire"
+    },
+    "Let This Grieving Soul Retire!": {
+      "Let This Grieving Soul Retire! (Nageki no Bourei wa Intai Shita)": "Let This Grieving Soul Retire!",
+      "Let This Grieving Soul Retire! (Nageki no Bourei wa Intai Shitai)": "Let This Grieving Soul Retire!"
+    },
+    "Level 1 Demon Lord and One Room Hero": {
+      "Level 1 Demon Lord and One Room Hero (Lv1 Maou to One Room Yuusha)": "Level 1 Demon Lord and One Room Hero"
+    },
+    "Liar, Liar": {
+      "Liar Liar": "Liar, Liar"
+    },
+    "Lord Marksman and Vanadis": {
+      "Madan no Ou to Vanadis": "Lord Marksman and Vanadis",
+      "Madan no Ou to Vanadis (Lord Marksman and Vanadis)": "Lord Marksman and Vanadis"
+    },
+    "Love After World Domination": {
+      "Koi wa Sekai Seifuku no Ato de (Love After World Domination)": "Love After World Domination",
+      "Love After World Domination (Koi wa Sekai Seifuku no Ato de)": "Love After World Domination"
+    },
+    "Love and Lies": {
+      "Koi to Uso (Love and Lies)": "Love and Lies"
+    },
+    "Love Between Twins Is Indivisible": {
+      "Koi wa Futago de Warikirenai": "Love Between Twins Is Indivisible"
+    },
+    "Love Live!": {
+      "Love Live! School Idol Project": "Love Live!"
+    },
+    "Love Live! Nijigasaki High School Idol Club": {
+      "Love Live! Nijigasaki High School Idol Club\\Yuki Setsuna": "Love Live! Nijigasaki High School Idol Club\\Setsuna Yuki"
+    },
+    "Love, Chunibyo & Other Delusions!": {
+      "Chuunibyou Demo Koi Ga Shitai!": "Love, Chunibyo & Other Delusions!",
+      "Love, Chunibyo & Other Delusions!\\Nibutani Shinka": "Love, Chunibyo & Other Delusions!\\Shinka Nibutani",
+      "Love, Chunibyo & Other Delusions!\\Takanashi Rikka": "Love, Chunibyo & Other Delusions!\\Rikka Takanashi"
+    },
+    "Lucia  Alpha": {
+      "Lucia  Alpha": ""
+    },
+    "Lupin the Third": {
+      "Lupin III": "Lupin the Third"
+    },
+    "Lycoris Recoil": {
+      "Lycoris Recoil\\Nishikigi Chisato": "Lycoris Recoil\\Chisato Nishikigi",
+      "Lycoris Recoil\\Inoue Takina": "Lycoris Recoil\\Takina Inoue"
+    },
+    "Magi The Labyrinth of Magic": {
+      "Magi The Labyrinth Of Magic": "Magi The Labyrinth of Magic",
+      "Magi (Magi The Labyrinth of Magic)": "Magi The Labyrinth of Magic",
+      "Magi The Labyrinth of Magic\\Yamuraiha": "Magi The Labyrinth of Magic\\Yamraiha"
+    },
+    "Magical Destroyers": {
+      "Mahou Shoujo Magical Destroyers": "Magical Destroyers"
+    },
+    "Magical Girl Lyrical Nanoha": {
+      "Lyrical Nanoha": "Magical Girl Lyrical Nanoha",
+      "ViVid Strike! (Magical Girl Lyrical Nanoha series)": "Magical Girl Lyrical Nanoha"
+    },
+    "Magical Girl Raising Project": {
+      "Magical Girl Witch Trial (魔法少女ノ魔女裁判)": "Magical Girl Raising Project"
+    },
+    "Makeine Too Many Losing Heroines!": {
+      "Make Heroine ga Oosugiru!": "Makeine Too Many Losing Heroines!",
+      "Too Many Losing Heroines!": "Makeine Too Many Losing Heroines!",
+      "Make Heroine ga Oosugiru! (Too Many Losing Heroines!)": "Makeine Too Many Losing Heroines!"
+    },
+    "Manaria Friends": {
+      "Mysteria Friends": "Manaria Friends",
+      "Mysteria Friends (Manaria Friends)": "Manaria Friends"
+    },
+    "Maoyu Archenemy & Hero": {
+      "Maoyuu Maou Yuusha": "Maoyu Archenemy & Hero",
+      "Maoyu Archenemy & Hero\\Maou (Demon Queen)": "Maoyu Archenemy & Hero\\Demon King"
+    },
+    "Marriagetoxin": {
+      "Marriage Toxin": "Marriagetoxin",
+      "Marriagetoxin\\Arashiyama Kimie": "Marriagetoxin\\Kimie Arashiyama"
+    },
+    "Marvel": {
+      "Marvel Comics _ X-Men": "Marvel",
+      "Aero (Marvel Comics)": "Marvel",
+      "Marvel\\Psylocke (Betsy Braddock)": "Marvel\\Psylocke"
+    },
+    "Marvel Rivals": {
+      "Marvel Rivals\\Magik (Illyana Rasputina)": "Marvel Rivals\\Magik"
+    },
+    "Masamune-kun's Revenge": {
+      "Masamune-kun's Revenge\\Adagaki Aki": "Masamune-kun's Revenge\\Aki Adagaki"
+    },
+    "May I Ask for One Final Thing": {
+      "May I Ask for One Final Thing_": "May I Ask for One Final Thing"
+    },
+    "Medaka Kuroiwa is Impervious to My Charms": {
+      "Kuroiwa Medaka Doesn't Understand My Charms": "Medaka Kuroiwa is Impervious to My Charms",
+      "Kuroiwa Medaka ni Watashi no Kawaii ga Tsuujinai (Medaka Kuroiwa is Impervious to My Charms)": "Medaka Kuroiwa is Impervious to My Charms"
+    },
+    "Miraculous Tales of Ladybug & Cat Noir": {
+      "Miraculous Tales of Ladybug & Cat Noir\\Ladybug (Marinette Dupain-Cheng)": "Miraculous Tales of Ladybug & Cat Noir\\Marinette Dupain-Cheng",
+      "Miraculous Tales of Ladybug & Cat Noir\\Marinette Dupain-Cheng (Ladybug)": "Miraculous Tales of Ladybug & Cat Noir\\Marinette Dupain-Cheng"
+    },
+    "Miss Kobayashi's Dragon Maid": {
+      "Kobayashi-san Chi no Maid Dragon (Miss Kobayashi's Dragon Maid)": "Miss Kobayashi's Dragon Maid",
+      "Kobayashi-san Chi No Maidragon": "Miss Kobayashi's Dragon Maid",
+      "Kobayashi-san Chi no Maid Dragon": "Miss Kobayashi's Dragon Maid"
+    },
+    "Mistress Kanan is Devilishly Easy": {
+      "Kanan-sama wa Akumade Choroi": "Mistress Kanan is Devilishly Easy",
+      "Kanan-sama wa Akumade Choroi (Mistress Kanan is Devilishly Easy)": "Mistress Kanan is Devilishly Easy",
+      "Mistress Kanan is Devilishly Easy\\Kanan": "Mistress Kanan is Devilishly Easy\\Kanan Takakiyo",
+      "Mistress Kanan is Devilishly Easy\\Takakiyo Kanan": "Mistress Kanan is Devilishly Easy\\Kanan Takakiyo"
+    },
+    "Mo Dao Zu Shi": {
+      "Mo Dao Zu Shi (Grandmaster of Demonic Cultivation)": "Mo Dao Zu Shi"
+    },
+    "Mobile Suit Gundam SEED Destiny": {
+      "Gundam": "Mobile Suit Gundam SEED Destiny"
+    },
+    "Monogatari Series": {
+      "Monogatari (series)": "Monogatari Series",
+      "Bakemonogatari": "Monogatari Series",
+      "Monogatari Series Second Season": "Monogatari Series",
+      "Monogatari Series (Kizumonogatari)": "Monogatari Series",
+      "Monogatari Series (Bakemonogatari)": "Monogatari Series",
+      "Monogatari Series Off & Monster Season": "Monogatari Series",
+      "Monogatari Series\\Araragi Karen": "Monogatari Series\\Karen Araragi",
+      "Monogatari Series\\Araragi Tsukihi": "Monogatari Series\\Tsukihi Araragi",
+      "Monogatari Series\\Hachikuji Mayoi": "Monogatari Series\\Mayoi Hachikuji",
+      "Monogatari Series\\Kanbaru Suruga": "Monogatari Series\\Suruga Kanbaru",
+      "Monogatari Series\\Ononoki Yotsugi": "Monogatari Series\\Yotsugi Ononoki",
+      "Monogatari Series\\Oshino Shinobu": "Monogatari Series\\Shinobu Oshino",
+      "Monogatari Series\\Hanekawa Tsubasa": "Monogatari Series\\Tsubasa Hanekawa",
+      "Monogatari Series\\Senjougahara Hitagi": "Monogatari Series\\Hitagi Senjougahara",
+      "Monogatari Series\\Black Hanekawa (Tsubasa Hanekawa)": "Monogatari Series\\Black Hanekawa"
+    },
+    "Monster Musume Everyday Life with Monster Girls": {
+      "Monster Musume No Iru Nichijou": "Monster Musume Everyday Life with Monster Girls"
+    },
+    "More Than a Married Couple, But Not Lovers": {
+      "Fuufu Ijou, Koibito Miman": "More Than a Married Couple, But Not Lovers",
+      "Fuufu Ijou, Koibito Miman (More Than a Married Couple, But Not Lovers)": "More Than a Married Couple, But Not Lovers"
+    },
+    "Mushoku Tensei Jobless Reincarnation": {
+      "Mushoku Tensei  Jobless Reincarnation": "Mushoku Tensei Jobless Reincarnation",
+      "Mushoku Tensei": "Mushoku Tensei Jobless Reincarnation",
+      "Mushoku Tensei  Jobless Reincarnation Season 2": "Mushoku Tensei Jobless Reincarnation",
+      "Mushoku Tensei II Isekai Ittara Honki Dasu": "Mushoku Tensei Jobless Reincarnation",
+      "Mushoku Tensei Isekai Ittara Honki Dasu": "Mushoku Tensei Jobless Reincarnation",
+      "Mushoku Tensei Jobless Reincarnation\\Eris": "Mushoku Tensei Jobless Reincarnation\\Eris Greyrat",
+      "Mushoku Tensei Jobless Reincarnation\\Eris Boreas Greyrat": "Mushoku Tensei Jobless Reincarnation\\Eris Greyrat"
+    },
+    "My Awkward Senpai": {
+      "My Awkward Senpai (Bukiyou na Senpai)": "My Awkward Senpai",
+      "Bukiyou na Senpai": "My Awkward Senpai"
+    },
+    "My Dress-Up Darling": {
+      "Sono Bisque Doll Wa Koi Wo Suru": "My Dress-Up Darling",
+      "My Dress-Up Darling (Sono Bisque Doll wa Koi wo Suru)": "My Dress-Up Darling",
+      "Sono Bisque Doll wa Koi wo Suru (My Dress-Up Doll)": "My Dress-Up Darling",
+      "Sono Bisque Doll wa Koi wo Suru (My Dress-Up Darling)": "My Dress-Up Darling",
+      "My Dress-Up Darling\\Marin Kitagawa": "My Dress-Up Darling\\Kitagawa Marin",
+      "My Dress-Up Darling\\Sajuna Inui": "My Dress-Up Darling\\Inui Sajuna"
+    },
+    "My First Girlfriend Is a Gal": {
+      "Hajimete no Gal": "My First Girlfriend Is a Gal"
+    },
+    "My Friend's Little Sister Has It In for Me!": {
+      "Tomodachi no Imouto ga Ore ni dake Uzai (My Friend's Little Sister Has It In for Me!)": "My Friend's Little Sister Has It In for Me!"
+    },
+    "My Gift Lvl 9999 Unlimited Gacha": {
+      "Backstabbed in a Backwater Dungeon My Trusted Companions Tried to Kill Me, but Thanks to the Gift of an Unlimited Gacha, I Got LVL 9999 Friends and Am Out for Revenge on My Former Party Members and the World": "My Gift Lvl 9999 Unlimited Gacha"
+    },
+    "My Hero Academia": {
+      "Boku No Hero Academia": "My Hero Academia",
+      "My Hero Academia (Boku no Hero Academia)": "My Hero Academia",
+      "My Hero Academia\\Ashido Mina": "My Hero Academia\\Mina Ashido",
+      "My Hero Academia\\Hadou Nejire": "My Hero Academia\\Nejire Hado",
+      "My Hero Academia\\Uraraka Ochako": "My Hero Academia\\Ochako Uraraka",
+      "My Hero Academia\\Toga Himiko": "My Hero Academia\\Himiko Toga"
+    },
+    "My Little Sister Can't Be This Cute": {
+      "Ore no Imouto ga Konna ni Kawaii Wake ga Nai (Oreimo)": "My Little Sister Can't Be This Cute",
+      "Ore no Imouto ga Konna ni Kawaii Wake ga Nai": "My Little Sister Can't Be This Cute",
+      "Oreimo": "My Little Sister Can't Be This Cute",
+      "My Little Sister Can't Be This Cute\\Kuroneko (Ruri Gokou)": "My Little Sister Can't Be This Cute\\Ruri Gokou"
+    },
+    "My Status as an Assassin Obviously Exceeds the Hero's": {
+      "My Status as an Assassin Obviously Exceeds the Hero’s": "My Status as an Assassin Obviously Exceeds the Hero's",
+      "Assassin de Aru Ore no Status ga Yuusha yori mo Akiraka ni Tsuyoi no da ga": "My Status as an Assassin Obviously Exceeds the Hero's",
+      "Even Though I Am an Assassin, My Status Is Clearly Beyond the Hero's": "My Status as an Assassin Obviously Exceeds the Hero's",
+      "My Status as an Assassin Obviously Exceeds the Hero's (暗殺者である俺のステータスが勇者よりも明らかに強いのだが)": "My Status as an Assassin Obviously Exceeds the Hero's",
+      "My Status as an Assassin Obviously Exceeds the Hero's\\Amelia": "My Status as an Assassin Obviously Exceeds the Hero's\\Amelia Rosequartz"
+    },
+    "My Stepmom's Daughter Is My Ex": {
+      "Mamahaha no Tsurego ga Moto Kano datta": "My Stepmom's Daughter Is My Ex"
+    },
+    "My Teen Romantic Comedy SNAFU": {
+      "My Teen Romantic Comedy SNAFU (Oregairu)": "My Teen Romantic Comedy SNAFU",
+      "Yahari Ore no Seishun Love Comedy wa Machigatteiru": "My Teen Romantic Comedy SNAFU",
+      "Yahari Ore No Seishun Lovecome Wa Machigatteiru": "My Teen Romantic Comedy SNAFU",
+      "Yahari Ore no Seishun Love Come wa Machigatteiru": "My Teen Romantic Comedy SNAFU",
+      "My Youth Romantic Comedy Is Wrong, As I Expected": "My Teen Romantic Comedy SNAFU",
+      "My Teen Romantic Comedy SNAFU (Yahari Ore no Seishun Love Come wa Machigatteiru)": "My Teen Romantic Comedy SNAFU",
+      "My Teen Romantic Comedy SNAFU (Yahari Ore no Seishun Love Comedy wa Machigatteiru)": "My Teen Romantic Comedy SNAFU",
+      "My Teen Romantic Comedy SNAFU\\Isshiki Iroha": "My Teen Romantic Comedy SNAFU\\Iroha Isshiki",
+      "My Teen Romantic Comedy SNAFU\\Yuigahama Yui": "My Teen Romantic Comedy SNAFU\\Yui Yuigahama",
+      "My Teen Romantic Comedy SNAFU\\Yukinoshita Yukino": "My Teen Romantic Comedy SNAFU\\Yukino Yukinoshita"
+    },
+    "Myriad Colors Phantom World": {
+      "Musaigen No Phantom World": "Myriad Colors Phantom World",
+      "Myriad Colors Phantom World\\Kawakami Mai": "Myriad Colors Phantom World\\Mai Kawakami",
+      "Myriad Colors Phantom World\\Minase Koito": "Myriad Colors Phantom World\\Koito Minase"
+    },
+    "Mysterious Girlfriend X": {
+      "Nazo no Kanojo X (Mysterious Girlfriend X)": "Mysterious Girlfriend X",
+      "Mysterious Girlfriend X\\Urabe Mikoto": "Mysterious Girlfriend X\\Mikoto Urabe"
+    },
+    "Naraka Bladepoint": {
+      "NARAKA BLADEPOINT": "Naraka Bladepoint"
+    },
+    "Naruto": {
+      "Naruto (series)": "Naruto",
+      "Naruto\\Haruno Sakura": "Naruto\\Sakura Haruno"
+    },
+    "Necromancer Academy's Genius Summoner": {
+      "Necromancer Academy": "Necromancer Academy's Genius Summoner",
+      "Necromancer Academy’s Genius Summoner": "Necromancer Academy's Genius Summoner"
+    },
+    "Needy Streamer Overload": {
+      "Needy Streamer Overload (Needy Girl Overdose)": "Needy Streamer Overload",
+      "Needy Streamer Overload\\KAngel (Ame-chan)": "Needy Streamer Overload\\KAngel",
+      "Needy Streamer Overload\\OMGkawaiiAngel": "Needy Streamer Overload\\KAngel"
+    },
+    "Negima! Magister Negi Magi": {
+      "Negima!_": "Negima! Magister Negi Magi"
+    },
+    "Nekopara": {
+      "Nekopara (ネコぱら)": "Nekopara"
+    },
+    "Neon Genesis Evangelion": {
+      "Rebuild of Evangelion": "Neon Genesis Evangelion",
+      "Evangelion 2.0 You Can (Not) Advance (Rebuild of Evangelion)": "Neon Genesis Evangelion",
+      "Neon Genesis Evangelion (Rebuild of Evangelion)": "Neon Genesis Evangelion",
+      "Neon Genesis Evangelion\\Ayanami Rei": "Neon Genesis Evangelion\\Rei Ayanami",
+      "Neon Genesis Evangelion\\Katsuragi Misato": "Neon Genesis Evangelion\\Misato Katsuragi",
+      "Neon Genesis Evangelion\\Makinami Mari Illustrious": "Neon Genesis Evangelion\\Mari Illustrious Makinami",
+      "Neon Genesis Evangelion\\Souryuu Asuka Langley": "Neon Genesis Evangelion\\Asuka Langley Soryu"
+    },
+    "Neverness to Everness": {
+      "Neverness to Everness\\Female Protagonist (NTE)": "Neverness to Everness\\Female Protagonist"
+    },
+    "Nier (series)": {
+      "Nier (series)\\2b": "Nier (series)\\2B"
+    },
+    "NieR Automata": {
+      "NieR Automata\\2B (YoRHa No.2 Type B)": "NieR Automata\\2B",
+      "NieR Automata\\YoRHa No.2 Type B (2B)": "NieR Automata\\2B"
+    },
+    "Nijisanji": {
+      "Nijisanji\\Hoshikawa Sara": "Nijisanji\\Sara Hoshikawa"
+    },
+    "No Game No Life": {
+      "No Game No Life  Zero": "No Game No Life",
+      "No Game No Life\\Fiel Nilvalen": "No Game No Life\\Fiel Nirvalen"
+    },
+    "No Longer Allowed in Another World": {
+      "Isekai Shikkaku": "No Longer Allowed in Another World"
+    },
+    "Noble Reincarnation": {
+      "Kizoku Tensei Megumareta Umare de Saikou no Nouryoku wo Eru (Noble Reincarnation)": "Noble Reincarnation",
+      "Kizoku Tensei Noble Reincarnation": "Noble Reincarnation",
+      "Noble Reincarnation\\Tsui (ツーイ)": "Noble Reincarnation\\Tsui"
+    },
+    "Noragami": {
+      "Noragami Aragoto": "Noragami",
+      "Noragami\\Bishamon (Bishamonten)": "Noragami\\Bishamon",
+      "Noragami\\Bishamonten": "Noragami\\Bishamon",
+      "Noragami\\Bishamonten (Bishamon)": "Noragami\\Bishamon"
+    },
+    "Nura Rise of the Yokai Clan": {
+      "Nurarihyon no Mago": "Nura Rise of the Yokai Clan",
+      "Nurarihyon no Mago (Nura Rise of the Yokai Clan)": "Nura Rise of the Yokai Clan",
+      "Nura Rise of the Yokai Clan\\Yuki-Onna (Tsurara Oikawa)": "Nura Rise of the Yokai Clan\\Tsurara Oikawa"
+    },
+    "Nyaruko Crawling with Love": {
+      "Haiyore! Nyaruko-san (Nyaruko Crawling with Love)": "Nyaruko Crawling with Love",
+      "Nyaruko Crawling with Love\\Nyaruko (Nyarlathotep)": "Nyaruko Crawling with Love\\Nyaruko"
+    },
+    "Onimai I'm Now Your Sister!": {
+      "Onii-chan Wa Oshimai!": "Onimai I'm Now Your Sister!",
+      "Onimai I'm Now Your Sister! (Oniichan wa Oshimai!)": "Onimai I'm Now Your Sister!",
+      "Oniichan wa Oshimai!": "Onimai I'm Now Your Sister!"
+    },
+    "onkai Star Rail": {
+      "Honkai Star Rail\\Herta": "onkai Star Rail\\The Herta"
+    },
+    "Onmyoji": {
+      "Onmyoji\\Tamamonomae": "Onmyoji\\Tamamo no Mae"
+    },
+    "Oshi no Ko": {
+      "Oshi No Ko": "Oshi no Ko",
+      "Oshi no Ko Season 2": "Oshi no Ko",
+      "Oshi no Ko\\Hoshino Ai": "Oshi no Ko\\Ai Hoshino",
+      "Oshi no Ko\\Hoshino Aqua": "Oshi no Ko\\Aqua Hoshino",
+      "Oshi no Ko\\Hoshino Aquamarine": "Oshi no Ko\\Aqua Hoshino",
+      "Oshi no Ko\\Hoshino Ruby": "Oshi no Ko\\Ruby Hoshino",
+      "Oshi no Ko\\Arima Kana": "Oshi no Ko\\Kana Arima",
+      "Oshi no Ko\\Kurokawa Akane": "Oshi no Ko\\Akane Kurokawa",
+      "Oshi no Ko\\Shiranui Frill": "Oshi no Ko\\Frill Shiranui"
+    },
+    "Otaku Elf": {
+      "Otaku Elf (Edomae Elf)": "Otaku Elf"
+    },
+    "Our Dating Story The Experienced You and The Inexperienced Me": {
+      "Keikenzumi na Kimi to, Keiken Zero na Ore ga, Otsukiai suru Hanashi (Our Dating Story The Experienced You and the Inexperienced Me)": "Our Dating Story The Experienced You and The Inexperienced Me",
+      "Our Dating Story You Were Experienced, I Was Not": "Our Dating Story The Experienced You and The Inexperienced Me",
+      "You Were Experienced, I Was Not Our Dating Story": "Our Dating Story The Experienced You and The Inexperienced Me",
+      "Keiken Zumi na Kimi to, Keiken Zero na Ore ga, Otsukiai Suru Hanashi": "Our Dating Story The Experienced You and The Inexperienced Me",
+      "Keikenzumi na Kimi to, Keiken Zero na Ore ga, Otsukiai suru Hanashi": "Our Dating Story The Experienced You and The Inexperienced Me",
+      "Keiken Zumi na Kimi to, Keiken Zero na Ore ga, Otsukiai Suru Hanashi (Our Dating Story The Experienced You and the Inexperienced Me)": "Our Dating Story The Experienced You and The Inexperienced Me",
+      "Keikenzumi na Kimi to, Keiken Zero na Ore ga, Otsukiai Suru Hanashi (You Were Experienced, I Was Not Our Dating Story)": "Our Dating Story The Experienced You and The Inexperienced Me"
+    },
+    "Our Last Crusade or the Rise of a New World": {
+      "Kimi to Boku no Saigo no Senjou (Our Last Crusade or the Rise of a New World)": "Our Last Crusade or the Rise of a New World",
+      "Kimi to Boku no Saigo no Senjou, Arui wa Sekai ga Hajimaru Seisen": "Our Last Crusade or the Rise of a New World",
+      "Our Last Crusade or the Rise of a New World (Kimi to Boku no Saigo no Senjou, Arui wa Sekai ga Hajimaru Seisen)": "Our Last Crusade or the Rise of a New World",
+      "Our Last Crusade or the Rise of a New World Season 2": "Our Last Crusade or the Rise of a New World",
+      "Our Last Crusade or the Rise of a New World (Kimi to Boku no Saigo no Senjou, Aruiwa Sekai ga Hajimaru Seisen)": "Our Last Crusade or the Rise of a New World",
+      "Our Last Crusade or the Rise of a New World\\Alice (Aliceliese Lou Nebulis IX)": "Our Last Crusade or the Rise of a New World\\Alice",
+      "Our Last Crusade or the Rise of a New World\\Aliceliese Lou Nebulis IX": "Our Last Crusade or the Rise of a New World\\Alice"
+    },
+    "Outbreak Company": {
+      "Outbreak Company\\Miusel Foaran": "Outbreak Company\\Myucel Foaran",
+      "Outbreak Company\\Myucel Foalan": "Outbreak Company\\Myucel Foaran"
+    },
+    "Overlord": {
+      "Overlord (maruyama)": "Overlord",
+      "Overlord\\Шалтир": "Overlord\\Shalltear Bloodfallen"
+    },
+    "Panty & Stocking With Garterbelt": {
+      "Panty & Stocking With Garterbelt\\Panty Anarchy": "Panty & Stocking With Garterbelt\\Panty"
+    },
+    "Peach Boy Riverside": {
+      "Peach Boy Riverside\\Sally (Sartrienne Aldraic)": "Peach Boy Riverside\\Sally",
+      "Peach Boy Riverside\\Sally (Sartrienne Aldarake)": "Peach Boy Riverside\\Sally"
+    },
+    "Peter Grill and the Philosopher's Time": {
+      "Peter Grill to Kenja no Jikan": "Peter Grill and the Philosopher's Time",
+      "Peter Grill to Kenja no Jikan (Peter Grill and the Philosopher's Time)": "Peter Grill and the Philosopher's Time"
+    },
+    "Peter Pan": {
+      "Peter Pan (Disney)": "Peter Pan"
+    },
+    "Playing Death Games to Put Food on the Table": {
+      "Playing Death Games to Put Food on the Table (Shibou Yuugi de Meshi wo Kuu)": "Playing Death Games to Put Food on the Table",
+      "Playing Death Games to Put Food on the Table (死亡遊戯で飯を食う。)": "Playing Death Games to Put Food on the Table",
+      "Shibou Yuugi de Meshi wo Kuu": "Playing Death Games to Put Food on the Table",
+      "Shibou Yuugi de Meshi wo Kuu (Death Game de Meshi wo Kuu)": "Playing Death Games to Put Food on the Table",
+      "Shibou Yuugi de Meshi wo Kuu (Playing Death Games to Put Food on the Table)": "Playing Death Games to Put Food on the Table",
+      "Shibō Yūgi de Meshi o Kuu": "Playing Death Games to Put Food on the Table",
+      "Shibō Yūgi de Meshi o Kū": "Playing Death Games to Put Food on the Table",
+      "Playing Death Games to Put Food on the Table\\Yuki": "Playing Death Games to Put Food on the Table\\Yuuki Sorimachi",
+      "Playing Death Games to Put Food on the Table\\Yuki Sorimachi": "Playing Death Games to Put Food on the Table\\Yuuki Sorimachi",
+      "Playing Death Games to Put Food on the Table\\Sorimachi Yuuki": "Playing Death Games to Put Food on the Table\\Yuuki Sorimachi"
+    },
+    "Please Put Them On, Takamine-san": {
+      "Please Put Them On, Takamine-san!": "Please Put Them On, Takamine-san",
+      "Haite Kudasai, Takamine-san": "Please Put Them On, Takamine-san",
+      "Please Put Them On, Takamine-san\\Takamine": "Please Put Them On, Takamine-san\\Takane Takamine"
+    },
+    "Plus-Sized Elf": {
+      "Elf-san wa Yaserarenai": "Plus-Sized Elf"
+    },
+    "Pokemon": {
+      "Pokémon Scarlet and Violet": "Pokemon",
+      "Pokémon": "Pokemon",
+      "Pokémon the Series Sun & Moon": "Pokemon",
+      "Pokemon\\Jessie (Musashi)": "Pokemon\\Jessie"
+    },
+    "Princess Connect! Re Dive": {
+      "Princess Connect!": "Princess Connect! Re Dive",
+      "Princess Connect! Re Dive\\Karyl (Kyaru)": "Princess Connect! Re Dive\\Karyl",
+      "Princess Connect! Re Dive\\Pecorine (Princess)": "Princess Connect! Re Dive\\Pecorine",
+      "Princess Connect! Re Dive\\Saren Sasaki": "Princess Connect! Re Dive\\Saren"
+    },
+    "Problem Children Are Coming from Another World, Aren't They": {
+      "Problem Children Are Coming from Another World, Aren't They_": "Problem Children Are Coming from Another World, Aren't They",
+      "Problem Children Are Coming from Another World, Aren't They\\Black Rabbit (Kuro Usagi)": "Problem Children Are Coming from Another World, Aren't They\\Black Rabbit"
+    },
+    "Project Sekai": {
+      "Project Sekai Colorful Stage!": "Project Sekai",
+      "Project SEKAI COLORFUL STAGE! feat. Hatsune Miku": "Project Sekai",
+      "Project Sekai\\Akiyama Mizuki": "Project Sekai\\Mizuki Akiyama",
+      "Project Sekai\\Asahina Mafuyu": "Project Sekai\\Mafuyu Asahina",
+      "Project Sekai\\Ootori Emu": "Project Sekai\\Emu Otori",
+      "Project Sekai\\Shiraishi An": "Project Sekai\\An Shiraishi",
+      "Project Sekai\\Kusanagi Nene": "Project Sekai\\Nene Kusanagi"
+    },
+    "Puella Magi Madoka Magica": {
+      "Mahou Shoujo Madoka Magica": "Puella Magi Madoka Magica",
+      "Puella Magi Madoka Magica\\Miki Sayaka": "Puella Magi Madoka Magica\\Sayaka Miki",
+      "Puella Magi Madoka Magica\\Sakura Kyoko": "Puella Magi Madoka Magica\\Kyoko Sakura",
+      "Puella Magi Madoka Magica\\Tomoe Mami": "Puella Magi Madoka Magica\\Mami Tomoe",
+      "Puella Magi Madoka Magica\\Akemi Homura": "Puella Magi Madoka Magica\\Homura Akemi"
+    },
+    "Punishing Gray Raven": {
+      "Punishing  Gray Raven": "Punishing Gray Raven",
+      "Punishing Gray Raven\\Liv (Empyrea)": "Punishing Gray Raven\\Liv Empyrea",
+      "Punishing Gray Raven\\Lucia (Crimson Abyss)": "Punishing Gray Raven\\Lucia Alpha",
+      "Punishing Gray Raven\\Alpha (Lucia)": "Punishing Gray Raven\\Lucia Alpha",
+      "Punishing Gray Raven\\Lucia Crimson Abyss": "Punishing Gray Raven\\Lucia Alpha",
+      "Punishing Gray Raven\\Lucia (Crimson Weave)": "Punishing Gray Raven\\Lucia Crimson Weave",
+      "Punishing Gray Raven\\No. 21": "Punishing Gray Raven\\No.21",
+      "Punishing Gray Raven\\Alpha (Lucia Crimson Abyss)": "Punishing Gray Raven\\Lucia Alpha"
+    },
+    "Rage of Bahamut": {
+      "Shingeki No Bahamut": "Rage of Bahamut",
+      "Rage of Bahamut Genesis": "Rage of Bahamut"
+    },
+    "Ranking of Kings": {
+      "Ranking of Kings (Ōsama Ranking)": "Ranking of Kings"
+    },
+    "Rascal Does Not Dream of Bunny Girl Senpai": {
+      "Seishun Buta Yarou": "Rascal Does Not Dream of Bunny Girl Senpai",
+      "Rascal Does Not Dream of Bunny Girl Senpai (Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai)": "Rascal Does Not Dream of Bunny Girl Senpai",
+      "Rascal Does Not Dream of Bunny Girl Senpai\\Sakurajima Mai": "Rascal Does Not Dream of Bunny Girl Senpai\\Mai Sakurajima"
+    },
+    "Re Zero − Starting Life in Another World": {
+      "Re Zero Kara Hajimeru Isekai Seikatsu": "Re Zero − Starting Life in Another World",
+      "Re Zero - Starting Life in Another World (Re Zero kara Hajimeru Isekai Seikatsu)": "Re Zero − Starting Life in Another World",
+      "Re Zero −Starting Life in Another World−": "Re Zero − Starting Life in Another World",
+      "Re Zero - Starting Life in Another World": "Re Zero − Starting Life in Another World",
+      "Re ZERO -Starting Life in Another World-": "Re Zero − Starting Life in Another World",
+      "Re Zero": "Re Zero − Starting Life in Another World",
+      "Re Zero − Starting Life in Another World (Re Zero kara Hajimeru Isekai Seikatsu)": "Re Zero − Starting Life in Another World"
+    },
+    "Reborn to Master the Blade From Hero-King to Extraordinary Squire": {
+      "Reborn to Master the Blade  From Hero-King to Extraordinary Squire": "Reborn to Master the Blade From Hero-King to Extraordinary Squire",
+      "The Demon Sword Master of Excalibur Academy": "Reborn to Master the Blade From Hero-King to Extraordinary Squire",
+      "Reborn to Master the Blade From Hero-King to Extraordinary Squire ♀": "Reborn to Master the Blade From Hero-King to Extraordinary Squire",
+      "Reborn to Master the Blade From Hero-King to Extraordinary Squire (Eiyuuou, Bu wo Kiwameru Tame Tenseisu)": "Reborn to Master the Blade From Hero-King to Extraordinary Squire",
+      "Reborn to Master the Blade From Hero-King to Extraordinary Squire\\Elfiné Phillet": "",
+      "Reborn to Master the Blade From Hero-King to Extraordinary Squire\\Riselia Ray Crystalia": ""
+    },
+    "Red Ranger Becomes an Adventurer in Another World": {
+      "The Red Ranger Becomes an Adventurer in Another World": "Red Ranger Becomes an Adventurer in Another World",
+      "The Red Ranger Becomes an Adventurer in Another World (Sentai Red Isekai de Boukensha ni Naru)": "Red Ranger Becomes an Adventurer in Another World",
+      "Sentai Red Isekai de Boukensha ni Naru (The Red Ranger Becomes an Adventurer in Another World)": "Red Ranger Becomes an Adventurer in Another World",
+      "Red Ranger Becomes an Adventurer in Another World\\Idola": "Red Ranger Becomes an Adventurer in Another World\\Idola Avom",
+      "Red Ranger Becomes an Adventurer in Another World\\Yidhra Arvoln": "Red Ranger Becomes an Adventurer in Another World\\Yihdra Arvoln"
+    },
+    "Redo of Healer": {
+      "Kaifuku Jutsushi no Yarinaoshi (Redo of Healer)": "Redo of Healer",
+      "Redo of Healer (Kaifuku Jutsushi no Yarinaoshi)": "Redo of Healer",
+      "Kaifuku Jutsushi no Yarinaoshi": "Redo of Healer",
+      "Redo of Healer\\Ева Риз": "Redo of Healer\\Eve Reese",
+      "Redo of Healer\\Норн Клаталисса Джиорал": "Redo of Healer\\Norn Clatalissa Jioral",
+      "Redo of Healer\\Флэр Аргранд Джиорал _ Фрейя": "Redo of Healer\\Freia",
+      "Redo of Healer\\Freya": "Redo of Healer\\Freia"
+    },
+    "Reincarnated as a Sword": {
+      "Reincarnated as a Sword (Tensei shitara Ken deshita)": "Reincarnated as a Sword"
+    },
+    "Remake Our Life!": {
+      "Bokutachi no Remake": "Remake Our Life!",
+      "Bokutachi no Remake (Remake Our Life!)": "Remake Our Life!"
+    },
+    "Rent-A-Girlfriend": {
+      "Kanojo Okarishimasu": "Rent-A-Girlfriend",
+      "Rent-A-Girlfriend (Kanojo, Okarishimasu)": "Rent-A-Girlfriend",
+      "Kanojo, Okarishimasu (Rent-a-Girlfriend)": "Rent-A-Girlfriend",
+      "Kanojo, Okarishimasu": "Rent-A-Girlfriend",
+      "Rent-A-Girlfriend\\Chizuru Ichinose": "Rent-A-Girlfriend\\Chizuru Mizuhara",
+      "Rent-A-Girlfriend\\Mizuhara Chizuru": "Rent-A-Girlfriend\\Chizuru Mizuhara",
+      "Rent-A-Girlfriend\\Sarashina Ruka": "Rent-A-Girlfriend\\Ruka Sarashina",
+      "Rent-A-Girlfriend\\Chizuru Ichinose (Chizuru Mizuhara)": "Rent-A-Girlfriend\\Chizuru Mizuhara",
+      "Rent-A-Girlfriend\\Chizuru Mizuhara (Ichinose Chizuru)": "Rent-A-Girlfriend\\Chizuru Mizuhara"
+    },
+    "Ring": {
+      "Ring (Ringu) franchise": "Ring"
+    },
+    "Rock Is a Lady's Modesty": {
+      "Rock wa Lady no Tashinami deshite": "Rock Is a Lady's Modesty",
+      "Rock Is a Lady's Modesty\\Otoha Kurugane": "Rock Is a Lady's Modesty\\Otoha Kurogane"
+    },
+    "Rosetta+": {
+      "Rosetta+": ""
+    },
+    "Ruri Rocks": {
+      "Ruri no Houseki": "Ruri Rocks"
+    },
+    "Saekano How to Raise a Boring Girlfriend": {
+      "Saenai Heroine No Sodatekata": "Saekano How to Raise a Boring Girlfriend",
+      "Saekano How to Raise a Boring Girlfriend\\Kasumigaoka Utaha": "Saekano How to Raise a Boring Girlfriend\\Utaha Kasumigaoka"
+    },
+    "Sailor Moon": {
+      "Bishoujo Senshi Sailor Moon": "Sailor Moon",
+      "Sailor Moon Crystal": "Sailor Moon",
+      "Sailor Moon\\Tsukino Usagi": "Sailor Moon\\Usagi Tsukino",
+      "Sailor Moon\\Usagi Tsukino (Sailor Moon)": "Sailor Moon\\Usagi Tsukino",
+      "Sailor Moon\\Sailor Mercury (Ami Mizuno)": "Sailor Moon\\Ami Mizuno",
+      "Sailor Moon\\Hino Rei": "Sailor Moon\\Rei Hino",
+      "Sailor Moon\\Mizuno Ami": "Sailor Moon\\Ami Mizuno"
+    },
+    "Saint Seiya": {
+      "Saint Seiya The Lost Canvas": "Saint Seiya",
+      "Saint Seiya\\Sasha (Athena)": "Saint Seiya\\Sasha"
+    },
+    "Science Fell in Love, So I Tried to Prove It": {
+      "Rikei ga Koi ni Ochita no de Shoumei shitemita": "Science Fell in Love, So I Tried to Prove It",
+      "Rikei ga Koi ni Ochita no de Shōmei Shite Mita (Science Fell in Love, So I Tried to Prove It)": "Science Fell in Love, So I Tried to Prove It",
+      "Science Fell in Love, So I Tried to Prove It\\Ayano Himuro": "Science Fell in Love, So I Tried to Prove It\\Ayame Himuro"
+    },
+    "Secrets of the Silent Witch": {
+      "Silent Witch Chinmoku no Majo no Kakushigoto": "Secrets of the Silent Witch"
+    },
+    "Selena (Capriccio)": {
+      "Selena (Capriccio)": ""
+    },
+    "Selena  Capriccio": {
+      "Selena  Capriccio": ""
+    },
+    "Senki Zesshou Symphogear": {
+      "Senki Zesshou Symphogear GX": "Senki Zesshou Symphogear",
+      "Senki Zesshou Symphogear\\Kazanari Tsubasa": "Senki Zesshou Symphogear\\Tsubasa Kazanari",
+      "Senki Zesshou Symphogear\\Yukine Chris": "Senki Zesshou Symphogear\\Chris Yukine"
+    },
+    "Seraph of the End Vampire Reign": {
+      "Seraph of the End": "Seraph of the End Vampire Reign",
+      "Owari No Seraph": "Seraph of the End Vampire Reign",
+      "Seraph of the End (Owari no Seraph)": "Seraph of the End Vampire Reign",
+      "Seraph of the End  Vampire Reign": "Seraph of the End Vampire Reign",
+      "Owari no Seraph (Seraph of the End)": "Seraph of the End Vampire Reign",
+      "Seraph of the End Bloody Blades": "Seraph of the End Vampire Reign",
+      "Seraph of the End Vampire Reign\\Shinoa Hiragi": "Seraph of the End Vampire Reign\\Shinoa Hiiragi",
+      "Seraph of the End Vampire Reign\\Asuramaru": "Seraph of the End Vampire Reign\\Ashuramaru",
+      "Seraph of the End Vampire Reign\\Shinoa Hīragi": "Seraph of the End Vampire Reign\\Shinoa Hiiragi"
+    },
+    "Shikimori's Not Just a Cutie": {
+      "Kawaii dake ja Nai Shikimori-san": "Shikimori's Not Just a Cutie",
+      "Kawaii dake ja Nai Shikimori-san (Shikimori's Not Just a Cutie)": "Shikimori's Not Just a Cutie",
+      "Shikimori's Not Just a Cutie\\Miyako Shikimori": "Shikimori's Not Just a Cutie\\Shikimori",
+      "Shikimori's Not Just a Cutie\\Shikimori Miyako": "Shikimori's Not Just a Cutie\\Shikimori",
+      "Shikimori's Not Just a Cutie\\Micchon Shikimori": "Shikimori's Not Just a Cutie\\Shikimori",
+      "Shikimori's Not Just a Cutie\\Shikimori Micchon": "Shikimori's Not Just a Cutie\\Shikimori"
+    },
+    "Shimoneta A Boring World Where the Concept of Dirty Jokes Doesn't Exist": {
+      "Shimoneta to Iu Gainen ga Sonzai Shinai Taikutsu na Sekai": "Shimoneta A Boring World Where the Concept of Dirty Jokes Doesn't Exist"
+    },
+    "Skeleton Knight in Another World": {
+      "Skeleton Knight in Another World (Gaikotsu Kishi-sama, Tadaima Isekai e Odekakechuu)": "Skeleton Knight in Another World",
+      "Skeleton Knight in Another World\\Ariane Glenys Maple": "Skeleton Knight in Another World\\Ariane Glenys Lalatoya"
+    },
+    "Sleepy Princess in the Demon Castle": {
+      "Sleepy Princess in the Demon Castle": ""
+    },
+    "Snowbreak Containment Zone": {
+      "Snowbreak Containment Zone\\Fenny - Golden": "Snowbreak Containment Zone\\Fenny"
+    },
+    "So I'm a Spider, So What": {
+      "So I'm a Spider, So What_": "So I'm a Spider, So What",
+      "So I'm a Spider, So What_ (Kumo Desu ga, Nani ka_)": "So I'm a Spider, So What"
+    },
+    "Solo Leveling": {
+      "Solo Max-Level Newbie": "Solo Leveling",
+      "Solo Leveling  Ragnarok": "Solo Leveling",
+      "Solo Leveling  ARISE": "Solo Leveling",
+      "Solo Leveling Season 2  Arise from the Shadow": "Solo Leveling",
+      "Solo Leveling (Ore dake Level Up na Ken)": "Solo Leveling",
+      "Solo Leveling\\Isil Radiru": "Solo Leveling\\Esil Radiru",
+      "Solo Leveling\\Chae Hae-In": "Solo Leveling\\Cha Hae-In",
+      "Solo Leveling\\Alice": "Solo Leveling\\Alice von Ataraxia",
+      "Solo Leveling\\Lee Bora": "Solo Leveling\\Lee Bo-ra",
+      "Solo Leveling\\Park Heejin": "Solo Leveling\\Park Hee-jin"
+    },
+    "Soul Land 4 The Ultimate Douluo": {
+      "斗罗大陆IV 终极斗罗": "Soul Land 4 The Ultimate Douluo",
+      "Soul Land 4 The Ultimate Douluo\\古月娜": "Soul Land 4 The Ultimate Douluo\\Gu Yuena"
+    },
+    "Spirit Sword Mountain": {
+      "Spirit Sword Mountain (从前有座灵剑山)": "Spirit Sword Mountain"
+    },
+    "Spy Classroom": {
+      "Spy Classroom 2nd season": "Spy Classroom"
+    },
+    "Spy X Family": {
+      "Spy × Family": "Spy X Family",
+      "SPY×FAMILY": "Spy X Family",
+      "Spy X Family\\Yor Forger": "Spy X Family\\Yor Briar"
+    },
+    "Star-Embracing Swordmaster": {
+      "Star Embracing Swordmaster": "Star-Embracing Swordmaster"
+    },
+    "Steins;gate": {
+      "Steins;gate\\Christina": "Steins;gate\\Makise Kurisu"
+    },
+    "Summer Pockets": {
+      "Summer Pockets REFLECTION BLUE": "Summer Pockets",
+      "Summer Pockets\\Kushima Kamome": "Summer Pockets\\Kamome Kushima",
+      "Summer Pockets\\Naruse Shiroha": "Summer Pockets\\Shiroha Naruse",
+      "Summer Pockets\\Sorakado Ao": "Summer Pockets\\Ao Sorakado"
+    },
+    "Summer Time Rendering": {
+      "Summertime Render": "Summer Time Rendering",
+      "Summertime Rendering": "Summer Time Rendering"
+    },
+    "Summoned to Another World for a Second Time": {
+      "Isekai Shoukan wa Nidome Desu": "Summoned to Another World for a Second Time"
+    },
+    "Swan Lake": {
+      "Swan Lake (Genshin Impact-styled fanart)": "Swan Lake"
+    },
+    "Sword Art Online": {
+      "Sword Art Online the Movie -Progressive- Aria of a Starless Night": "Sword Art Online",
+      "Sword Art Online Alicization": "Sword Art Online",
+      "Sword Art Online Progressive": "Sword Art Online",
+      "Sword Art Online Ordinal Scale": "Sword Art Online",
+      "Sword Art Online the Movie Ordinal Scale": "Sword Art Online",
+      "Sword Art Online Alternative Gun Gale Online": "Sword Art Online",
+      "Sword Art Online Integral Factor": "Sword Art Online",
+      "Sword Art Online\\Asuna Yuuki": "Sword Art Online\\Asuna",
+      "Sword Art Online\\Quinella (Administrator)": "Sword Art Online\\Quinella",
+      "Sword Art Online\\Асада Сино": "Sword Art Online\\Sinon",
+      "Sword Art Online\\Цуберг Алиса": "Sword Art Online\\Alice Zuberg",
+      "Sword Art Online\\Kirigaya Suguha": "Sword Art Online\\Leafa",
+      "Sword Art Online\\Asuna (Yuuki Asuna)": "Sword Art Online\\Asuna",
+      "Sword Art Online\\Mito (Misumi Tozawa)": "Sword Art Online\\Mito",
+      "Sword Art Online\\Yuna (Yuuna Shigemura)": "Sword Art Online\\Yuna",
+      "Sword Art Online\\Alice Zuberg (Alice Synthesis Thirty)": "Sword Art Online\\Alice Zuberg",
+      "Sword Art Online\\Leafa (Suguha Kirigaya)": "Sword Art Online\\Leafa"
+    },
+    "Sword of the Demon Hunter Kijin Gentōshō": {
+      "Sword of the Demon Hunter  Kijin Gentōshō": "Sword of the Demon Hunter Kijin Gentōshō",
+      "Sword of the Demon Hunter  Kijin Gentosho": "Sword of the Demon Hunter Kijin Gentōshō",
+      "Kijin Gentōshō": "Sword of the Demon Hunter Kijin Gentōshō"
+    },
+    "Takt Op. Destiny": {
+      "Takt op.Destiny": "Takt Op. Destiny",
+      "Takt op": "Takt Op. Destiny",
+      "Takt Op. Destiny\\Cosette Schneider (Destiny)": "Takt Op. Destiny\\Destiny"
+    },
+    "Tales of Wedding Rings": {
+      "Tales of Wedding Rings (Kekkon Yubiwa Monogatari)": "Tales of Wedding Rings",
+      "Kekkon Yubiwa Monogatari (Tales of Wedding Rings)": "Tales of Wedding Rings",
+      "Tales of Wedding Rings\\Nefritis": "Tales of Wedding Rings\\Nephrites",
+      "Tales of Wedding Rings\\Granart Needakitta": "Tales of Wedding Rings\\Granart",
+      "Tales of Wedding Rings\\Amber Idonokan": "Tales of Wedding Rings\\Amber",
+      "Tales of Wedding Rings\\Nephrites Lomier": "Tales of Wedding Rings\\Nephrites"
+    },
+    "Tekken": {
+      "Tekken 8": "Tekken",
+      "Tekken\\Reina": "Tekken\\Reina Mishima"
+    },
+    "TenPuru No One Can Live on Loneliness": {
+      "TenPuru": "TenPuru No One Can Live on Loneliness"
+    },
+    "Terminally-Ill Genius Dark Knight": {
+      "Terminally Ill Genius Dark Knight": "Terminally-Ill Genius Dark Knight",
+      "Terminally-Ill Genius Dark Knight (시한부 천재 암흑기사)": "Terminally-Ill Genius Dark Knight"
+    },
+    "That Time I Got Reincarnated as a Slime": {
+      "Tensei Shitara Slime Datta Ken": "That Time I Got Reincarnated as a Slime",
+      "Tensei Shitara Slime Datta Ken (That Time I Got Reincarnated as a Slime)": "That Time I Got Reincarnated as a Slime",
+      "That Time I Got Reincarnated as a Slime (Tensei Shitara Slime Datta Ken)": "That Time I Got Reincarnated as a Slime",
+      "The Slime Diaries That Time I Got Reincarnated as a Slime": "That Time I Got Reincarnated as a Slime",
+      "That Time I Got Reincarnated as a Slime\\Elmesia El Ru Sarion": "That Time I Got Reincarnated as a Slime\\Elmesia El-Ru Sarion",
+      "That Time I Got Reincarnated as a Slime\\Testarossa (Blanc)": "That Time I Got Reincarnated as a Slime\\Testarossa"
+    },
+    "The 100 Girlfriends Who Really, Really, Really, Really, Really Love You": {
+      "The 100 Girlfriends Who Really, Really, Really, Really, Really Love You Season 2": "The 100 Girlfriends Who Really, Really, Really, Really, Really Love You",
+      "The 100 Girlfriends Who Really, Really Love You": "The 100 Girlfriends Who Really, Really, Really, Really, Really Love You",
+      "Kimi no Koto ga Daidaidaidaidaisuki na 100-nin no Kanojo": "The 100 Girlfriends Who Really, Really, Really, Really, Really Love You",
+      "The 100 Girlfriends Who Really, Really, Really, Really, Really Love You (Kimi no Koto ga Daidaidaidaidaisuki na 100-nin no Kanojo)": "The 100 Girlfriends Who Really, Really, Really, Really, Really Love You",
+      "The 100 Girlfriends Who Really, Really, Really, Really, Really Love You\\Eiai Nano": "The 100 Girlfriends Who Really, Really, Really, Really, Really Love You\\Nano Eiai",
+      "The 100 Girlfriends Who Really, Really, Really, Really, Really Love You\\Haraga Kurumi": "The 100 Girlfriends Who Really, Really, Really, Really, Really Love You\\Kurumi Haraga",
+      "The 100 Girlfriends Who Really, Really, Really, Really, Really Love You\\Yamato Nadeshiko": "The 100 Girlfriends Who Really, Really, Really, Really, Really Love You\\Nadeshiko Yamato"
+    },
+    "The Ancient Magus' Bride": {
+      "Mahoutsukai no Yome (The Ancient Magus' Bride)": "The Ancient Magus' Bride",
+      "The Ancient Magus' Bride (Mahoutsukai no Yome)": "The Ancient Magus' Bride",
+      "The Ancient Magus' Bride\\Leanan Sídhe": "The Ancient Magus' Bride\\Leannan Sídhe"
+    },
+    "The Apothecary Diaries": {
+      "The Apothecary Diaries (Kusuriya no Hitorigoto)": "The Apothecary Diaries"
+    },
+    "The Asterisk War": {
+      "The Asterisk War (Gakusen Toshi Asterisk)": "The Asterisk War"
+    },
+    "The Banished Court Magician Aims to Become the Strongest": {
+      "The Banished Court Magician Aims to Become the Strongest\\Krasia": "The Banished Court Magician Aims to Become the Strongest\\Krasia Annerose"
+    },
+    "The Beginning After the End": {
+      "The Beginning After the End (TBATE)": "The Beginning After the End"
+    },
+    "The Case Study of Vanitas": {
+      "The Case Study of Vanitas (Vanitas no Carte)": "The Case Study of Vanitas",
+      "Vanitas no Carte": "The Case Study of Vanitas",
+      "Vanitas no Carte (The Case Study of Vanitas)": "The Case Study of Vanitas"
+    },
+    "The Dangers in My Heart": {
+      "Boku No Kokoro No Yabai Yatsu": "The Dangers in My Heart",
+      "The Dangers in My Heart\\Yamada Anna": "The Dangers in My Heart\\Anna Yamada"
+    },
+    "The Demon Girl Next Door": {
+      "Machikado Mazoku": "The Demon Girl Next Door",
+      "The Demon Girl Next Door\\Yuko Yoshida (Shamiko)": "The Demon Girl Next Door\\Yuko Yoshida",
+      "The Demon Girl Next Door\\Chiyoda Momo": "The Demon Girl Next Door\\Momo Chiyoda"
+    },
+    "The Detective Is Already Dead": {
+      "The Detective Is Already Dead (Tanmoshi)": "The Detective Is Already Dead",
+      "The Detective Is Already Dead (Tantei wa Mou, Shindeiru)": "The Detective Is Already Dead",
+      "The Detective Is Already Dead (Tantei wa Mou, Shindeiru.)": "The Detective Is Already Dead",
+      "The Shiunji Family Children\\Charlotte Arisaka Anderson": "The Detective Is Already Dead\\Charlotte Arisaka Anderson"
+    },
+    "The Duke of Death and His Black Maid": {
+      "The Duke of Death and His Maid": "The Duke of Death and His Black Maid",
+      "The Duke of Death and His Maid (Shinigami Bocchan to Kuro Maid)": "The Duke of Death and His Black Maid",
+      "The Duke of Death and His Black Maid\\Alice": "The Duke of Death and His Black Maid\\Alice Lendrott",
+      "The Duke of Death and His Black Maid\\Alice Liddell": "The Duke of Death and His Black Maid\\Alice Lendrott"
+    },
+    "The Duke of Death and His Maid": {
+      "Alice  Madness Returns": "The Duke of Death and His Maid",
+      "Alice": "The Duke of Death and His Maid",
+      "Alice in the Country of Hearts": "The Duke of Death and His Maid"
+    },
+    "The Elusive Samurai": {
+      "The Elusive Samurai (Nige Jouzu no Wakagimi)": "The Elusive Samurai",
+      "The Elusive Samurai (Nige Jōzu no Wakagimi)": "The Elusive Samurai"
+    },
+    "The Eminence in Shadow": {
+      "The Eminence in Shadow Season 2": "The Eminence in Shadow",
+      "The Eminence in Shadow Master of Garden": "The Eminence in Shadow",
+      "The Eminence in Shadow (Kage no Jitsuryokusha ni Naritai!)": "The Eminence in Shadow",
+      "The Eminence in Shadow (Kage no Jitsuryokusha ni Naritakute!)": "The Eminence in Shadow",
+      "The Eminence in Shadow (Kage no Jitsuryokusha ni Naritau!)": "The Eminence in Shadow",
+      "The Eminence in Shadow 2nd Season": "The Eminence in Shadow",
+      "Kage no Jitsuryokusha ni Naritakute! (Kagejitsu!)": "The Eminence in Shadow",
+      "Kage no Jitsuryokusha ni Naritakute!": "The Eminence in Shadow",
+      "The Eminence in Shadow (Kage no Jitsuryoku-sha ni Naritakute!)": "The Eminence in Shadow",
+      "The Eminence in Shadow (Master of Garden)": "The Eminence in Shadow",
+      "Kage no Jitsuryoku-sha ni Naritakute! (The Eminence in Shadow)": "The Eminence in Shadow",
+      "The Eminence in Shadow\\Victoria": "The Eminence in Shadow\\Victoria (#559)",
+      "The Eminence in Shadow\\Elizabeth": "The Eminence in Shadow\\Elisabeth",
+      "The Eminence in Shadow\\Mary Harvey": "The Eminence in Shadow\\Mary"
+    },
+    "The Fainting Hero and the Assassin Princess": {
+      "Kizetsu Yuusha to Ansatsu Hime (The Fainting Hero and the Assassin Princess)": "The Fainting Hero and the Assassin Princess"
+    },
+    "The Familiar of Zero": {
+      "Zero no Tsukaima (The Familiar of Zero)": "The Familiar of Zero",
+      "Zero no Tsukaima": "The Familiar of Zero"
+    },
+    "The Five Wedded Brides": {
+      "Go-toubun No Hanayome": "The Five Wedded Brides",
+      "Gotoubun no Hanayome (The Quintessential Quintuplets)": "The Five Wedded Brides",
+      "The Quintessential Quintuplets": "The Five Wedded Brides",
+      "The Quintessential Quintuplets (Gotoubun no Hanayome)": "The Five Wedded Brides",
+      "The Five Wedded Brides\\Nakano Miku": "The Five Wedded Brides\\Miku Nakano",
+      "The Five Wedded Brides\\Nakano Nino": "The Five Wedded Brides\\Nino Nakano",
+      "The Five Wedded Brides\\Nakano Ichika": "The Five Wedded Brides\\Ichika Nakano",
+      "The Five Wedded Brides\\Nakano Yotsuba": "The Five Wedded Brides\\Yotsuba Nakano",
+      "The Five Wedded Brides\\Nakano Itsuki": "The Five Wedded Brides\\Itsuki Nakano"
+    },
+    "The Garden of Sinners": {
+      "Kara No Kyoukai": "The Garden of Sinners",
+      "The Garden of Sinners\\Ryougi Shiki": "The Garden of Sinners\\Shiki Ryougi"
+    },
+    "The Genius Prince's Guide to Raising a Nation Out of Debt": {
+      "Tensai Ouji no Akaji Kokka Saisei Jutsu (The Genius Prince's Guide to Raising a Nation Out of Debt)": "The Genius Prince's Guide to Raising a Nation Out of Debt"
+    },
+    "The Greatest Demon Lord Is Reborn as a Typical Nobody": {
+      "Shijou Saikyou no Daimaou, Murabito A ni Tensei suru (The Greatest Demon Lord Is Reborn as a Typical Nobody)": "The Greatest Demon Lord Is Reborn as a Typical Nobody",
+      "The Greatest Demon Lord Is Reborn as a Typical Nobody (Shijou Saikyou no Daimaou, Murabito A ni Tensei suru)": "The Greatest Demon Lord Is Reborn as a Typical Nobody"
+    },
+    "The Idolmaster Million Live!": {
+      "THE IDOLM@STER MILLION LIVE!": "The Idolmaster Million Live!"
+    },
+    "The Irregular at Magic High School": {
+      "Mahouka Koukou No Rettousei": "The Irregular at Magic High School"
+    },
+    "The Kingdoms of Ruin": {
+      "The Kingdoms of Ruin (Hametsu no Oukoku)": "The Kingdoms of Ruin",
+      "Other\\Chloe von Einzbern": "The Kingdoms of Ruin\\Chloe von Einzbern"
+    },
+    "The Legend of Heroes": {
+      "Eiyuu Densetsu": "The Legend of Heroes",
+      "The Legend of Heroes Trails of Cold Steel - Northern War": "The Legend of Heroes"
+    },
+    "The Legend Of Zelda": {
+      "The Legend of Zelda Tears of the Kingdom": "The Legend Of Zelda",
+      "The Legend of Zelda Breath of the Wild": "The Legend of Zelda",
+      "The Legend of Zelda Twilight Princess": "The Legend of Zelda",
+      "The Legend Of Zelda\\Zelda": "The Legend Of Zelda\\Princess Zelda"
+    },
+    "The Magical Revolution of the Reincarnated Princess and the Genius Young Lady": {
+      "Tensei Oujo To Tensai Reijou No Mahou Kakumei": "The Magical Revolution of the Reincarnated Princess and the Genius Young Lady"
+    },
+    "The Misfit of Demon King Academy": {
+      "The Misfit of Demon King Academy (Maou Gakuin no Futekigousha)": "The Misfit of Demon King Academy",
+      "The Misfit of Demon King Academy II": "The Misfit of Demon King Academy",
+      "The Misfit of Demon King Academy\\Eleanor Bianca": "The Misfit of Demon King Academy\\Eleonore Bianca"
+    },
+    "The Most Notorious «Talker» Runs the World's Greatest Clan": {
+      "The Most Notorious _Talker_ Runs the World's Greatest Clan": "The Most Notorious «Talker» Runs the World's Greatest Clan"
+    },
+    "The Ossan Newbie Adventurer, Trained to Death by the Most Powerful Party, Became Invincible": {
+      "Shinmai Ossan Boukensha, Saikyou Party ni Shinu Hodo Kitaerarete Muteki ni Naru": "The Ossan Newbie Adventurer, Trained to Death by the Most Powerful Party, Became Invincible"
+    },
+    "The Pet Girl of Sakurasou": {
+      "Sakurasou no Pet na Kanojo": "The Pet Girl of Sakurasou",
+      "Sakurasou no Pet na Kanojo (The Pet Girl of Sakurasou)": "The Pet Girl of Sakurasou",
+      "The Pet Girl of Sakurasou\\Shiina Mashiro": "The Pet Girl of Sakurasou\\Mashiro Shiina"
+    },
+    "The Pharmacist's Monologue": {
+      "The Apothecary Diaries": "The Pharmacist's Monologue",
+      "Kusuriya no Hitorigoto (The Apothecary Diaries)": "The Pharmacist's Monologue",
+      "The Pharmacist's Monologue\\Aylin (Airin)": "The Pharmacist's Monologue\\Aylin"
+    },
+    "The Regressed Mercenary's Machinations": {
+      "The Regressed Mercenary Has a Plan": "The Regressed Mercenary's Machinations"
+    },
+    "The Rising of the Shield Hero": {
+      "Tate No Yuusha No Nariagari": "The Rising of the Shield Hero",
+      "The Rising of the Shield Hero (Tate no Yuusha no Nariagari)": "The Rising of the Shield Hero",
+      "The Rising of the Shield Hero Season 3": "The Rising of the Shield Hero",
+      "The Rising of the Shield Hero\\Mirellia Q Melromarc": "The Rising of the Shield Hero\\Mirellia Q. Melromarc",
+      "The Rising of the Shield Hero\\Melty Q. Melromarc": "The Rising of the Shield Hero\\Melty Q Melromarc"
+    },
+    "The Seven Deadly Sins": {
+      "['The Seven Deadly Sins']": "The Seven Deadly Sins",
+      "The Seven Deadly Sins  Four Knights of the Apocalypse": "The Seven Deadly Sins",
+      "Seven Deadly Sins": "The Seven Deadly Sins",
+      "Nanatsu No Taizai": "The Seven Deadly Sins",
+      "The Seven Deadly Sins (Nanatsu no Taizai)": "The Seven Deadly Sins",
+      "Nanatsu no Taizai (The Seven Deadly Sins)": "The Seven Deadly Sins",
+      "Sin Nanatsu no Taizai": "The Seven Deadly Sins",
+      "The Seven Deadly Sins\\Элизабет _ Семь смертных грехов": "The Seven Deadly Sins\\Elizabeth Liones"
+    },
+    "The Shiunji Family Children": {
+      "Shiunji-ke no Kodomo-tachi": "The Shiunji Family Children",
+      "The Shiunji Family Children (Shiunji-ke no Kodomotachi)": "The Shiunji Family Children",
+      "The Shiunji Family Children (Shiunji-ke no Kodomo-tachi)": "The Shiunji Family Children",
+      "The Shiunji Family's Children (Shiunji-ke no Kodomotachi)": "The Shiunji Family Children",
+      "The Shiunji Family Children\\Shion Shiunji": "The Shiunji Family Children\\Seiha Shiunji"
+    },
+    "The Strongest Job Is Apparently Not a Hero or a Sage, but an Appraiser (Provisional)": {
+      "Saikyou no Shokugyou wa Yuusha demo Kenja demo Naku Kanteishi (Kari) Rashii desu yo_": "The Strongest Job Is Apparently Not a Hero or a Sage, but an Appraiser (Provisional)",
+      "The Strongest Job Is Apparently Not a Hero or a Sage, but an Appraiser (Provisional) (Saikyou no Shokugyou wa Yuusha demo Kenja demo Naku Kanteishi (Kari) Rashii desu yo_)": "The Strongest Job Is Apparently Not a Hero or a Sage, but an Appraiser (Provisional)"
+    },
+    "The Testament of Sister New Devil": {
+      "Shinmai Maou no Testament": "The Testament of Sister New Devil",
+      "Shinmai Maou no Testament (The Testament of Sister New Devil)": "The Testament of Sister New Devil",
+      "The Testament of Sister New Devil (Shinmai Maou no Testament)": "The Testament of Sister New Devil"
+    },
+    "The Too-Perfect Saint Tossed Aside by My Fiancé and Sold to Another Kingdom": {
+      "The Too-Perfect Saint Tossed Aside by My Fiancé and Sold to Another Kingdom\\Philia Adanauer": "The Too-Perfect Saint Tossed Aside by My Fiancé and Sold to Another Kingdom\\Philia Adenauer"
+    },
+    "The Vexations of a Shut-In Vampire Princess": {
+      "Hikikomari Kyuuketsuki no Monmon (The Vexations of a Shut-In Vampire Princess)": "The Vexations of a Shut-In Vampire Princess",
+      "The Vexations of a Shut-In Vampire Princess (Hikikomari Kyuuketsuki no Monmon)": "The Vexations of a Shut-In Vampire Princess",
+      "Hikikomari Kyuuketsuki no Monmon": "The Vexations of a Shut-In Vampire Princess",
+      "The Vexations of a Shut-In Vampire Princess\\Sakuna Memoir": "The Vexations of a Shut-In Vampire Princess\\Sakuna Memoire"
+    },
+    "The Warrior Princess and the Barbaric King": {
+      "The Warrior Princess and the Barbaric King (Hime Kishi wa Barbaroi no Yome)": "The Warrior Princess and the Barbaric King",
+      "The Warrior Princess and the Barbaric King\\Sera": "The Warrior Princess and the Barbaric King\\Serafina de Lavillant"
+    },
+    "The Witcher": {
+      "The Witcher (series)": "The Witcher",
+      "The Witcher\\Cirilla Fiona Elen Riannon (Ciri)": "The Witcher\\Ciri"
+    },
+    "The World's Finest Assassin Gets Reincarnated in Another World as an Aristocrat": {
+      "Sekai Saikou no Ansatsusha, Isekai Kizoku ni Tensei suru": "The World's Finest Assassin Gets Reincarnated in Another World as an Aristocrat"
+    },
+    "There Was a Cute Girl in the Hero's Party, So I Tried Confessing to Her": {
+      "There Was a Cute Girl in the Hero's Party, So I Confessed to Her": "There Was a Cute Girl in the Hero's Party, So I Tried Confessing to Her",
+      "There Was a Cute Girl in the Hero's Party, So I Tried Confessing": "There Was a Cute Girl in the Hero's Party, So I Tried Confessing to Her",
+      "I Confessed to the Cute Girl in the Hero's Party": "There Was a Cute Girl in the Hero's Party, So I Tried Confessing to Her",
+      "I Found a Cute Girl in the Hero's Party, So I Tried Confessing to Her": "There Was a Cute Girl in the Hero's Party, So I Tried Confessing to Her",
+      "There Was a Cute Girl in the Hero’s Party, so I Tried Confessing to Her": "There Was a Cute Girl in the Hero's Party, So I Tried Confessing to Her",
+      "Yuusha Party ni Kawaii Ko ga Ita node, Kokuhaku shitemita": "There Was a Cute Girl in the Hero's Party, So I Tried Confessing to Her",
+      "There Was a Cute Girl in the Hero's Party, So I Tried Confessing to Her\\Cecilia": "There Was a Cute Girl in the Hero's Party, So I Tried Confessing to Her\\Cecilia Aquarain"
+    },
+    "There's No Freaking Way I'll Be Your Lover! Unless": {
+      "There's No Freaking Way I'll Be Your Lover! Unless!": "There's No Freaking Way I'll Be Your Lover! Unless",
+      "There's No Freaking Way I'll Be Your Lover! Unless..._": "There's No Freaking Way I'll Be Your Lover! Unless",
+      "Watashi ga Koibito ni Nareru Wake Nai jan, Muri Muri! (※Muri ja Nakatta!_)": "There's No Freaking Way I'll Be Your Lover! Unless",
+      "Watashi ga Koibito ni Nareru Wake Naijan, Muri Muri! (Muri Janakatta!) (Watanare)": "There's No Freaking Way I'll Be Your Lover! Unless",
+      "Watashi ga Koibito ni Nareru Wake Nai jan, Muri Muri! (Muri Janakatta!_)": "There's No Freaking Way I'll Be Your Lover! Unless",
+      "Watashi ga Koibito ni Nareru Wake Naijan, Muri Muri! (※Muri Janakatta!_)": "There's No Freaking Way I'll Be Your Lover! Unless",
+      "Watashi ga Koibito ni Nareru Wake Nai jan, Muri Muri! (_Muri Janakatta!_)": "There's No Freaking Way I'll Be Your Lover! Unless",
+      "Watashi ga Koibito ni Nareru Wake Nai jan, Muri Muri! (_Muri ja Nakatta!_)": "There's No Freaking Way I'll Be Your Lover! Unless",
+      "Watashi ga Koibito ni Nareru Wake Nai jan, Muri Muri! (※Muri Janakatta!_)": "There's No Freaking Way I'll Be Your Lover! Unless"
+    },
+    "This Monster Wants to Eat Me": {
+      "Watashi wo Tabetai, Hitodenashi (This Monster Wants to Eat Me)": "This Monster Wants to Eat Me"
+    },
+    "To Love-ru": {
+      "To Love-Ru Darkness": "To Love-ru",
+      "Redo of Healer\\Momo Belia Deviluke": "To Love-ru\\Momo Belia Deviluke",
+      "To Love-ru\\Momo Velia Deviluke": "To Love-ru\\Momo Belia Deviluke"
+    },
+    "Tokyo Ghoul": {
+      "Tokyo Ghoul\\Kirishima Touka": "Tokyo Ghoul\\Touka Kirishima"
+    },
+    "Too Cute Crisis": {
+      "Kawaisugi Crisis": "Too Cute Crisis"
+    },
+    "Touhoku Zunko": {
+      "Touhoku Zunko (VOCALOID_UTAU)": "Touhoku Zunko"
+    },
+    "Touhou": {
+      "Touhou Project": "Touhou",
+      "Touhou Project (fan depiction)": "Touhou",
+      "Touhou\\Hakurei Reimu": "Touhou\\Reimu Hakurei",
+      "Touhou\\Kochiya Sanae": "Touhou\\Sanae Kochiya",
+      "Touhou\\Izayoi Sakuya": "Touhou\\Sakuya Izayoi"
+    },
+    "Tower of God": {
+      "Tower of God (Kami no Tou  Ouji no Kikan _ Season 2)": "Tower of God",
+      "Tower of God (Hero Cantare game artwork)": "Tower of God",
+      "Tower of God (Kami no Tou)": "Tower of God",
+      "Tower of God M": "Tower of God",
+      "Tower of God\\Hwa Ryun": "Tower of God\\Hwaryun",
+      "Tower of God\\Ha Yuri Zahard": "Tower of God\\Yuri Zahard",
+      "Tower of God\\Lo Po Bia Elaine (Kaiser)": "Tower of God\\Lo Po Bia Elaine"
+    },
+    "Trinity Seven": {
+      "Trinity Seven\\Asami Lilith": "Trinity Seven\\Lilith Asami"
+    },
+    "Tsuki ni Yorisou Otome no Sahou": {
+      "Tsuki ni Yorisou Otome no Sahou\\Sakurakouji Luna": "Tsuki ni Yorisou Otome no Sahou\\Luna Sakurakouji"
+    },
+    "Tsukimichi Moonlit Fantasy": {
+      "Tsukimichi  Moonlit Fantasy": "Tsukimichi Moonlit Fantasy",
+      "Tsuki ga Michibiku Isekai Douchuu": "Tsukimichi Moonlit Fantasy",
+      "TSUKIMICHI -Moonlit Fantasy-": "Tsukimichi Moonlit Fantasy",
+      "Tsuki ga Michibiku Isekai Douchuu (Tsukimichi Moonlit Fantasy)": "Tsukimichi Moonlit Fantasy"
+    },
+    "Tune In to the Midnight Heart": {
+      "Mayonaka Heart Tune": "Tune In to the Midnight Heart",
+      "Mayonaka Heart Tune (真夜中ハートチューン)": "Tune In to the Midnight Heart"
+    },
+    "Tying the Knot with an Amagami Sister": {
+      "Amagami-san Chi no Enmusubi (Tying the Knot with an Amagami Sister)": "Tying the Knot with an Amagami Sister",
+      "Tying the Knot with an Amagami Sister (Amagami-san Chi no Enmusubi)": "Tying the Knot with an Amagami Sister"
+    },
+    "Uma Musume Pretty Derby": {
+      "Umamusume": "Uma Musume Pretty Derby",
+      "Umamusume Cinderella Gray": "Uma Musume Pretty Derby",
+      "Uma Musume Cinderella Gray": "Uma Musume Pretty Derby",
+      "Umamusume Pretty Derby": "Uma Musume Pretty Derby"
+    },
+    "Umineko When They Cry": {
+      "Umineko No Naku Koro Ni": "Umineko When They Cry"
+    },
+    "Uncle from Another World": {
+      "Isekai Ojisan": "Uncle from Another World",
+      "Isekai Ojisan (Uncle from Another World)": "Uncle from Another World",
+      "Uncle from Another World\\Elf (Suzailgiererzegalnelvzegilreagranzelga Elga)": "Uncle from Another World\\Elf",
+      "Uncle from Another World\\Elf (Suzailgiererlegant Elf)": "Uncle from Another World\\Elf"
+    },
+    "Undefeated Bahamut Chronicle": {
+      "Saijaku Muhai no Bahamut": "Undefeated Bahamut Chronicle",
+      "Undefeated Bahamut Chronicle (Saijaku Muhai no Bahamut)": "Undefeated Bahamut Chronicle"
+    },
+    "Uzaki-chan Wants to Hang Out!": {
+      "Uzaki-chan Wa Asobitai!": "Uzaki-chan Wants to Hang Out!",
+      "Uzaki-chan Wants to Hang Out! (Uzaki-chan wa Asobitai!)": "Uzaki-chan Wants to Hang Out!",
+      "Uzaki-chan Wants to Hang Out!\\Uzaki Hana": "Uzaki-chan Wants to Hang Out!\\Hana Uzaki"
+    },
+    "Valkyria Chronicles": {
+      "Valkyria Chronicles (Senjou no Valkyria)": "Valkyria Chronicles",
+      "Senjou no Valkyria (Valkyria Chronicles)": "Valkyria Chronicles"
+    },
+    "Valkyrie Drive": {
+      "Valkyrie Drive Mermaid": "Valkyrie Drive",
+      "Valkyrie Drive Bhikkhuni": "Valkyrie Drive"
+    },
+    "Vermeil in Gold": {
+      "Vermeil in Gold  A Magician's Guide to Raising an Unsummoned Demon": "Vermeil in Gold",
+      "Vermeil in Gold  A Magician Pushes Through the Magical World With the Strongest Disaster": "Vermeil in Gold",
+      "Kinsou no Vermeil (Vermeil in Gold)": "Vermeil in Gold",
+      "Kinsou no Vermeil Gakeppuchi Majutsushi wa Saikyou no Yakusai to Mahou Sekai wo Tsukisusumu": "Vermeil in Gold",
+      "Vermeil in Gold (Kinsou no Vermeil)": "Vermeil in Gold"
+    },
+    "Villainess Level 99 I May Be the Hidden Boss but I'm Not the Demon Lord": {
+      "Akuyaku Reijou Level 99 Watashi wa Ura-Boss desu ga Maou dewa arimasen": "Villainess Level 99 I May Be the Hidden Boss but I'm Not the Demon Lord"
+    },
+    "Violet Evergarden": {
+      "Violet Evergarden (series)": "Violet Evergarden"
+    },
+    "Vocaloid": {
+      "Hatsune Miku _ Vocaloid": "Vocaloid",
+      "Hatsune Miku (Vocaloid)": "Vocaloid",
+      "Vocaloid\\Hatsune Miku (Sakura Miku)": "Vocaloid\\Sakura Miku"
+    },
+    "Vspo!": {
+      "VSPO! (Virtual eSports Project)": "Vspo!"
+    },
+    "VTuber": {
+      "Independent VTuber": "VTuber",
+      "VTuber (Independent)": "VTuber",
+      "Virtual YouTuber": "VTuber"
+    },
+    "Waiting in the Summer": {
+      "Ano Natsu de Matteru": "Waiting in the Summer"
+    },
+    "Wandering Witch The Journey of Elaina": {
+      "Majo No Tabitabi": "Wandering Witch The Journey of Elaina"
+    },
+    "Watari-kun's ______ Is about to Collapse": {
+      "Watari-kun no xx ga Houkai Sunzen": "Watari-kun's ______ Is about to Collapse",
+      "Watari-kun no xx ga Hōkaisunzen": "Watari-kun's ______ Is about to Collapse",
+      "Watari-kun's ______ Is about to Collapse\\Tachibana Satsuki": "Watari-kun's ______ Is about to Collapse\\Satsuki Tachibana"
+    },
+    "Welcome to Japan, Ms. Elf!": {
+      "Nihon e Youkoso Elf-san. (Welcome to Japan, Ms. Elf!)": "Welcome to Japan, Ms. Elf!",
+      "Welcome to Japan, Ms. Elf!\\Mariabelle": "Welcome to Japan, Ms. Elf!\\Marie"
+    },
+    "When Supernatural Battles Became Commonplace": {
+      "When Supernatural Battles Became Commonplace (Inou-Battle wa Nichijou-kei no Naka de)": "When Supernatural Battles Became Commonplace"
+    },
+    "Why Does Nobody Remember Me in This World": {
+      "Why Does Nobody Remember Me in This World_": "Why Does Nobody Remember Me in This World",
+      "Naze Boku no Sekai wo Dare mo Oboeteinai no ka (Why Nobody Remembers My World_)": "Why Does Nobody Remember Me in This World",
+      "Naze Boku no Sekai wo Dare mo Oboeteinainoka_ (Why Does Nobody Remember Me in This World_)": "Why Does Nobody Remember Me in This World",
+      "Naze Boku no Sekai wo Dare mo Oboete Inai no ka_ (Why Nobody Remembers My World_)": "Why Does Nobody Remember Me in This World",
+      "Naze Boku no Sekai wo Daremo Oboeteinai no ka_ (Why Does Nobody Remember Me in This World_)": "Why Does Nobody Remember Me in This World"
+    },
+    "Wise Man's Grandchild": {
+      "Kenja no Mago": "Wise Man's Grandchild"
+    },
+    "Wistoria Wand and Sword": {
+      "Wistoria Wand and Sword (Tsue to Tsurugi no Wistoria)": "Wistoria Wand and Sword",
+      "Tsue to Tsurugi no Wistoria (Wistoria Wand and Sword)": "Wistoria Wand and Sword"
+    },
+    "Witch on the Holy Night": {
+      "Mahou Tsukai No Yoru": "Witch on the Holy Night",
+      "Witch on the Holy Night\\Aozaki Aoko": "Witch on the Holy Night\\Aoko Aozaki"
+    },
+    "WorldEnd": {
+      "WorldEnd What do you do at the end of the world_ Are you busy_ Will you save us_ (Shuumatsu Nani Shitemasu ka_)": "WorldEnd"
+    },
+    "Wuthering Waves": {
+      "鸣潮": "Wuthering Waves",
+      "Wuthering Waves\\The Shorekeeper": "Wuthering Waves\\Shorekeeper",
+      "Wuthering Waves\\Rover (Female)": "Wuthering Waves\\Rover",
+      "Wuthering Waves\\Luno": "Wuthering Waves\\Iuno",
+      "Wuthering Waves\\Cartethyia (Fleurdelys)": "Wuthering Waves\\Cartethyia",
+      "Original character\\Fleurdelys": "Wuthering Waves\\Cartethyia",
+      "Wuthering Waves\\Carlotta Montelli": "Wuthering Waves\\Carlotta",
+      "Wuthering Waves\\Fleurdelys": "Wuthering Waves\\Cartethyia",
+      "Wuthering Waves\\Frolova": "Wuthering Waves\\Phrolova",
+      "Zenless Zone Zero\\Zani": "Wuthering Waves\\Zani",
+      "Zenless Zone Zero\\Lupa": "Wuthering Waves\\Lupa",
+      "Zenless Zone Zero\\Phoebe": "Wuthering Waves\\Phoebe",
+      "Wuthering Waves\\散华": "Wuthering Waves\\Sanhua",
+      "Wuthering Waves\\Camellia": "Wuthering Waves\\Camellya",
+      "Wuthering Waves\\Female Rover": "Wuthering Waves\\Rover",
+      "Wuthering Waves\\Fleurdelys (Cartethyia)": "Wuthering Waves\\Cartethyia"
+    },
+    "Yani Neko": {
+      "Yani Neko (Itokatsu)": "Yani Neko",
+      "Yani Neko (Табакошка)": "Yani Neko"
+    },
+    "Yes! Precure 5": {
+      "Yes! Precure 5 GoGo!": "Yes! Precure 5"
+    },
+    "You Are Ms. Servant": {
+      "You Are Ms. Servant!": "You Are Ms. Servant",
+      "You Are Ms. Servant! (Kimi wa Meido-sama.)": "You Are Ms. Servant",
+      "Kimi wa Meido-sama": "You Are Ms. Servant"
+    },
+    "Your Lie in April": {
+      "Your Lie in April (Shigatsu wa Kimi no Uso)": "Your Lie in April"
+    },
+    "Your Name": {
+      "Kimi No Na Wa": "Your Name",
+      "Your Name\\Miyamizu Mitsuha": "Your Name\\Mitsuha Miyamizu"
+    },
+    "Yuki Yuna Is a Hero": {
+      "Yuuki Yuuna wa Yuusha de Aru": "Yuki Yuna Is a Hero"
+    },
+    "Zenless Zone Zero": {
+      "Zenless Zone Zero (ZZZ)": "Zenless Zone Zero",
+      "Orphie & Magus": "Zenless Zone Zero\\Orphie & Magus",
+      "Zenless Zone Zero\\Miyabi": "Zenless Zone Zero\\Hoshimi Miyabi",
+      "Zenless Zone Zero\\Caesar": "Zenless Zone Zero\\Caesar King",
+      "Zenless Zone Zero\\Evelyn": "Zenless Zone Zero\\Evelyn Chevalier",
+      "Zenless Zone Zero\\Anby Demara": "Zenless Zone Zero\\Anby",
+      "Zenless Zone Zero\\Lucy (Luciana de Montefio)": "Zenless Zone Zero\\Lucy",
+      "Zenless Zone Zero\\Yi Xuan": "Zenless Zone Zero\\Yixuan",
+      "Zenless Zone Zero\\Yuzuha": "Zenless Zone Zero\\Ukinami Yuzuha",
+      "Zenless Zone Zero\\Grace": "Zenless Zone Zero\\Grace Howard",
+      "Unknown game title\\Ye Shunguang": "Zenless Zone Zero\\Ye Shunguang",
+      "Unknown game title\\Yixuan": "Zenless Zone Zero\\Yixuan",
+      "Wuthering Waves\\Yixuan": "Zenless Zone Zero\\Yixuan",
+      "Zenless Zone Zero\\Alexandrina Sebastiane": "Zenless Zone Zero\\Rina",
+      "Zenless Zone Zero\\Alexandrina Sebastiane (Rina)": "Zenless Zone Zero\\Rina",
+      "Zenless Zone Zero\\Alice": "Zenless Zone Zero\\Alice Thymefield",
+      "Zenless Zone Zero\\Alice Thyme": "Zenless Zone Zero\\Alice Thymefield",
+      "Zenless Zone Zero\\Burnice": "Zenless Zone Zero\\Burnice White",
+      "Zenless Zone Zero\\Lucia Elowen": "Zenless Zone Zero\\Lucia",
+      "Zenless Zone Zero\\Miyabi Hoshimi": "Zenless Zone Zero\\Hoshimi Miyabi",
+      "Zenless Zone Zero\\Nicole": "Zenless Zone Zero\\Nicole Demara",
+      "Zenless Zone Zero\\Orphie": "Zenless Zone Zero\\Orphie & Magus",
+      "Zenless Zone Zero\\Tsukishiro Yanagi": "Zenless Zone Zero\\Yanagi",
+      "Zenless Zone Zero\\Vivian Banshee": "Zenless Zone Zero\\Vivian",
+      "Zenless Zone Zero\\Corin Wickes": "Zenless Zone Zero\\Corin",
+      "Zenless Zone Zero\\Luciana De Montefio": "Zenless Zone Zero\\Lucy",
+      "Zenless Zone Zero\\Piper Wheel": "Zenless Zone Zero\\Piper",
+      "Zenless Zone Zero\\Pulchra Fellata": "Zenless Zone Zero\\Pulchra"
+    }
+  }
+}

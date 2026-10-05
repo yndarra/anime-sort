@@ -1,0 +1,10 @@
+{
+  "//": "Агенты anime-sort (tools/agent): работают ТОЛЬКО через OpenRouter и только со своим ключом secrets/agent/openrouter.txt — конвейеры этот ключ не видят. Модель — любая из openrouter.ai/models",
+  "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+  "key_file": "secrets/agent/openrouter.txt",
+  "model": "anthropic/claude-sonnet-5",
+
+  "//names": "Агент имён: сколько тайтлов (с их персонажами) отправлять в одном запросе и сколько правил максимум принимать за запуск",
+  "names_chunk": 120,
+  "names_max_rules": 400
+}
