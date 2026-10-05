@@ -1,5 +1,5 @@
 r"""Агент конфигов: сам проверяет, какие API и модели сейчас работают (и сколько денег где осталось), и
-пересобирает шаблоны пачек configs\template.json (обычные dataN) и configs\template-other.json
+пересобирает шаблоны пачек configs\main\template.json (обычные dataN) и configs\other\template.json
 («Other» на второй круг) так, чтобы одновременно идущие пачки меньше пересекались, AI-этапы не повторяли
 одну и ту же модель, у каждого этапа были запасные провайдеры и запасная модель и т. д. (правила — RULES ниже,
 собраны из пожеланий пользователя). Дальше prepare.bat как обычно делает из шаблонов config1…configN.
@@ -94,6 +94,13 @@ Rules (from the owner, all important):
 10. Explain decisions with "//" keys in Russian inside the templates (short), as in the current files.
 
 Return ONLY JSON: {"template": {...}, "template-other": {...}, "notes": ["short Russian lines: what you changed and why"]}"""
+
+
+def template_file(name: str) -> Path:
+    """«template» — configs\\main\\template.json, «template-other» — configs\\other\\template.json (tools\\modes.py)."""
+    import modes
+
+    return modes.template_path("other" if name == "template-other" else "main")
 
 
 # ---------------------------------------------------------------- опрос API
@@ -298,8 +305,8 @@ def main(from_prepare: bool = False) -> int:
     balance = agent.balance()
     if balance is not None:
         console.info(f"  баланс ключа агента OpenRouter: ${balance:.2f}")
-    current = {name: json.loads((CONFIGS / f"{name}.json").read_text(encoding="utf-8")) for name in TEMPLATES
-               if (CONFIGS / f"{name}.json").exists()}
+    current = {name: json.loads(template_file(name).read_text(encoding="utf-8")) for name in TEMPLATES
+               if template_file(name).exists()}
     names = {stage_id: table for stage_id, (_, table) in settings.names.items()}
     request = json.dumps({"survey": info, "folders_waiting": {k: len(v) for k, v in folders.items()},
                           "names_table": names, "current_templates": current}, ensure_ascii=False)
@@ -325,7 +332,7 @@ def main(from_prepare: bool = False) -> int:
         console.warn("Отменено — шаблоны не тронуты.")
         return 0
     for name in TEMPLATES:
-        path = CONFIGS / f"{name}.json"
+        path = template_file(name)
         if path.exists():
             shutil.copy2(path, path.with_suffix(".json.bak"))
         path.write_text(json.dumps(templates[name], ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

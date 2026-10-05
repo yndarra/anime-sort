@@ -9,6 +9,14 @@ ANIME-SORT — сортировка аниме-картинок по тайтл�
 Этапы, их порядок, модели, пороги и какие файлы достаются каждому этапу — в configs\template.json, без правки кода.
 Результат каждого набора — в test-dataN\ (in / work / out / logs / cache), готовое вливается в Waifu.
 
+Пульт
+-----
+control.vbs (ярлык anime-sort в коллекции) — одно окно на всё, веб-интерфейс (pywebview, gui\control\web):
+обзор наборов с миниатюрами, конвейеры по шагам (агент конфигов → подготовить → запустить / остановить → finish),
+второй круг, конфиги формами (порядок этапов и API — перетаскиванием, проверка тем же кодом, что движок), names.json,
+ключи и проверка API, все инструменты с пробным прогоном. Вопросы инструментов — кнопками в панели «Задачи».
+Всё, что ниже, можно делать и без Пульта — .bat-файлами.
+
 Порядок работы
 --------------
 0. Новые картинки: anime-vault → download.bat (Pinterest), distribute.bat (раскладка в dataN).
@@ -20,19 +28,20 @@ ANIME-SORT — сортировка аниме-картинок по тайтл�
 3. finish.bat   — слияние в Waifu → мелкие тайтлы (≤15 картинок: персонажей — в большие тайтлы, остальное
                   в «Other») → нумерация (шаги можно пропускать).
    Агент имён (дубли тайтлов/персонажей → names.json) — вручную: venv\Scripts\python tools\agent\names_agent.py
-4. other.bat    — всё из «Other» на второй круг (dataN-other, configs\template-other.json: 6 AI-этапов,
+4. other.bat    — всё из «Other» на второй круг (dataN-other, configs\other\template.json: 6 AI-этапов,
                   запасные модели, соседи по общему порядку всех наборов) и снова prepare.
 
 Где что
 -------
-  prepare.bat, finish.bat, other.bat, start.vbs   запуск (двойной щелчок)
-  configs\     template.json, template-other.json (шаблоны пачек), config.json (коллекция, подписи этапов, окно), live.json (на ходу),
-               agent.json (агенты, только OpenRouter), tools.json (параметры инструментов); configN.json пишет prepare
+  control.vbs                                     Пульт (gui\control)
+  prepare.bat, finish.bat, other.bat, start.vbs   запуск без Пульта (двойной щелчок)
+  configs\     main\template.json и other\template.json (шаблоны пачек режимов), other\settings.json, config.json (коллекция, подписи этапов, окно), live.json (на ходу),
+               agent.json (агенты, только OpenRouter); configN.json пишет prepare
   providers\   провайдеры API: адрес и модели (provider.json); в git только openrouter и example
   secrets\     КЛЮЧИ — не в git: secrets\providers\<провайдер>\<ключ>.txt, secrets\agent\openrouter.txt (только агенты)
   engine\      движок: проверка конфигов, пачка, набор, конвейер, клиент API с переключением, окна, значки папок
   stages\      этапы — по файлу на тип этапа
-  gui\         главное окно (журнал + статистика + кнопки) и окно набора (лог + таблица этапов)
+  gui\         главное окно (журнал + статистика + кнопки) и окно набора (лог + таблица этапов); gui\control — Пульт
   tools\       инструменты: add (слияние), fix_name (+regroup, names.json), sort, watch,
                agent (агент имён и агент конфигов), cleanup, mark_broken,
                prepare / finish / other, probe (проверка API), console (окна инструментов)

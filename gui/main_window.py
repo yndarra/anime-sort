@@ -203,6 +203,10 @@ class MainWindow(BaseWindow):
     # ---------- цикл окна ----------
 
     def poll_control(self) -> None:
+        if getattr(self.dispatcher, "quit_requested", False):
+            # Пульт: «Остановить всё» — закрыться без вопроса (окна наборов и пачки закроются вместе с главным).
+            self.root.destroy()
+            return
         try:
             self.poll_layout()
             flags = self.layout.manual_flags(self.layout.read_state())

@@ -3,6 +3,10 @@
 ## Processes
 
 ```
+control.vbs ─► gui/control/app.py (the control panel: pywebview window, page gui/control/web/, Python side api.py)
+```
+
+```
 start.vbs ─► engine/main.py (main window, Tk in the main thread; dispatcher in a background thread)
                └─► engine/batch.py   one process per configN in "run", single-instance per config (named mutex)
                      └─► engine/dataset.py   one per folder: prepares test-dataN, opens gui/window.py, runs:
@@ -78,7 +82,7 @@ waiting for sleeping routes (every 2 s) and during a pause:
 ## Second pass (`dataN-other`)
 
 `tools/other.py` moves every image from the collection's "Other" (recursively) into new `dataN-other` folders.
-`prepare.py` builds their batches from `configs/template-other.json`: at least five AI stages, no `from`/`where`,
+`prepare.py` builds their batches from `configs/other/template.json`: at least five AI stages, no `from`/`where`,
 `"batches": 4` and `"rotate_ai": true` — each batch starts the AI chain at a different stage, and providers are
 interleaved in the template, so the four batches load different models and gateways at any moment.
 `"previous": "keep"` preserves answers of stages that `prepare` had to disable.
@@ -107,6 +111,29 @@ Shared state lives in `logs/windows.json` and is guarded by a named mutex.
   - On the second round, windows never cover slot 0 (the main window), unless only one window fits in a column.
 - **Buttons in the main window** bump a generation counter, and every window applies the change. Moving or resizing
   a window by hand greys out the active setup or mode button until it is pressed again.
+
+## Control panel (`gui/control/`)
+
+A pywebview window (Edge WebView2) showing a plain HTML/CSS/JS page — no framework, no build step — with pages
+Overview, Pipelines, Second pass, Configs, Names, API & keys, Tools and a "Tasks" dock. The page calls Python through
+`window.pywebview.api` (`gui/control/api.py`) and polls once a second for task output and pipeline state. The Python
+side reuses the engine rather than duplicating it:
+
+- **Tasks.** Every tool is started as a subprocess with `ANIME_SORT_GUI=1`. `tools/console.py` then prints questions as
+  a marker line `\x1eASK\t<question>\t<options>`; the panel shows them as buttons and writes the answer to stdin, so
+  the same tools work both in a console and in the panel. Tools that rewrite the collection run one at a time.
+- **Pipelines.** Started exactly like `start.vbs` (via `explorer.exe`, not as a child). "Stop all" writes
+  `logs/main_control.json`, which the dispatcher picks up and closes the main window gracefully.
+- **Configs.** Batch templates are edited as forms (stage table with drag-and-drop order, stage panel, draggable API
+  lists, fallback) or as raw JSON. "Check" builds a batch with `prepare.build_configs` (all routes assumed working) and validates it with
+  `engine/config.check_one`, the same code the pipelines run. `"//"` comment keys survive editing.
+- **Overview.** Dataset states come from the same code as the main window (`gui/stats.py`); thumbnails are 96 px JPEGs
+  cached in `logs/thumbs/`; KPI sparklines come from `logs/history.json` (one point per hour).
+- **Secrets.** Key values never cross into the page: the API reports only "present / empty"; pasting a key writes the
+  file on the Python side; removing a key sends it to the Recycle Bin.
+- **Modes.** `tools/modes.py` knows where each mode keeps its template (`configs/main/`, `configs/other/`) and migrates
+  the old flat layout; `prepare.py --mode main|other` plans only that mode's folders and saves probe results to
+  `logs/probes.json` for the overview.
 
 ## Collection tools (`tools/`)
 

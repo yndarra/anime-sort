@@ -73,8 +73,21 @@ def title(text: str) -> None:
     say("─" * len(text), CYAN)
 
 
-def wait(prompt: str = "Нажмите Enter, чтобы продолжить…") -> str:
+# Под Пультом (gui\control, env ANIME_SORT_GUI=1) вопросы идут служебной строкой: «\x1eASK\t<вопрос>\t<варианты>»
+# или «\x1eWAIT\t<текст>»; Пульт показывает их кнопками и пишет ответ одной строкой в stdin.
+GUI_MARK = "\x1e"
+
+
+def gui() -> bool:
+    return os.environ.get("ANIME_SORT_GUI") == "1"
+
+
+def wait(prompt: str = "Нажмите Enter, чтобы продолжить…", options: str = "") -> str:
     try:
+        if gui():
+            kind = f"ASK\t{prompt}\t{options}" if options else f"WAIT\t{prompt}"
+            print(f"{GUI_MARK}{kind}", flush=True)
+            return input()
         return input(f"{YELLOW}{prompt}{RESET} ")
     except EOFError:
         return ""
@@ -85,7 +98,8 @@ def ask(prompt: str, options: str = "дн") -> str:
     # Латинские y/n — тоже «да/нет» (английская раскладка, ввод через pipe).
     aliases = {"y": "д", "n": "н"}
     while True:
-        answer = wait(f"{prompt} [{'/'.join(options)}]:").strip().lstrip("﻿").casefold()[:1]
+        text = prompt if gui() else f"{prompt} [{'/'.join(options)}]:"
+        answer = wait(text, options if gui() else "").strip().lstrip("﻿").casefold()[:1]
         answer = aliases.get(answer, answer)
         if answer in options:
             return answer

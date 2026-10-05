@@ -6,3 +6,4 @@ pillow>=11
 pillow-heif>=1.0
 piexif>=1.1
 numpy>=1.26
+pywebview>=6.2,<7      # control panel window (Edge WebView2)

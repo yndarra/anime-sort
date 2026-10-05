@@ -4,7 +4,7 @@ r"""prepare.bat — подготовка запуска: проверить API,
    под то, что сейчас работает и сколько где денег (платно: OpenRouter, ключ агента). --no-agent — не спрашивать.
 1. Папки: все dataN (и dataN-other) коллекции, у которых набор test-dataN ещё не готов (нет или остались
    необработанные файлы). Готовые наборы получают значок-галочку (engine\marks.py).
-2. API: каждый ключ-кандидат из configs\template.json проверяется маленьким запросом (tools\probe.py):
+2. API: каждый ключ-кандидат из шаблона режима (configs\main|other\template.json) проверяется маленьким запросом (tools\probe.py):
    работает / нет баланса / не получает картинку / нет ключа / ошибка. Таблица — в окне.
 3. Пачки: сколько запускать одновременно = min(max_batches, папок, рабочих ключей первого AI-этапа).
    Папки делятся между пачками подряд; в каждой пачке у этапов остаются только рабочие API, а первым
@@ -147,7 +147,7 @@ def build_configs(template: dict, probes: dict, folders: list[str]) -> list[dict
         raise UserError(f"у первого AI-этапа {first['id']} ({first['model']}) нет ни одного рабочего API",
                         "пополните баланс или добавьте ключ (secrets\\providers\\<провайдер>\\<ключ>.txt), затем запустите prepare снова")
     if template.get("batches"):
-        # Шаблон задаёт число пачек жёстко (template-other.json): ключи первого этапа делятся между пачками.
+        # Шаблон задаёт число пачек жёстко (configs\other\template.json): ключи первого этапа делятся между пачками.
         count = max(1, min(int(template["batches"]), len(folders)))
     else:
         count = max(1, min(int(template.get("max_batches", 4)), len(folders), first_keys))
@@ -209,7 +209,7 @@ def build_configs(template: dict, probes: dict, folders: list[str]) -> list[dict
         if template.get("rotate_ai"):
             stages = rotate_ai(stages, index)
         configs.append({
-            "//": f"Сгенерировано prepare.bat из template.json (пачка {index + 1} из {count}) — правьте template.json, этот файл перезапишется",
+            "//": f"Сгенерировано prepare.bat из шаблона режима (configs\\main или configs\\other; пачка {index + 1} из {count}) — правьте template.json, этот файл перезапишется",
             "name": f"batch{index + 1}",
             "folders": part,
             "stages": stages,
@@ -221,11 +221,28 @@ def build_configs(template: dict, probes: dict, folders: list[str]) -> list[dict
     return configs
 
 
-def load_template(name: str) -> dict:
+def load_template(mode: str) -> dict:
+    """Шаблон пачки режима: configs\\main\\template.json или configs\\other\\template.json (tools\\modes.py)."""
+    import modes
+
+    path = modes.template_path(mode)
     try:
-        return json.loads((CONFIGS / f"{name}.json").read_text(encoding="utf-8"))
+        return json.loads(path.read_text(encoding="utf-8"))
     except (OSError, ValueError) as exc:
-        raise UserError(f"configs\\{name}.json не прочитан: {exc}", "проверьте файл (образец — в README)")
+        raise UserError(f"{path.relative_to(PROJECT)} не прочитан: {exc}", "проверьте файл (образец — в README)")
+
+
+def save_probes(probes: dict) -> None:
+    """Итог проверки API — в logs\\probes.json (его показывает Пульт на вкладке «Обзор»)."""
+    import time
+
+    rows = [{"route": route, "model": model, "images": images, "status": result.status,
+             "detail": result.detail[:160], "seconds": round(result.seconds, 1)}
+            for (route, model, images), result in sorted(probes.items())]
+    path = PROJECT / "logs" / "probes.json"
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps({"time": time.strftime("%Y-%m-%d %H:%M:%S"), "probes": rows}, ensure_ascii=False, indent=1),
+                    encoding="utf-8")
 
 
 def write_configs(configs: list[dict]) -> None:
@@ -249,7 +266,16 @@ def main() -> int:
 
     import probe
 
-    console.title("Подготовка запуска anime-sort")
+    import modes
+
+    # --mode main|other — только папки этого режима (Пульт); без флага — оба режима, как раньше.
+    mode = sys.argv[sys.argv.index("--mode") + 1] if "--mode" in sys.argv else None
+    if mode not in (None, *modes.MODES):
+        raise UserError(f"неизвестный режим --mode {mode}", "допустимо: --mode main или --mode other")
+    moved = modes.migrate()
+    console.title("Подготовка запуска anime-sort" + (f" — {modes.TITLES[mode]}" if mode else ""))
+    for line in moved:
+        console.info(f"  конфиги перенесены в новую раскладку: {line}")
     # Агент конфигов (tools\agent\config_agent.py): опрашивает все ключи и модели и пересобирает шаблоны
     # template*.json под то, что сейчас работает. Платный (OpenRouter, ключ агента) — поэтому только по вопросу.
     if "--no-agent" not in sys.argv and console.ask(
@@ -269,15 +295,20 @@ def main() -> int:
     if not folders:
         console.ok("Всё обработано — новых папок нет. Новые картинки: anime-vault → download.bat, distribute.bat.")
         return 0
+    if mode:
+        folders = [folder for folder in folders if modes.mode_of(folder) == mode]
+        if not folders:
+            console.ok(f"В режиме «{modes.TITLES[mode]}» необработанных папок нет.")
+            return 0
     console.info(f"  к обработке: {len(folders)} — " + ", ".join(folders))
-    # Обычные dataN — по template.json, «Other» на второй круг (dataN-other) — по template-other.json.
-    groups = [(name, [f for f in folders if f.endswith("-other") == (name == "template-other")])
-              for name in ("template", "template-other")]
+    # Обычные dataN — по configs\main\template.json, второй круг (dataN-other) — по configs\other\template.json.
+    groups = [(name, [f for f in folders if modes.mode_of(f) == name]) for name in modes.MODES]
     groups = [(load_template(name), part) for name, part in groups if part]
 
     console.step("Проверяю API (по одному маленькому запросу на ключ и модель)…")
     probes = probe.probe_all(list(dict.fromkeys(pair for template, _ in groups for pair in stage_pairs(template))))
     show_probes(probes)
+    save_probes(probes)
 
     configs = [config for template, part in groups for config in build_configs(template, probes, part)]
     for index, config in enumerate(configs, 1):
@@ -297,7 +328,7 @@ def main() -> int:
     check = subprocess.run([sys.executable, str(PROJECT / "engine" / "main.py"), "--check"], capture_output=True, text=True,
                            encoding="utf-8", errors="replace")
     if check.returncode != 0:
-        console.error("проверка конфигов нашла ошибки:", "исправьте template.json и запустите prepare снова")
+        console.error("проверка конфигов нашла ошибки:", "исправьте шаблон режима (configs\\main|other\\template.json) и запустите prepare снова")
         console.say(check.stdout[-3000:], console.RED)
         return 1
     console.ok("Проверка конфигов: ошибок нет.")

@@ -1,7 +1,7 @@
 r"""other.bat — «Other» на второй круг: ВСЕ картинки Waifu\Other (и россыпью, и в подпапках) ПЕРЕНОСЯТСЯ
-в новые папки коллекции dataN\data<N>-other по other_batch_size (configs\tools.json), номера — после последней dataN.
+в новые папки коллекции dataN\data<N>-other по other_batch_size (configs\other\settings.json), номера — после последней dataN.
 Совпавшие имена получают суффикс __2, __3 …; опустевшие подпапки Other удаляются.
-Затем предлагается prepare.bat: под папки -other он берёт configs\template-other.json (шесть AI-этапов, запасные
+Затем предлагается prepare.bat: под папки -other он берёт configs\other\template.json (шесть AI-этапов, запасные
 модели, соседи по общему порядку всех dataN). Конвейер ПЕРЕНОСИТ файлы dataN-other в test-dataN-other\in и удаляет
 пустую dataN-other; итог, как обычно, КОПИРУЕТСЯ в Waifu (finish.bat).
 
@@ -46,10 +46,9 @@ def main() -> int:
     settings = load_settings(Report(), check_run_files=False)
     if settings is None:
         raise UserError("configs\\config.json с ошибками", "проверьте: venv\\Scripts\\python engine\\main.py --check")
-    try:
-        size = int(json.loads((PROJECT / "configs" / "tools.json").read_text(encoding="utf-8")).get("other_batch_size", 500))
-    except (OSError, ValueError):
-        size = 500
+    import modes
+
+    size = int(modes.other_settings()["other_batch_size"])   # configs\\other\\settings.json
     other = settings.waifu / "Other"
     console.title("«Other» на второй круг")
     files = sorted((p for p in other.rglob("*") if p.is_file() and p.suffix.lower() in MEDIA),

@@ -7,9 +7,10 @@ tools — инструменты anime-sort
 
 Запуск конвейеров
 -----------------
-prepare.py      проверка API (probe.py) → поиск необработанных dataN → configN.json из configs\template.json → запуск
+prepare.py      проверка API (probe.py) → поиск необработанных dataN → configN.json из configs\main|other\template.json → запуск (--mode main|other)
+modes.py        режимы (main / other): где шаблон и настройки режима, перенос старой раскладки configs
 probe.py        маленький запрос на каждую пару «ключ + модель»: работает / нет баланса / теряет картинку / нет ключа
-other.py        файлы россыпью из Waifu\Other → новые dataN-other (по other_batch_size из configs\tools.json) → prepare
+other.py        всё из Waifu\Other → новые dataN-other (по other_batch_size из configs\other\settings.json) → prepare
 
 После конвейеров
 ----------------

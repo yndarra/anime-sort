@@ -1,5 +1,5 @@
 @echo off
-rem After the pipelines: merge into Waifu, names agent, small titles to Other, numbering.
+rem After the pipelines: merge into Waifu, small titles to Other, numbering (the names agent is run separately).
 rem Keep this file ASCII-only: cmd reads it before switching the code page.
 chcp 65001 >nul
 cd /d "%~dp0"

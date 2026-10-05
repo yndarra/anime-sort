@@ -54,7 +54,7 @@ configs — настройки конвейера (формат JSON)
 --------------------------------
 Параметр        Обязательно  Значение
 "run"           да           список пачек для запуска: ["config1", "config2"] (без .json). Обычно его пишет prepare.bat
-                             вместе с configN.json (из template.json) — вручную править не нужно
+                             вместе с configN.json (из main\template.json или other\template.json) — вручную править не нужно
 "collection"    да           папка коллекции, где лежит anime-paths.json (общий файл путей с проектом anime-vault):
                              из него waifu (итоговая коллекция), batches (исходные dataN — не изменяются, наборы берут
                              копии) и results (куда класть наборы test-dataN). Старые ключи "waifu", "source",

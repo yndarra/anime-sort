@@ -171,14 +171,17 @@ class Stats:
     def dataset_status(root: Path) -> str:
         """done — влит в Waifu; completed — завершён, не влит; active — сейчас в работе; started — прерван; new — не начат."""
         if not root.exists():
-            return "new"
+            # Старые наборы, обработанные частями (test-data80_1 … _5), — влиты, если влиты все части.
+            parts = list(root.parent.glob(f"{root.name}_*"))
+            return "done" if parts and all((part / "DONE.txt").exists() for part in parts) else "new"
+        # Влитый набор в работе быть не может (номер процесса в старом pids.json мог достаться другой программе).
+        if (root / "DONE.txt").exists():
+            return "done"
         pids = read_json(root / "logs" / "pids.json")
         from engine import winproc
 
         if winproc.pid_alive(pids.get("dataset")):
             return "active"
-        if (root / "DONE.txt").exists():
-            return "done"
         if read_json(root / "out" / "status_snapshot.json").get("status") == "completed" and not (root / "work").exists():
             return "completed"
         return "started"

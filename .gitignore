@@ -24,3 +24,6 @@ tools/fix_name/names.json.bak
 assets/done.ico
 configs/config[0-9]*.json
 configs/config.json
+
+# Копии шаблонов до правки агентом/Пультом
+configs/**/*.bak

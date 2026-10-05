@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>anime-sort — Пульт</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <aside>
+    <div class="brand"><div class="logo">AS</div><div><b>anime-sort</b><small>Пульт</small></div></div>
+    <div class="nav" data-page="overview"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/></svg>Обзор</div>
+    <div class="nav" data-page="pipelines"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Конвейеры<span class="badge" id="badge-batches" hidden></span></div>
+    <div class="nav" data-page="other"><svg viewBox="0 0 24 24"><path d="M4 12a8 8 0 1 0 3-6.3M4 4v5h5"/></svg>Второй круг</div>
+    <div class="nav" data-page="configs"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h10M4 18h7"/></svg>Конфиги</div>
+    <div class="nav" data-page="names"><svg viewBox="0 0 24 24"><path d="M4 7h7M4 12h12M4 17h9"/><circle cx="18" cy="7" r="2"/></svg>Имена</div>
+    <div class="nav" data-page="apis"><svg viewBox="0 0 24 24"><circle cx="8" cy="15" r="4"/><path d="M11 12l8-8M16 7l2 2"/></svg>API и ключи</div>
+    <div class="nav" data-page="tools"><svg viewBox="0 0 24 24"><path d="M14 7l3-3 3 3-3 3M17 4v9a5 5 0 0 1-5 5H4"/></svg>Инструменты</div>
+    <div class="side-foot">
+      <div id="foot-state"><span class="dot off"></span>Конвейеры остановлены</div>
+      <div class="row"><span>Задач идёт</span><span id="foot-tasks">0</span></div>
+      <div class="row"><span>Обновлено</span><span id="foot-time">—</span></div>
+    </div>
+  </aside>
+
+  <main>
+    <header>
+      <div><h1 id="page-title">Обзор</h1><div class="sub" id="page-sub"></div></div>
+      <div class="spacer"></div>
+      <div id="page-actions" style="display:flex;gap:8px"></div>
+    </header>
+    <div class="content" id="content"><div class="loading">Загрузка…</div></div>
+    <div class="dock collapsed" id="dock">
+      <div class="dock-head" id="dock-head"><b>Задачи</b><small id="dock-summary">пока ничего не запускали</small>
+        <span class="spacer"></span><small id="dock-toggle">развернуть ▴</small></div>
+      <div class="dock-body">
+        <div class="task-list" id="task-list"></div>
+        <div class="console"><pre id="task-output"></pre><div class="question" id="task-question" hidden></div></div>
+      </div>
+    </div>
+  </main>
+</div>
+<div class="toasts" id="toasts"></div>
+
+<script src="app.js"></script>
+<script src="pages/overview.js"></script>
+<script src="pages/pipelines.js"></script>
+<script src="pages/configs.js"></script>
+<script src="pages/names.js"></script>
+<script src="pages/apis.js"></script>
+<script src="pages/tools.js"></script>
+</body>
+</html>

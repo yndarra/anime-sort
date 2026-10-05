@@ -88,11 +88,15 @@ def merge_dir(source: Path, target: Path) -> None:
             except OSError:
                 pass
         else:
-            destination = unique_file(destination, child)
-            if destination.exists() and destination != child:
-                child.unlink()
-            elif destination != child:
-                child.replace(destination)
+            try:
+                destination = unique_file(destination, child)
+                if destination.exists() and destination != child:
+                    child.unlink()
+                elif destination != child:
+                    child.replace(destination)
+            except FileNotFoundError:
+                # Файл уже перенесли (одноимённая папка слилась раньше в этом же проходе) — не падать.
+                print(f"skip vanished: {child}")
     try:
         source.rmdir()
     except OSError:

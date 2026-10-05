@@ -10,6 +10,8 @@ from pathlib import Path
 
 import pytest
 
+ROOT = Path(__file__).resolve().parent.parent
+
 PROJECT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(PROJECT))
 sys.path.insert(0, str(PROJECT / "tools" / "fix_name"))
@@ -114,3 +116,92 @@ def test_back_button_skips_files_checked_by_stage_ahead():
     ds = SimpleNamespace(entries=[(None, None, "a"), (None, None, "b")], stages=[stage], item=items.__getitem__,
                          exclude_checked_by={"B"})
     assert [key for _, _, key in common.candidates(ds, stage)] == ["b"]
+
+
+# ---------- Пульт (gui/control) и режимы ----------
+
+def _control():
+    for path in (ROOT / "gui", ROOT / "tools"):
+        if str(path) not in sys.path:
+            sys.path.insert(0, str(path))
+    from control import tasks
+
+    return tasks
+
+
+def test_task_question_buttons_take_words_from_prompt():
+    tasks = _control()
+    assert tasks.option_labels("р — повторить, п — пропустить шаг, в — выйти", "рпв") == [
+        ("р", "Повторить"), ("п", "Пропустить шаг"), ("в", "Выйти")]
+    assert tasks.option_labels("Перенести?", "дн") == [("д", "Да"), ("н", "Нет")]
+
+
+def test_task_output_ansi_colours_become_tags():
+    tasks = _control()
+    assert tasks.split_ansi("\x1b[92m[12:00] ok\x1b[0m tail") == [("[12:00] ok", "92"), (" tail", None)]
+
+
+def test_console_asks_through_gui_protocol():
+    import subprocess
+
+    code = "import sys; sys.path.insert(0, 'tools'); import console; print('answer=' + console.ask('Перенести?', 'дн'))"
+    env = {**__import__("os").environ, "ANIME_SORT_GUI": "1", "PYTHONIOENCODING": "utf-8"}
+    result = subprocess.run([sys.executable, "-c", code], input="н\n", capture_output=True, text=True,
+                            encoding="utf-8", cwd=ROOT, env=env)
+    lines = result.stdout.split("\n")   # не splitlines(): он считает \x1e концом строки
+    assert lines[0] == "\x1eASK\tПеренести?\tдн"
+    assert lines[1] == "answer=н"
+
+
+def test_modes_split_folders_and_defaults():
+    _control()
+    import modes
+
+    assert modes.mode_of("data12") == "main"
+    assert modes.mode_of("data90-other") == "other"
+    assert set(modes.OTHER_DEFAULTS) == {"other_batch_size", "small_title_max_files"}
+
+
+def test_task_manager_answers_tool_question(tmp_path):
+    """Задача Пульта: инструмент спрашивает через console.ask, ответ уходит в stdin, вывод копится по курсору."""
+    import time
+
+    tasks = _control()
+    script = tmp_path / "ask.py"
+    script.write_text("import sys\nsys.path.insert(0, r'%s')\nimport console\n"
+                      "print('answer=' + console.ask('Перенести?', 'дн'))\n" % (ROOT / "tools"), encoding="utf-8")
+    manager = tasks.TaskManager()
+    task = manager.run("проверка", script)
+    for _ in range(100):
+        if task.question:
+            break
+        time.sleep(0.05)
+    assert task.question["prompt"] == "Перенести?"
+    assert [o["key"] for o in task.question["options"]] == ["д", "н"]
+    task.answer("н")
+    for _ in range(100):
+        if task.status in ("ok", "failed"):
+            break
+        time.sleep(0.05)
+    assert task.status == "ok"
+    cursor, lines = task.lines_since(0)
+    assert cursor == len(lines)
+    assert any("".join(text for text, _ in parts) == "answer=н" for parts in lines)
+
+
+def test_control_api_refuses_paths_outside_configs():
+    _control()
+    from control.api import Api
+
+    with pytest.raises(ValueError):
+        Api.config_path("../secrets/providers/x.json")
+    assert Api.config_path("main/template.json").name == "template.json"
+
+
+def test_control_checks_where_expression():
+    _control()
+    from control import checks
+
+    assert checks.check_where("[AI-GF] and [AI-K3]") == ""
+    assert checks.check_where("[AI-GF] and") != ""
+

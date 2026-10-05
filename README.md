@@ -5,9 +5,16 @@ A config-driven Windows pipeline that sorts a large anime-art collection (≈40,
 then multimodal LLMs, then text-only metadata analysis and finally neighbour heuristics. Every stage only
 sees the images that the previous ones could not identify, so the expensive models touch just a few percent of the data.
 
-![Main window: journal of all batches, live statistics and window controls](docs/images/main-window.png)
+![Control panel: datasets with thumbnails and progress, collection stats, models and APIs of the day](docs/images/control-panel.png)
 
 ## Features
+
+- **Control panel.** A web UI in its own window (`control.vbs`: pywebview + Edge WebView2, plain HTML/CSS/JS, no build
+  step) for everything the project does: an overview of all datasets with thumbnails and progress, live model and API
+  statistics, the pipeline workflow step by step (config agent → prepare → start / stop → finish), the second pass,
+  form editors for every config (drag-and-drop stage order and API routes) validated by the engine's own code, a
+  `names.json` editor, API keys and probes, and every collection tool with a dry run. Tools run as tasks inside the
+  panel; their console questions become buttons. API key values never reach the page.
 
 - **Pipeline as configuration.** Stages, their order, models, confidence thresholds and which images each stage
   receives (`"from": 0.10`, `"where": "[AI-GF] and [AI-K3]"`) are described in JSON. No code changes are needed
@@ -77,7 +84,8 @@ venv\Scripts\pip install -r requirements.txt
 1. Copy `secrets.example\` to `secrets\` and put your API keys there (one key per file). Keys are never committed.
 2. Copy `configs\config.example.json` to `configs\config.json` and set `"collection"`. It is the folder with
    `anime-paths.json`, the shared path file with the companion data tool.
-3. Describe the stages and candidate keys in `configs\template.json` (and `template-other.json` for the second pass).
+3. Describe the stages and candidate keys in `configs\main\template.json` (and `configs\other\template.json` for the
+   second pass) — in a text editor or in the control panel (`control.vbs` → Configs).
 4. Run `prepare.bat`. It first offers the config agent (paid, optional), then checks the keys, finds unprocessed folders,
    writes the batch configs and offers to start.
 5. When batches finish, run `finish.bat`. It merges results into the collection, dissolves tiny titles (≤ 15 images:
@@ -87,19 +95,23 @@ venv\Scripts\pip install -r requirements.txt
 
 | Launcher | Purpose |
 |---|---|
+| `control.vbs` | The control panel: everything below from one window |
 | `prepare.bat` | Probe APIs, plan batches, generate `configN.json`, start |
 | `start.vbs` | Start the batches listed in `config.json` → `run` |
 | `finish.bat` | Post-processing (merge, tidy, renumber) with retry / skip on errors |
-| `other.bat` | Move everything from "Other" to a second pass (`dataN-other`, `template-other.json`) |
+| `other.bat` | Move everything from "Other" to a second pass (`dataN-other`, `configs\other\template.json`) |
+
+![Main window of the pipelines: journal of all batches, live statistics and window controls](docs/images/main-window.png)
 
 ## Project layout
 
 ```
 engine/      config validation, batch/dataset runners, API client with failover, window layout, folder marks
 stages/      one module per stage type
-gui/         dataset window, main window, statistics
+gui/         dataset window, main window, statistics; gui/control/ — the control panel (Python API + web/)
 tools/       collection tools: add (merge), fix_name (+ regroup), sort, watch, agent, cleanup, prepare/finish/other
-configs/     template.json, template-other.json, config.json, live.json (hot-reloaded), agent.json, tools.json
+configs/     main/ and other/ (batch template per mode; other/settings.json), config.json, live.json (hot-reloaded),
+             agent.json
 providers/   OpenAI-compatible providers (endpoint + model names); keys live in secrets/
 tests/       pytest suite for the pure logic
 docs/        architecture notes and screenshots

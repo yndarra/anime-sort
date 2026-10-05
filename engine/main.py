@@ -30,6 +30,7 @@ sys.path.insert(0, str(PROJECT))
 
 import argparse  # noqa: E402
 import ctypes  # noqa: E402
+import json  # noqa: E402
 import os  # noqa: E402
 import queue  # noqa: E402
 import re  # noqa: E402
@@ -186,6 +187,7 @@ class Dispatcher:
         self.live_values = live.LiveSettings()
         self.windows_config = winlayout.read_config(self.live_path)[0]
         self.tail = Tail()
+        self.quit_requested = False   # Пульт попросил закрыть anime-sort (logs\\main_control.json)
 
     # ---------- снимок конфигов
 
@@ -295,7 +297,23 @@ class Dispatcher:
 
     # ---------- цикл
 
+    def check_control(self) -> None:
+        """Запрос от Пульта (gui\\control): {"quit": время} — штатно закрыть главное окно, а с ним пачки и окна
+        наборов (всё сохранённое остаётся, следующий запуск продолжит с того же места)."""
+        path = LOGS / "main_control.json"
+        if not path.exists():
+            return
+        try:
+            request = json.loads(path.read_text(encoding="utf-8"))
+        except (OSError, ValueError):
+            request = {}
+        path.unlink(missing_ok=True)
+        if request.get("quit"):
+            say(f"[{now()}] Пульт: остановить всё — закрываю anime-sort", YELLOW)
+            self.quit_requested = True
+
     def step(self) -> None:
+        self.check_control()
         self.check_live()
         if self.settings is None:
             self.check_settings()

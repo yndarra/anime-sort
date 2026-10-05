@@ -1,4 +1,4 @@
-r"""Мелкие тайтлы — разобрать: тайтлы Waifu, где картинок не больше порога (configs\tools.json →
+r"""Мелкие тайтлы — разобрать: тайтлы Waifu, где картинок не больше порога (configs\other\settings.json →
 small_title_max_files, по умолчанию 15), перестают быть отдельными папками:
     - персонаж мелкого тайтла (полное имя из 2+ слов), который есть и в «большом» тайтле (больше порога картинок), — его картинки
       переносятся в папку этого персонажа в большом тайтле (если таких тайтлов несколько — в самый большой);
@@ -14,7 +14,6 @@ python tools\cleanup\small_titles.py --max 15   свой порог
 from __future__ import annotations
 
 import argparse
-import json
 import re
 import sys
 from pathlib import Path
@@ -98,10 +97,9 @@ def remove_empty(folder: Path) -> None:
 def main() -> int:
     from waifu_common import WAIFU_ROOT, waifu_busy
 
-    try:
-        default = int(json.loads((PROJECT / "configs" / "tools.json").read_text(encoding="utf-8")).get("small_title_max_files", 15))
-    except (OSError, ValueError):
-        default = 15
+    import modes
+
+    default = int(modes.other_settings()["small_title_max_files"])   # configs\\other\\settings.json
     parser = argparse.ArgumentParser()
     parser.add_argument("--max", type=int, default=default, help="тайтл с таким числом картинок и меньше — разобрать")
     parser.add_argument("--yes", action="store_true")
